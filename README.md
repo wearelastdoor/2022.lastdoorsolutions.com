@@ -3,7 +3,7 @@
 1.  **Clone Repo**
 
 ```shell
- git clone https://ldsdev@bitbucket.org/lastdoor/idealaya.com.np.git
+ git clone https://ldsdev@bitbucket.org/lastdoor/lastdoorsolutions.com_2022.git
 ```
 
 2.  **install dependencies in the project**

@@ -1,0 +1,65 @@
+.c-highlight-content {
+  padding: 151px 0 50px;
+  @media #{$tablet} {
+    padding-top: 100px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 940px;
+  }
+
+  .c-highlight-content__path {
+    height: 176px;
+    width: 165px;
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    left: -94px;
+  }
+}
+
+.c-highlight-content__intro {
+  letter-spacing: -0.5px;
+  @include fsz(20px);
+  font-family: $ff-primary-bold;
+  margin-bottom: 7px;
+  @media #{$phone} {
+    margin-bottom: 0;
+  }
+
+  p {
+    max-width: 414px;
+    width: 100%;
+    vertical-align: top;
+    display: inline-block;
+  }
+}
+
+.c-highlight-content__quote {
+  font-size: clamp(1.6375rem, 3vw, 2.375rem);
+  @include line-height(38px, 55px);
+  color: $c-brand;
+  letter-spacing: -1.8px;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-family: $ff-primary;
+  margin: 0;
+
+  i {
+    display: inline;
+    margin: 0;
+    background-image: linear-gradient(to right, #8ED2DC, #8ED2DC);
+    background-repeat: no-repeat;
+    background-size: 100% 0.12em;
+    background-position: 0 calc(100% - 0.123em);
+  }
+
+  @media #{$phone} {
+    letter-spacing: -0.5px;
+  }
+}

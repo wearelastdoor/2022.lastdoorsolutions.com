@@ -1,0 +1,64 @@
+[
+  {
+    "header": {
+      "title": "Our work revolves around three things.",
+      "description": "<p>We stand for the uncompromised commitment to quality of work we deliver at a pace.</p>"
+    },
+    "steps": [
+      {
+        "backgroundColor": "#8EDC97",
+        "title": "User Experience Design",
+        "list": [
+          {
+            "item": "Strategic consulting"
+          },
+          {
+            "item": "User experience"
+          },
+          {
+            "item": "Interface Design"
+          },
+          {
+            "item": "Product Design"
+          }
+        ]
+      },
+      {
+        "backgroundColor": "#8EC8DC",
+        "title": "Frontend engineering",
+        "list": [
+          {
+            "item": "HTML/CSS"
+          },
+          {
+            "item": "React, Angular or other stacks"
+          },
+          {
+            "item": "Frontend Team on demand."
+          },
+          {
+            "item": "Email templates, Elementor websites and so on."
+          }
+        ]
+      },
+      {
+        "backgroundColor": "#C38EDC",
+        "title": "cms & software development",
+        "list": [
+          {
+            "item": ".net & Drupal systems"
+          },
+          {
+            "item": "Laravel cms"
+          },
+          {
+            "item": "Custom WordPress Dev"
+          },
+          {
+            "item": "Backend Team on demand."
+          }
+        ]
+      }
+    ]
+  }
+]

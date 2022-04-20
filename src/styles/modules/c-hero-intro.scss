@@ -1,0 +1,84 @@
+.c-hero-intro {
+  background-color: $c-secondary;
+
+
+  .l-container {
+    max-width: 930px;
+    position: relative;
+    z-index: 2;
+    padding: 215px 20px 50px 110px;
+
+    @media #{$phone} {
+      padding-left: 20px;
+    }
+  }
+}
+
+.c-hero-intro__title {
+  font-size: clamp(3.6875rem, 10vw, 7.5rem);
+  font-family: $ff-primary-black;
+  font-weight: normal;
+  color: $c-brand;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+  margin-bottom: clamp(25px, 5vw, 33px);
+  letter-spacing: -0.437475rem;
+
+  @media #{$phone} {
+    letter-spacing: -0.28125rem;
+    max-width: min(316px, 100%);
+    width: 100%;
+  }
+
+  &:after {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    color: transparent;
+    z-index: -1;
+    display: inline-block;
+    vertical-align: top;
+    left: 0;
+    right: 0;
+    transform: translate(5px, 5px) translateZ(0);
+    backface-visibility: hidden;
+    @include letter-stroke(rgba($c-primary, 0.75), 1px);
+
+    @media #{$phone} {
+      transform: translate(3px, 3px) translateZ(0);
+    }
+  }
+}
+
+.c-hero-intro__description {
+  @include fsz(26px);
+  line-height: 1.615;
+  letter-spacing: -0.5px;
+
+
+  @media #{$phone} {
+    @include fsz(20px);
+  }
+
+  p {
+    margin-bottom: 42px;
+    @media #{$phone} {
+      margin-bottom: 32px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.c-hero-intro__image {
+  width: 800px;
+  position: absolute;
+  z-index: -1;
+  left: calc(100% - 420px);
+  top: 92px;
+}

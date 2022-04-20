@@ -1,0 +1,51 @@
+/*!
+Theme Name: Lastdoor
+Theme URI: https://lastdoor.co/
+Author: Lastdoor
+Author URI: https://lastdoor.co/
+Description: Gatsby Starter for Lastdoor
+Version: 1.0.0
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+#gradient-canvas {
+  width:100%;
+  height:100%;
+  --gradient-color-1: #17DCBC;
+  --gradient-color-2: #C34CA3;
+  --gradient-color-3: #FD4D87;
+  --gradient-color-4: #FC8375;
+  --gradient-color-5: #A23FC3;
+}
+//@import foundation
+@import "foundation/config";
+@import "foundation/mixins";
+@import "foundation/normalize";
+@import "foundation/accessibility";
+@import "foundation/base";
+@import "foundation/fonts";
+
+//@import defaults
+@import "defaults/blockquote";
+@import "defaults/buttons";
+@import "defaults/code";
+@import "defaults/divider";
+@import "defaults/forms";
+@import "defaults/image";
+@import "defaults/link";
+@import "defaults/lists";
+@import "defaults/table";
+@import "defaults/typography";
+
+//@import vendors
+@import "vendors/slick";
+@import "vendors/locomotiveScroll";
+
+//@import partials
+@import "partials/grid";
+@import "partials/navigation";
+@import "partials/sidebar";
+
+//@import modules
+@import "modules/modules";

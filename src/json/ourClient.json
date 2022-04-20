@@ -1,0 +1,58 @@
+[
+  {
+    "header": {
+      "subTitle": "OUR PARTNERS AND CLIENTS",
+      "title": "We make brands and agencies thrive"
+    },
+    "clients": [
+      {
+        "description": "<p>Last Door has been collaborating the anchorwave team as their web design & development partner since 2009. A dedicated team of experts at Last Door serves them.</p>",
+        "image": {
+          "url": "../images/anchorwave-logo.png",
+          "alt": "Anchorwave branding",
+          "width": 80
+        }
+      },
+      {
+        "description": "<p>Last Door and highstep has worked together on a several projects including softwares, small to large scale websites, UX strategy and marketing campaigns for their clients.</p>",
+        "image": {
+          "url": "../images/highstep-logo.png",
+          "alt": "Highstep branding",
+          "width": 142
+        }
+      },
+      {
+        "description": "<p>Sampression delivers you excellent digital goods for busy folks. It reflects what we do, how we communicate, and how we share ideas & our thoughts.</p>",
+        "image": {
+          "url": "../images/kings-college-logo.png",
+          "alt": "Kings Collage branding",
+          "width": 64
+        }
+      },
+      {
+        "description": "<p>Last Door has been working with Mila to power up their website since their inception. </p>",
+        "image": {
+          "url": "../images/mila-care-logo.png",
+          "alt": "Mila care branding",
+          "width": 48
+        }
+      },
+      {
+        "description": "<p>Last Door was brought in for their upcoming website. With a thorough ground research, we pulled-off a rocksolid website to express their project.</p>",
+        "image": {
+          "url": "../images/british-gut-logo.png",
+          "alt": "british gut branding",
+          "width": 82
+        }
+      },
+      {
+        "description": "<p>Since 2015, Last Door has been collaborating with eleven11 group to develop their clients’ websites from small to large scale. </p>",
+        "image": {
+          "url": "../images/eleven-logo.png",
+          "alt": "eleven branding",
+          "width": 162
+        }
+      }
+    ]
+  }
+]

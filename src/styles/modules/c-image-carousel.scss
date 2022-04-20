@@ -1,0 +1,33 @@
+.c-image-carousel {
+    position: relative;
+    z-index: 1;
+    background-color: $c-secondary;
+
+    .slick-list {
+        margin: 0 -15px 0 -80px;
+        height: 380px;
+        @media #{$phone} {
+            margin: 0 -15px;
+        }
+    }
+}
+.c-image-carousel__item {
+    position: relative;
+    z-index: 1;
+    margin-left: 15px;
+
+    .c-image-carousel__image {
+        margin-bottom: -10px;
+    }
+}
+
+.c-image-carousel__figcation {
+    bottom: 7px;
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    @include fsz(14px);
+    color: $c-white;
+    text-shadow: 0 0 3px $c-black;
+    margin-bottom: 0;
+}

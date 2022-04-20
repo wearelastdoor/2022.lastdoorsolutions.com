@@ -1,0 +1,65 @@
+.c-content {
+  position: relative;
+
+  .container {
+    padding-left: 140px;
+
+    @media #{$tablet} {
+      padding-left: 20px;
+    }
+  }
+}
+
+.c-content-card__title {
+  margin-bottom: 40px;
+  font-size: clamp(2.125rem, 6vw, 2.875rem);
+  line-height: 1;
+  max-width: 414px;
+  letter-spacing: -2px;
+
+  @media #{$phone} {
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+  }
+}
+
+.c-content__card {
+  padding: 120px 0 120px 120px;
+  position: relative;
+  z-index: 1;
+  @include fsz(26px);
+  line-height: 1.615;
+  letter-spacing: -0.5px;
+
+  @media #{$tablet} {
+    padding: 60px 0 60px 60px;
+  }
+
+  @media #{$phone} {
+    padding: 40px 0 40px 20px;
+    @include fsz(20px);
+  }
+
+  p {
+    margin-bottom: 42px;
+    @media #{$phone} {
+      margin-bottom: 32px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-color: $c-white;
+    box-shadow: 0 30px 60px rgba($c-black, .1);
+    left: 0;
+    right: -999%;
+    top: 0;
+    bottom: 0;
+  }
+}

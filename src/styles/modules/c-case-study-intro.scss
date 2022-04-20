@@ -1,0 +1,64 @@
+.c-case-study-intro {
+  .container {
+    padding: 147px 20px 22px;
+    position: relative;
+
+    @media #{$tablet} {
+      padding: 100px 20px 20px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: $c-white;
+      z-index: 99;
+      top: 0;
+      bottom: -120px;
+      right: calc(100% - 250px);
+      left: -999%;
+
+      @media #{$tablet} {
+        bottom: -60px;
+      }
+
+      @media #{$phone} {
+        right: calc(100% - 180px);
+      }
+    }
+
+    @media #{$desktop} {
+      padding-top: 120px;
+    }
+
+    @media #{$tablet} {
+      padding-top: 100px;
+    }
+
+    @media #{$phone} {
+      padding-top: 80px;
+    }
+  }
+}
+
+.c-case-study-intro__content {
+  position: relative;
+  z-index: 999;
+}
+
+
+.c-case-study-intro__lead-text {
+  @include fsz(14px);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-family: $ff-primary-black;
+  font-weight: normal;
+  display: block;
+  width: 100%;
+  color: $c-brand;
+  margin-bottom: 36px;
+
+  @media #{$phone} {
+    margin-bottom: 20px;
+  }
+}
+

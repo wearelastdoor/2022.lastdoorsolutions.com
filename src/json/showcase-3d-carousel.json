@@ -1,0 +1,36 @@
+[
+  {
+    "dwt": [
+      {
+        "image": {
+          "url": "../images/dwt-carousel-showcase-05.jpg",
+          "alt": "showcase"
+        }
+      },
+      {
+        "image": {
+          "url": "../images/dwt-carousel-showcase-04.jpg",
+          "alt": "showcase"
+        }
+      },
+      {
+        "image": {
+          "url": "../images/dwt-carousel-showcase-03.jpg",
+          "alt": "showcase"
+        }
+      },
+      {
+        "image": {
+          "url": "../images/dwt-carousel-showcase-02.jpg",
+          "alt": "showcase"
+        }
+      },
+      {
+        "image": {
+          "url": "../images/dwt-carousel-showcase-01.jpg",
+          "alt": "showcase"
+        }
+      }
+    ]
+  }
+]

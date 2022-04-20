@@ -1,0 +1,41 @@
+[
+  {
+    "header": {
+      "subTitle": "Our past work",
+      "title": "pioneering digital presence"
+    },
+    "projects": [
+      {
+       "title": "discovery world trekking",
+        "projectUrl": "https://www.discoveryworldtrekking.com/",
+        "urlType": "external",
+        "image": {
+          "url": "../images/discovery-world-trekking-thumbnail.png",
+          "alt": "Discovery World Trekking"
+        }
+      },
+      {
+        "title": "Sampression",
+        "projectUrl": "https://sampression.com/",
+        "urlType": "external",
+        "image": {
+          "url": "../images/sampression-thumbnail.png",
+          "alt": "Sampression | WordPress Themes"
+        }
+      },
+      {
+        "title": "twinsUK, Kings college",
+        "projectUrl": "https://twinsuk.ac.uk/",
+        "urlType": "external",
+        "image": {
+          "url": "../images/twins-uk-thumbnail.png",
+          "alt": "Twin Research & Genetic Epidemiology"
+        }
+      }
+    ],
+    "button": {
+      "url": "/work/",
+      "title": "View all our work"
+    }
+  }
+]

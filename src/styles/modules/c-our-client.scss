@@ -1,0 +1,236 @@
+.c-our-client {
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+  margin-top: -130px;
+  padding-bottom: 80px;
+
+  @media #{$small-screen} {
+    padding-bottom: 60px;
+  }
+
+  @media #{$phone} {
+    margin-top: -250px;
+  }
+
+  .l-container {
+    @media #{$tablet} {
+      padding-left: 80px;
+      padding-right: 0;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding-left: 40px;
+      padding-right: 0;
+    }
+  }
+}
+
+.c-our-client__header {
+  padding-right: 153px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+
+  @media #{$tablet} {
+    padding-right: 68px;
+  }
+  @media #{$phone} {
+    padding-right: 48px;
+    padding-top: 20px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 65px;
+    top: 0;
+    bottom: -426px;
+    z-index: -1;
+    display: block;
+    left: -999%;
+    background-color: $c-brand;
+
+    @media #{$tablet} {
+      right: 20px;
+    }
+  }
+
+  .c-our-client__header-content {
+    max-width: 493px;
+    width: 100%;
+    padding: 42px 0 50px;
+    position: relative;
+    z-index: 1;
+    @media #{$phone} {
+      padding-bottom: 155px;
+    }
+
+    &:after {
+      content: "";
+      left: 10px;
+      bottom: 15px;
+      width: 2px;
+      background-color: $c-white;
+      display: none;
+      position: absolute;
+      z-index: -1;
+      height: 120px;
+      @media screen and (max-width: 480px) {
+        display: block;
+      }
+    }
+  }
+
+  .c-our-client__lead-text {
+    @include fsz(14px);
+    @include line-height(14px, 17px);
+    @include letter-spacing(36, 14px);
+    color: rgba($c-white, 0.5);
+    font-family: $ff-primary-black;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+
+  .c-our-client__title {
+    font-size: clamp(3.125rem, 8vw, 5.9375rem);
+    font-family: $ff-primary-black;
+    font-weight: normal;
+    color: $c-white;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: -6px;
+    line-height: 1;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+    @media #{$phone} {
+      letter-spacing: -3.3px;
+      max-width: min(264px, 100%);
+    }
+
+    &:before {
+      content: "";
+      width: 72px;
+      background-color: transparent;
+      right: calc(100% + 8px);
+      border-width: 2px 0 2px 2px;
+      border-style: solid;
+      border-color: $c-white;
+      display: block;
+      position: absolute;
+      top: 140px;
+      bottom: calc(0px - 211px);
+      @media #{$tablet} {
+        top: 90px;
+        width: 40px;
+      }
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: attr(title);
+      position: absolute;
+      top: 0;
+      color: transparent;
+      z-index: -1;
+      display: inline-block;
+      vertical-align: top;
+      left: 0;
+      transform: translate(5px, 5px) translateZ(0);
+      backface-visibility: hidden;
+      @include letter-stroke(rgba(#5e8b95, 0.5), 1px);
+
+      @media #{$phone} {
+        transform: translate(3px, 3px) translateZ(0);
+      }
+    }
+  }
+
+  .c-our-client__image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    @media #{$phone} {
+      position: absolute;
+      bottom: -67px;
+      right: 30px;
+    }
+
+    img {
+      max-height: 434px;
+      @media #{$phone} {
+        max-height: 261px;
+      }
+    }
+  }
+}
+
+.c-our-client__card {
+  background-color: $c-white;
+  box-shadow: 0 30px 60px rgba($c-black, 0.1);
+  padding: 80px 80px 8px;
+  position: relative;
+  z-index: 2;
+
+  @media #{$tablet} {
+    padding: 60px 40px 8px;
+  }
+
+  @media #{$phone}{
+    padding: 40px 40px 8px;
+  }
+
+  .l-grid {
+    margin: 0 -32px;
+  }
+}
+
+.l-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.c-client {
+  width: 33.33%;
+  padding: 0 32px;
+  margin-bottom: 52px;
+
+  @media #{$tablet} {
+    width: 50%;
+  }
+
+  &:last-child {
+    @media #{$phone}{
+      margin-bottom: 32px;
+    }
+  }
+
+  @media #{$phone}{
+    width: 100%;
+  }
+
+  .c-client__logo {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15px;
+  }
+
+  .c-client__description {
+    @include fsz(15px);
+
+    p {
+      @media screen and (max-width: 640px) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}

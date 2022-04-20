@@ -1,0 +1,22 @@
+[
+  {
+    "logo": {
+      "url": "../images/anchorwave-logo-white.png",
+      "alt": "anchorwave logo",
+      "width": "201px"
+    },
+    "image": {
+      "url": "../images/anchorwave-group.jpg",
+      "alt": "anchorwave group"
+    },
+    "content": {
+      "subtitle": "Partnership Story",
+      "title": "We help ambitious agencies",
+      "description": "<p>Realize their full potential of having a partner who crafts digital solutions that stand the test of time. We spent the last 17 years helping our partners Strategize, Design, Develop and grow their Brands & Products.</p>"
+    },
+    "button": {
+      "url": "/work/",
+      "title": "Comming Soon"
+    }
+  }
+]

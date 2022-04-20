@@ -1,0 +1,168 @@
+.tl-edges {
+  overflow: hidden !important;
+}
+
+.c-footer {
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+
+  .l-container {
+    position: relative;
+    z-index: 6;
+  }
+
+  &:before {
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -2;
+    background-color: $c-brand;
+    display: block;
+    position: absolute;
+  }
+
+  &:after {
+    content: "";
+    background-image: url("../images/texture.png");
+    background-repeat: repeat;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+  }
+
+  .c-footer__menu-wrap {
+    padding: 42px 0 30px;
+    border-width: 2px 0;
+    border-color: rgba($c-white, 0.09);
+    border-style: solid;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+
+    @media #{$phone} {
+      padding: 17px 0 7px;
+    }
+  }
+
+  .c-footer__menu {
+    margin: 0 -50px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+
+    @media #{$phone} {
+      margin: 0 auto;
+      padding: 0 7px;
+    }
+
+    @media screen and (max-width: 374px) {
+      padding: 0;
+      margin: 0 -11px;
+      justify-content: center;
+    }
+
+    li {
+      padding: 0 50px;
+      margin-bottom: 12px;
+      @media #{$phone} {
+        padding: 0 13px;
+      }
+      @media screen and (max-width: 364px) {
+        padding: 0 11px;
+      }
+
+      a {
+        @include fsz(14px);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-family: $ff-primary-black;
+        font-weight: normal;
+        color: $c-white;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+          color: $c-primary;
+        }
+      }
+    }
+
+    [aria-current] {
+      color: $c-primary;
+    }
+  }
+}
+
+.c-footer__bottom {
+  @include fsz(16px);
+  font-family: $ff-primary;
+  color: rgba($c-white, 0.5);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0 17px;
+
+  @media #{$phone} {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 28px 0 22px;
+  }
+
+  a {
+    display: block;
+    color: $c-white;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    text-transform: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $c-primary;
+    }
+  }
+}
+
+.c-footer__copyright {
+  @media #{$phone} {
+    order: 2;
+  }
+}
+
+.c-footer__contact {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media #{$phone} {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    order: 1;
+    margin-bottom: 14px;
+  }
+
+  a {
+    @media #{$phone} {
+      @include fsz(20px);
+    }
+
+    &:not(:last-child) {
+      margin-right: 50px;
+
+      @media #{$phone} {
+        margin-right: 0;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}

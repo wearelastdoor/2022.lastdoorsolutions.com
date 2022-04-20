@@ -1,0 +1,120 @@
+.c-offering {
+  background-color: $c-brand;
+  color: $c-white;
+  padding: 102px 0 90px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 80px 0 70px;
+  }
+}
+
+.c-offering__headline {
+  font-size: clamp(3.125rem, 8vw, 5.9375rem);
+  font-family: $ff-primary-black;
+  font-weight: normal;
+  color: $c-white;
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: -6px;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 27px;
+  @media #{$phone} {
+    letter-spacing: -3.3px;
+    max-width: min(264px, 100%);
+  }
+
+  &:after {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    color: transparent;
+    z-index: -1;
+    display: inline-block;
+    vertical-align: top;
+    left: 0;
+    transform: translate(5px, 5px) translateZ(0);
+    backface-visibility: hidden;
+    @include letter-stroke(rgba(#5e8b95, 0.5), 1px);
+
+    @media #{$phone} {
+      transform: translate(3px, 3px) translateZ(0);
+    }
+  }
+}
+
+.c-offering__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0 -35px;
+
+  @media screen and (max-width: 1024px) {
+    padding-left: 40px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-left: 0;
+  }
+}
+
+.c-offering__item {
+  width: 33.33%;
+  padding: 74px 35px 0;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (max-width: 1024px) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.c-offering__icon {
+  position: absolute;
+  top: 0;
+  left: -5px;
+
+  @media screen and (max-width: 767px) {
+    left: 20px;
+  }
+}
+
+.offering__icon--rectangle {
+  top: 0;
+}
+
+.c-offering__icon--oval {
+  top: 10px;
+}
+
+.c-offering__icon--triangle {
+  top: 16px;
+}
+
+.c-offering__title {
+  color: $c-white;
+  @include fsz(20px);
+  font-family: $ff-primary-bold;
+  margin-bottom: 25px;
+}
+
+.c-offering__description {
+  color: #B7C1CA;
+  @include fsz(20px);
+  letter-spacing: -0.38;
+  line-height: 1.5;
+
+  p {
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+}

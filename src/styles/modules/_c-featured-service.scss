@@ -1,0 +1,54 @@
+
+.c-featured-service {
+  padding: 50px 0;
+  @media #{$phone} {
+    padding: 20px 0;
+  }
+}
+
+.c-featured-service__content {
+  background: rgb(51, 69, 84);
+  background: linear-gradient(146deg, rgba(51, 69, 84, 1) 0%, rgba(23, 33, 42, 1) 100%);
+  color: $c-white;
+  padding: 60px 20px 40px 60px;
+  box-shadow: 0 30px 60px rgba($c-black, .1);
+  @media #{$tablet} {
+    padding: 40px 20px 30px;
+  }
+}
+
+.c-featured-service__title {
+  @include fsz(20px);
+  text-transform: uppercase;
+  font-family: $ff-primary-black;
+  display: block;
+  border-bottom: 1px solid rgba($c-white, .25);
+  margin-bottom: 28px;
+  padding-bottom: 14px;
+}
+
+.c-featured-service__inner {
+  max-width: 766px;
+}
+
+.c-featured-service__list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0 -10px;
+
+  li {
+    margin-bottom: 14px;
+    width: 33.33%;
+    padding: 0 10px;
+    @media screen and (max-width: 767px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 540px) {
+      width: 100%;
+    }
+  }
+}
+
+

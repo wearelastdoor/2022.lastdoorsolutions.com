@@ -1,0 +1,144 @@
+.c-accordion {
+  padding: 143px 0 110px;
+  @media #{$tablet} {
+    padding: 100px 0 80px;
+  }
+  @media #{$phone} {
+    padding: 80px 0 60px;
+  }
+
+  .container {
+    max-width: 1120px;
+  }
+}
+
+.c-accordion__intro {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 28px;
+  @media #{$phone} {
+    margin-bottom: 0;
+  }
+}
+
+.c-accordion__header {
+  position: relative;
+  z-index: 1;
+  padding-right: 70px;
+
+}
+
+
+.c-accordion__heading {
+  font-size: clamp(2.925rem, 8vw, 5rem);
+  font-family: $ff-primary-black;
+  font-weight: normal;
+  color: $c-brand;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  letter-spacing: -6px;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto 29px;
+  max-width: min(970px, 100%);
+
+
+  @media #{$tablet} {
+    letter-spacing: -3.3px;
+  }
+
+  &:after {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    color: transparent;
+    z-index: -1;
+    left: 0;
+    transform: translate(5px, 5px) translateZ(0);
+    backface-visibility: hidden;
+    @include letter-stroke(rgba($c-primary, 0.5), 1px);
+
+    @media #{$tablet} {
+      transform: translate(3px, 3px) translateZ(0);
+    }
+  }
+}
+
+.c-accordion__item {
+  border-top: 1px solid rgba($c-brand, .25);
+
+  &:last-child {
+    border-bottom: 1px solid rgba($c-brand, .25);
+  }
+}
+
+.c-accordion__header {
+  padding: 21px 75px 20px 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.c-accordion__button {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  display: block;
+  z-index: 1;
+  border-radius: 0;
+  border-style: none;
+  background-color: transparent;
+  top: 25px;
+  right: 30px;
+
+  &:after, &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    display: block;
+    background-color: $c-brand;
+    transition: all 300ms ease;
+  }
+
+  &:after {
+    top: 0;
+    width: 4px;
+    height: 22px;
+    left: 9px;
+
+    .is-open & {
+      opacity: 0;
+    }
+  }
+
+  &:before {
+    height: 4px;
+    width: 22px;
+    left: 0;
+    top: 9px;
+  }
+}
+
+.c-accordion__title {
+  position: relative;
+  z-index: 1;
+  @include fsz(26px);
+  line-height: 1.2315;
+  letter-spacing: -0.5px;
+  margin-bottom: 0;
+  @media #{$phone} {
+    @include fsz(22px);
+    letter-spacing: -0.2px;
+  }
+}
+
+.c-accordion__body {
+  padding: 10px 0;
+  display: none;
+
+  .is-open & {
+    display: block;
+  }
+}

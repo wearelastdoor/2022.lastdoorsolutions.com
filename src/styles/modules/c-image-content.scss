@@ -1,0 +1,111 @@
+.c-image-content {
+    position: relative;
+    z-index: 1;
+    background-color: #1c262e;
+    padding: 86px 0;
+
+    @media #{$phone} {
+        padding: 46px 0 60px;
+    }
+    
+    &:after {
+        content: "";
+        background-image: url("../images/texture.png");
+        background-repeat: repeat;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: block;
+    }
+
+    &.reversed {
+        .l-container {
+            flex-direction: row-reverse;
+        }
+    }
+    &.dark {
+        background-color: $c-brand;
+        color: $c-white;
+    }
+
+    &.light {
+        background-color: $c-secondary;
+        color: $c-brand;
+    }
+
+    .l-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+.c-image-content__content {
+    width: 43.16239%;
+
+    @media #{$tablet} {
+        width: 48%;
+    }
+    @media #{$phone} {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+.c-image-content__image {
+    width: 43%;
+
+    @media #{$tablet} {
+        width: 48%;
+    }
+
+    @media #{$phone} {
+        width: 100%;
+    }
+    .c-image-content__imageInner {
+        @media #{$phone} {
+            max-width: min(360px, 100%);
+            width: 100%;
+        }
+    }
+}
+
+.c-image-content__title {
+    letter-spacing: -3px;
+    font-size: clamp(1.875rem, 5vw, 2.875rem);
+    max-width: min(370px, 100%);
+    line-height: 1;
+    margin-bottom: 28px;
+
+    @media #{$tablet} {
+        letter-spacing: -1px;
+    }
+
+    .dark & {
+        color: $c-tertiary;
+    }
+}
+
+.c-image-content__description {
+    font-size: clamp(1.275rem, 3vw, 2.375rem);
+    line-height: 1.447;
+    font-family: $ff-primary;
+    letter-spacing: -1.8px;
+
+    @media #{$tablet} {
+        letter-spacing: -1px;
+    }
+
+    @media #{$phone} {
+        letter-spacing: -0.5px;
+    }
+    p {
+        margin-bottom: 0;
+        &:not(:last-of-type) {
+            margin-bottom: 30px;
+        }
+    }
+}

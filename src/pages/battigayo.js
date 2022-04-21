@@ -1,7 +1,7 @@
 import * as React from "react"
 import {StaticImage} from "gatsby-plugin-image"
 import Seo from "../components/seo"
-import Cta from "../components/cta";
+import HighlightCta from "../components/HighlightCta";
 import Footer from "../components/footer";
 
 const BattiGayoPage = () => (
@@ -97,7 +97,7 @@ const BattiGayoPage = () => (
                     </div>
                 </div>
             </section>
-            <Cta/>
+            <HighlightCta themeColor={`c-highlight-cta--dark`}/>
         </main>
         <Footer/>
     </>

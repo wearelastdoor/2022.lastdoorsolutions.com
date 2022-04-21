@@ -1,5 +1,4 @@
 
-
 .c-strategy {
   padding: 120px 0;
 }
@@ -132,4 +131,7 @@
   max-width: 600px;
   float: right;
   margin: 0 -440px 0 115px;
+  @media screen and (max-width: 1440px) {
+    margin-left: 100px;
+  }
 }

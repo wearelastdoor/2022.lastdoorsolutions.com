@@ -1,10 +1,10 @@
 .c-leadership {
   position: relative;
   z-index: 1;
-  background-color: $c-brand;
-  padding: 206px 0 196px;
+  background-color: #1C262E;
+  padding: 206px 0 130px;
   @media #{$phone} {
-    padding-bottom: 126px;
+    padding-bottom: 80px;
   }
 
   &:after {

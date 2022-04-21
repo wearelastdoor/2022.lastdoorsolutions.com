@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 import PageBanner from "../components/pageBanner.js"
 import ImageCarousel from "../components/work/ImageCarousel.js"
 import CaseStudy from "../components/work/CaseStudy.js"
-import Cta from "../components/cta";
+import HighlightCta from "../components/HighlightCta.js"
 import Footer from "../components/footer";
 
 const WorkPage = () => (
@@ -15,7 +15,7 @@ const WorkPage = () => (
             <PageBanner pageName={`Work`} title={`Rare blend of assorted work`}/>
             <ImageCarousel/>
             <CaseStudy/>
-            <Cta/>
+            <HighlightCta/>
         </main>
         <Footer/>
     </>

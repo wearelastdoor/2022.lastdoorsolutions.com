@@ -7,7 +7,7 @@ import PageBanner from "../components/pageBanner.js"
 import AboutIntro from "../components/about/AboutIntro.js"
 import Stats from "../components/about/Stats.js"
 import Leadership from "../components/about/Leadership.js"
-import Cta from "../components/cta";
+import HighlightCta from "../components/HighlightCta";
 import Footer from "../components/footer";
 
 const AboutPage = () => (
@@ -22,7 +22,7 @@ const AboutPage = () => (
             <AboutIntro/>
             <Stats/>
             <Leadership/>
-            <Cta/>
+            <HighlightCta themeColor={`c-highlight-cta--dark`}/>
         </main>
         <Footer/>
     </>

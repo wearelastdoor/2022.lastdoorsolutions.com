@@ -2,7 +2,7 @@ import * as React from "react"
 import Seo from "../components/seo"
 // Import Components
 import Footer from "../components/footer";
-import HighlightCta from "../components/home/HighlightCta";
+import HighlightCta from "../components/HighlightCta";
 
 // Images
 import FeaturedArticleImage from '../images/featured-article-image.webp'

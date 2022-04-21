@@ -12,7 +12,7 @@ import partnerImg from '../images/partner-01.webp'
 
 // Import Components
 import Footer from "../components/footer";
-import HighlightCta from "../components/home/HighlightCta";
+import HighlightCta from "../components/HighlightCta";
 
 const ServiceSingle = () => {
     return (

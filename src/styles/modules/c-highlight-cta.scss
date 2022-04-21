@@ -1,12 +1,37 @@
 .c-highlight-cta {
   color: $c-white;
   padding: 70px 0 120px;
+
   @media #{$phone} {
     padding: 70px 0;
   }
 
   .container {
     max-width: 1320px;
+  }
+
+  &.c-highlight-cta--dark {
+    background-color: $c-brand-secondary;
+    position: relative;
+    z-index: 1;
+    padding: 0 0 220px;
+    @media #{$phone} {
+      padding: 0 0 120px;
+    }
+
+    &:after {
+      content: "";
+      background-image: url("../images/texture.png");
+      background-repeat: repeat;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: block;
+    }
+
   }
 }
 
@@ -34,6 +59,7 @@
   @media #{$phone} {
     padding: 100px 20px 80px;
   }
+
 
   &:after {
     content: '';
@@ -88,6 +114,10 @@
     }
     @media #{$phone} {
       bottom: -20px
+    }
+
+    .c-highlight-cta--dark & {
+      background-color: #334656;
     }
   }
 

@@ -8,7 +8,7 @@ import OurClient from "../components/home/OurClient.js"
 import FeaturedWork from "../components/home/FeaturedWork.js"
 import FeaturedStory from "../components/home/FeaturedStory.js"
 import HighlightContent from "../components/home/HighlightContent.js"
-import HighlightCta from "../components/home/HighlightCta.js"
+import HighlightCta from "../components/HighlightCta.js"
 import Footer from "../components/footer";
 
 const IndexPage = () => {

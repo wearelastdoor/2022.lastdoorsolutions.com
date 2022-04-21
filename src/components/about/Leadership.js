@@ -18,26 +18,36 @@ const Leadership = () => {
           </div>
         </div>
         <div className="l-grid">
-          {/* <div className="l-grid__column">
+          <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--outline">
+              {/*<StaticImage*/}
+              {/*  src={`../../images/pk.jpeg`}*/}
+              {/*  alt="Pravash Karki"*/}
+              {/*  className="c-leadership-card__image"*/}
+              {/*></StaticImage>*/}
               <StaticImage
-                src={`../../images/pk.jpeg`}
-                alt="Pravash Karki"
-                className="c-leadership-card__image"
+                  src={`../../images/dummy-face.png`}
+                  alt="Dummy Face"
+                  className="c-leadership-card__image"
               ></StaticImage>
               <p className="c-leadership-card__figcation">Pravash Karki</p>
             </div>
           </div>
           <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--outline">
+              {/*<StaticImage*/}
+              {/*  src={`../../images/bishal.jpeg`}*/}
+              {/*  alt="Bishal Mishra"*/}
+              {/*  className="c-leadership-card__image"*/}
+              {/*></StaticImage>*/}
               <StaticImage
-                src={`../../images/bishal.jpeg`}
-                alt="Bishal Mishra"
-                className="c-leadership-card__image"
+                  src={`../../images/dummy-face.png`}
+                  alt="Dummy Face"
+                  className="c-leadership-card__image"
               ></StaticImage>
               <p className="c-leadership-card__figcation">Bishal Mishra</p>
             </div>
-          </div> */}
+          </div>
           <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--linked">
               <StaticImage

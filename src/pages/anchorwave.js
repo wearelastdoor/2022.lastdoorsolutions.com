@@ -22,7 +22,7 @@ import toolLogo9 from '../images/tool-logo-9.png'
 import toolLogo10 from '../images/tool-logo-10.png'
 import toolLogo11 from '../images/tool-logo-11.png'
 import toolLogo12 from '../images/tool-logo-12.png'
-import HighlightCta from "../components/home/HighlightCta";
+import HighlightCta from "../components/HighlightCta";
 
 import ScaleCarousel from '../components/anchorwave/scaleCarousel'
 // Import Components

@@ -13,7 +13,7 @@ import Heading from "../components/CaseStudy/Heading.js"
 import ImageContent from "../components/CaseStudy/ImageContent.js"
 import Quote from "../components/CaseStudy/Quote.js"
 import HighlightCard from "../components/CaseStudy/HighlightCard.js"
-import Cta from "../components/cta";
+import HighlightCta from "../components/HighlightCta";
 import Footer from "../components/footer";
 
 const DiscoveryWorldTrekkingPage = () => {
@@ -100,7 +100,7 @@ const DiscoveryWorldTrekkingPage = () => {
                     title="number 1"
                     decsription="<p>Overall, the discovery world trekking site stands as the number one website in the Nepalese Travel Industry</p>"
                 />
-                <Cta/>
+                <HighlightCta/>
             </main>
             <Footer/>
         </>

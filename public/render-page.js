@@ -5699,7 +5699,7 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-transition-link/gatsby-ssr */ "./node_modules/gatsby-plugin-transition-link/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "layout": "/Users/harry/Documents/Work/lastdoorsolutions.com_2022/src/components/layout.js"
+    "layout": "/Users/bishal/Documents/Dev/lastdoorsolutions.com_2022/src/components/layout.js"
   }
 }];
 /* global plugins */
@@ -7799,7 +7799,7 @@ if (true) {
     Layout = preferDefault(__webpack_require__(/*! ./src/components/layout.js */ "./src/components/layout.js"));
   } catch (e) {
     if (e.toString().indexOf(`Error: Cannot find module`) !== -1) {
-      throw new Error(`Couldn't find layout component at "${"/Users/harry/Documents/Work/lastdoorsolutions.com_2022/src/components/layout.js"}.\n\n` + `Please create layout component in that location or specify path to layout component in gatsby-config.js`);
+      throw new Error(`Couldn't find layout component at "${"/Users/bishal/Documents/Dev/lastdoorsolutions.com_2022/src/components/layout.js"}.\n\n` + `Please create layout component in that location or specify path to layout component in gatsby-config.js`);
     } else {
       // Logging the error for debugging older browsers as there is no way
       // to wrap the thrown error in a try/catch.
@@ -63943,23 +63943,23 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "react-dom/server":
 /*!**********************************************************************************************************!*\
-  !*** external "/Users/harry/Documents/Work/lastdoorsolutions.com_2022/node_modules/react-dom/server.js" ***!
+  !*** external "/Users/bishal/Documents/Dev/lastdoorsolutions.com_2022/node_modules/react-dom/server.js" ***!
   \**********************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/harry/Documents/Work/lastdoorsolutions.com_2022/node_modules/react-dom/server.js");
+module.exports = require("/Users/bishal/Documents/Dev/lastdoorsolutions.com_2022/node_modules/react-dom/server.js");
 
 /***/ }),
 
 /***/ "react":
 /*!*****************************************************************************************************!*\
-  !*** external "/Users/harry/Documents/Work/lastdoorsolutions.com_2022/node_modules/react/index.js" ***!
+  !*** external "/Users/bishal/Documents/Dev/lastdoorsolutions.com_2022/node_modules/react/index.js" ***!
   \*****************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/harry/Documents/Work/lastdoorsolutions.com_2022/node_modules/react/index.js");
+module.exports = require("/Users/bishal/Documents/Dev/lastdoorsolutions.com_2022/node_modules/react/index.js");
 
 /***/ }),
 

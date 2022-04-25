@@ -65,7 +65,7 @@
     position: relative;
     z-index: 1;
     @media #{$phone} {
-      padding-bottom: 155px;
+      padding-bottom: 35px;
     }
 
     &:after {
@@ -124,10 +124,11 @@
       display: block;
       position: absolute;
       top: 140px;
-      bottom: calc(0px - 211px);
+      bottom: calc(0px - 300px);
       @media #{$tablet} {
         top: 90px;
         width: 40px;
+        bottom: -340px;
       }
       @media screen and (max-width: 480px) {
         display: none;
@@ -153,6 +154,13 @@
     }
   }
 
+  .c-our-client__description {
+    color: $c-white;
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+  }
+
   .c-our-client__image {
     display: flex;
     justify-content: flex-end;
@@ -162,6 +170,7 @@
       position: absolute;
       bottom: -67px;
       right: 30px;
+      opacity: .6;
     }
 
     img {

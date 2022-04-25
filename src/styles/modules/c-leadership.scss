@@ -170,11 +170,31 @@
     }
   }
 
-  .c-leadership-card__figcation {
+  .c-leadership-card__title {
     color: $c-white;
     @include fsz(24px);
     letter-spacing: -1px;
     margin-bottom: 2px;
     line-height: 1;
+    font-weight: 500;
+
+    @media #{$phone} {
+      @include fsz(22px);
+    }
+  }
+
+  .c-leadership-card__subTitle {
+    color: $c-white;
+    @include fsz(18px);
+    letter-spacing: -.5px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    line-height: 1;
+    opacity: .6;
+
+    @media #{$phone} {
+      @include fsz(16px);
+      letter-spacing: -.2px;
+    }
   }
 }

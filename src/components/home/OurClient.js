@@ -16,6 +16,7 @@ const OurClient = () => {
         header {
           subTitle
           title
+          description
         }
         clients {
           description
@@ -39,12 +40,15 @@ const OurClient = () => {
             <div className="l-container">
                 <header className="c-our-client__header">
                     <div className="c-our-client__header-content">
-                        <strong className="c-our-client__lead-text">
+                        <h2 className="c-our-client__lead-text">
                             {data.items.header.subTitle}
-                        </strong>
-                        <h2 className="c-our-client__title" title={`${data.items.header.title}`}>
-                            {data.items.header.title}
                         </h2>
+                        <h3 className="c-our-client__title" title={`${data.items.header.title}`}>
+                            {data.items.header.title}
+                        </h3>
+                        <p className="c-our-client__description">
+                            {data.items.header.description}
+                        </p>
                     </div>
                     <figure className="c-our-client__image">
                         <img src={graphic_2} alt={`we craft brands, that people love`} height={354} width={334}/>

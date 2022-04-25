@@ -17,7 +17,7 @@ const IndexPage = () => {
             <Seo/>
             <main className="main">
                 <MainHero
-                    title={`We design the future every day`}
+                    title={`Extending your team just got easy.`}
                     description={`<p>We shake hands with lookalikes to extend their team by providing dedicated Human Resources for agencies around the world. Some people call us experts in doing so—those people are not wrong.</p>`}
                     linkUrl="/about/"
                     linkTitle={`Read our story`}

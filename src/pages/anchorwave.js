@@ -7,8 +7,18 @@ import Footer from "../components/footer";
 
 import anchorwave_logo from "../images/anchorwave-logo-white.png"
 import welcome_illustration from "../images/grapic-welcome.svg"
-import projectImage1 from "../images/project-image-01.webp"
-import projectImage2 from "../images/project-image-02.webp"
+import projectImage1 from "../images/projects_anchorwave/agency_coach_last_door.webp"
+import projectImage2 from "../images/projects_anchorwave/amg_aesthetics_last_door.webp"
+import projectImage3 from "../images/projects_anchorwave/amore_events_last_door.webp"
+import projectImage4 from "../images/projects_anchorwave/boyce_thompson_arboretum_last_door.webp"
+import projectImage5 from "../images/projects_anchorwave/bryan_dulaney_last_door.webp"
+import projectImage6 from "../images/projects_anchorwave/foothills_club_last_door.webp"
+import projectImage7 from "../images/projects_anchorwave/gaon_plastic_surgery_last_door.webp"
+import projectImage8 from "../images/projects_anchorwave/glhn_last_door.webp"
+import projectImage9 from "../images/projects_anchorwave/interiors_in_design_last_door.webp"
+import projectImage10 from "../images/projects_anchorwave/never_ending_cashflow_last_door.webp"
+import projectImage11 from "../images/projects_anchorwave/stephen_larsen_last_door.webp"
+import projectImage12 from "../images/projects_anchorwave/valeria_grunbaum_last_door.webp"
 
 import toolLogo1 from '../images/tool-logo-1.png'
 import toolLogo2 from '../images/tool-logo-2.png'
@@ -154,19 +164,22 @@ const AnchorwavePage = () => {
                     <div className={`container`}>
                         <div className={`c-showcase__carousel scale-carousel`}>
                             <div className={`c-front-showcase__image`}>
-                                <img src={projectImage2} alt={`alt`}/>
+                                <img src={projectImage1} alt={`Agency Coach project, Last Door`}/>
                             </div>
                             <div className={`c-front-showcase__image`}>
-                                <img src={projectImage1} alt={`alt`}/>
+                                <img src={projectImage2} alt={`Amg Aesthetics, Last Door`}/>
                             </div>
                             <div className={`c-front-showcase__image`}>
-                                <img src={projectImage2} alt={`alt`}/>
+                                <img src={projectImage3} alt={`Amore Events, Last Door`}/>
                             </div>
                             <div className={`c-front-showcase__image`}>
-                                <img src={projectImage2} alt={`alt`}/>
+                                <img src={projectImage4} alt={`Boyce Thompson Arboretum Last Door`}/>
                             </div>
                             <div className={`c-front-showcase__image`}>
-                                <img src={projectImage1} alt={`alt`}/>
+                                <img src={projectImage5} alt={`Bryan Dulaney Last Door`}/>
+                            </div>
+                            <div className={`c-front-showcase__image`}>
+                                <img src={projectImage6} alt={`Foothills Club Last Door`}/>
                             </div>
                         </div>
                     </div>
@@ -281,13 +294,22 @@ const AnchorwavePage = () => {
                     <div className={`container`}>
                         <div className={`c-showcase__carousel scale-carousel`}>
                             <div className={`c-front-showcase__image`}>
-                                <img src={projectImage2} alt={`alt`}/>
+                                <img src={projectImage7} alt={`Gaon Plastic Surgery Last Door`}/>
                             </div>
                             <div className={`c-front-showcase__image`}>
-                                <img src={projectImage1} alt={`alt`}/>
+                                <img src={projectImage8} alt={`GLHN Last Door`}/>
                             </div>
                             <div className={`c-front-showcase__image`}>
-                                <img src={projectImage2} alt={`alt`}/>
+                                <img src={projectImage9} alt={`Interiors in Design Last Door`}/>
+                            </div>
+                            <div className={`c-front-showcase__image`}>
+                                <img src={projectImage10} alt={`Never Ending Cashflow Last Door`}/>
+                            </div>
+                            <div className={`c-front-showcase__image`}>
+                                <img src={projectImage11} alt={`Stephen Larsen Last Door`}/>
+                            </div>
+                            <div className={`c-front-showcase__image`}>
+                                <img src={projectImage12} alt={`Valeria Grunbaum Last Door`}/>
                             </div>
                         </div>
                     </div>

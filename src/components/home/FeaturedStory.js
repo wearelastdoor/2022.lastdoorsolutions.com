@@ -67,7 +67,7 @@ const FeaturedStory = () => {
                              dangerouslySetInnerHTML={createHTML(data.items.content.description)}/>
 
                         <a href={data.items.button.url}
-                           className={`c-btn c-btn--dark-alt c-btn--disabled`}>{data.items.button.title}<span></span></a>
+                           className={`c-btn c-btn--dark-alt`}>{data.items.button.title}<span></span></a>
                     </div>
                 </div>
             </div>

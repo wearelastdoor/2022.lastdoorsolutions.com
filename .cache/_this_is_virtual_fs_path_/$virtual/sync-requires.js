@@ -4,7 +4,7 @@ const preferDefault = m => (m && m.default) || m
 
 
 exports.components = {
-  "component---cache-dev-404-page-js": preferDefault(require("/Users/bishal/Documents/Dev/lastdoorsolutions.com_2022/.cache/dev-404-page.js")),
+  "component---cache-caches-gatsby-plugin-offline-app-shell-js": preferDefault(require("/Users/bishal/Documents/Dev/lastdoorsolutions.com_2022/.cache/caches/gatsby-plugin-offline/app-shell.js")),
   "component---src-pages-404-js": preferDefault(require("/Users/bishal/Documents/Dev/lastdoorsolutions.com_2022/src/pages/404.js")),
   "component---src-pages-about-js": preferDefault(require("/Users/bishal/Documents/Dev/lastdoorsolutions.com_2022/src/pages/about.js")),
   "component---src-pages-anchorwave-js": preferDefault(require("/Users/bishal/Documents/Dev/lastdoorsolutions.com_2022/src/pages/anchorwave.js")),

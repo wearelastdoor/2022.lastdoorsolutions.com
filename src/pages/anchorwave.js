@@ -189,22 +189,16 @@ const AnchorwavePage = () => {
                         <h2 className={`c-showcase-detail__title`}>What We Did</h2>
                         <div className="c-showcase-detail__description">
                             <p>Over the years, we set up a team of experienced designers, developers, and project
-                                managers
-                                who
-                                can handle any project, no matter how big or small the scope.
-                            </p>
+                                managers who can handle any project, no matter how big or small the scope.</p>
                             <p>We set up a team of experienced designers, developers, and project managers for
-                                anchorwave.
-                                We’ve
-                                worked on projects ranging from small-scale to large, with even some previously unknown
-                                verticals! Our expertise reaches every layer: user interfaces (UI) across all platforms;
-                                UX
-                                strategy based on research, programming, and coding across all the verticals and
-                                platforms.
-                            </p>
+                                anchorwave. We’ve worked on projects ranging from small-scale to large, with even some
+                                previously unknown verticals! Our expertise reaches every layer: user interfaces (UI)
+                                across all platforms;
+                                UX strategy based on research, programming, and coding across all the verticals and
+                                platforms.</p>
                             <p>Over the years, we built at least 1200+ websites, ranging from small to large scales. We
-                                worked
-                                on almost all the verticals and utilized all the skills ranging from graphic design, UX,
+                                worked on almost all the verticals and utilized all the skills ranging from graphic
+                                design, UX,
                                 Strategy, Front-End Development, Email Templates, Elementor Websites, Custom WordPress
                                 Development, Programming, SEO, etc.</p>
                         </div>
@@ -217,21 +211,16 @@ const AnchorwavePage = () => {
                             <div className="c-list-content__card-content">
                                 <h2 className={`c-list-content__title`}>How do We work?</h2>
                                 <p>We have the most straightforward structure that gets the workflow up and running with
-                                    a
-                                    simple plan that eliminates 99% of the hassle. We work as a team.</p>
+                                    a simple plan that eliminates 99% of the hassle. We work as a team.</p>
                                 <ul>
                                     <li> We gather all of the project requirements from the anchorwave team and the
-                                        client
-                                        to
-                                        create a detailed brief.
+                                        client to create a detailed brief.
                                     </li>
                                     <li>Whenever we have a project, the team at anchorwave gathers requirements, creates
-                                        a
-                                        thorough brief, and includes every detail on a task.
+                                        a thorough brief, and includes every detail on a task.
                                     </li>
                                     <li>Someone at Last Door picks up the project, reviews it thoroughly, and gets back
-                                        with
-                                        questions, missing elements, solutions, suggestions, etc.
+                                        with questions, missing elements, solutions, suggestions, etc.
                                     </li>
                                     <li>Depending on the nature of the project, we allocate the resources and conduct
                                         preliminary discussions regarding the assignment.
@@ -239,9 +228,7 @@ const AnchorwavePage = () => {
                                     <li>While the details are in, the team starts the project.</li>
                                     <li>The teams communicate timely with each other to complete the task on time.</li>
                                     <li>We use tools like Connectwise, basecamp, invision, Figma, G-Suite, Dropbox,
-                                        Loom,
-                                        etc.,
-                                        to communicate effectively.
+                                        Loom, etc., to communicate effectively.
                                     </li>
                                 </ul>
                             </div>

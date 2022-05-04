@@ -15,7 +15,7 @@ module.exports = [{
       options: {"plugins":[],"precachePages":["/","/about/","/work/","/contact/","/mediabook/","/discovery-world-trekking/","/battigayo/","/anchorwave/","/animated/","/service-single/","/ux-design/"]},
     },{
       plugin: require('../node_modules/gatsby-plugin-transition-link/gatsby-browser.js'),
-      options: {"plugins":[],"layout":"/Users/harry/Documents/Work/lastdoorsolutions.com_2022/src/components/layout.js"},
+      options: {"plugins":[],"layout":"/Users/bishal/Documents/Dev/lastdoorsolutions.com_2022/src/components/layout.js"},
     },{
       plugin: require('../gatsby-browser.js'),
       options: {"plugins":[]},

@@ -51,7 +51,6 @@
   }
 }
 
-
 .c-featured-work__grid {
   display: flex;
   flex-wrap: wrap;
@@ -66,6 +65,7 @@
   width: 100%;
   padding: 0 30px;
   margin-bottom: 100px;
+
   @media screen and (max-width: 1200px) {
     margin-bottom: 60px;
   }
@@ -154,7 +154,6 @@
 .c-featured-work__logo {
   margin-bottom: 16px;
 
-
   img {
     backface-visibility: hidden;
   }
@@ -185,6 +184,7 @@
   letter-spacing: -2px;
   line-height: 1;
   color: $c-white;
+
   @media #{$phone} {
     letter-spacing: -1px;
   }

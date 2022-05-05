@@ -9,10 +9,10 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import {gsap, Power2, TimelineMax, Expo} from "gsap"
 import {Location} from "@reach/router";
-import Header from "./header"
+import Header from "components/header"
 import $ from "jquery"
-
-import logo from "../images/logo.svg"
+import {GlobalStyles} from "styles/GlobleStyles";
+import logo from "images/logo.svg"
 
 // hidden object animation
 export function animateObjects() {
@@ -172,7 +172,8 @@ const Numbers = props => {
 const Layout = ({children}) => {
     const randomized = getRandomOrder(overlayBg)
     return (
-        <div className="app">
+        <>
+            <GlobalStyles/>
             <div className="page-wrapper">
                 <Numbers data={randomized}/>
                 <Location>
@@ -187,9 +188,9 @@ const Layout = ({children}) => {
                         ) : <Header logoImage={logo} headerVisible={`show`}/>
                     }}
                 </Location>
-                    {children}
+                {children}
             </div>
-        </div>
+        </>
     )
 }
 

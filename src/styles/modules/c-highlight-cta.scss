@@ -193,7 +193,6 @@
   height: 195px;
   width: 195px;
   border-radius: 50%;
-  transition: none;
 
   @media #{$phone} {
     right: 20px;
@@ -202,79 +201,3 @@
   }
 }
 
-#contactIcon {
-  transition: all 0.25s ease;
-  cursor: pointer;
-  transform-origin: center;
-  transform: scale(1);
-
-  &:hover,
-  &:focus {
-    transform: scale(1.1);
-  }
-}
-
-#fence,
-#strokeBorder {
-  transition: ease all 0.25s;
-  transform-origin: center center;
-}
-#text {
-  animation: rotation 12s linear infinite;
-  transform-origin: 50% 50%;
-}
-#contactIcon {
-  transition: ease all 0.25s;
-  cursor: pointer;
-  transform-origin: center;
-
-  &:hover,
-  &:focus {
-    transition: ease all 0.25s;
-    transform: scale(1.1);
-    transform-origin: center;
-
-    #fence,.stage {
-      opacity: 0;
-    }
-
-    #strokeBorder {
-      opacity: .5;
-      animation: spin 8s ease-in-out infinite;
-    }
-
-    #text {
-      animation: rotation 4s cubic-bezier(0.46,0.03,0.52,0.96) infinite;
-    }
-    #arrow {
-      transform-origin: center;
-      animation: tilt 4s  ease-in-out infinite;
-    }
-  }
-}
-
-
-@keyframes rotation {
-  to {
-    transform: rotate(359deg);
-  }
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-
-@keyframes tilt {
-  0% {
-    transform: rotate(178deg);
-  }
-  50% {
-    transform: rotate(235deg);
-  }
-  100% {
-    transform: rotate(178deg);
-  }
-}

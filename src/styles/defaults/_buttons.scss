@@ -11,7 +11,6 @@ button {
   border-radius: 0;
   background-color: $cb-background;
   color: $c-brand;
-  letter-spacing: 0;
   font-family: $ff-primary-black;
   font-weight: normal;
   @include fsz(14px);
@@ -216,7 +215,7 @@ button {
 
   &:hover,
   &:focus {
-    color: $c-brand;;
+    color: $c-brand;
 
     &:after,
     &::before {

@@ -2,6 +2,22 @@ import * as React from "react"
 import {useStaticQuery, graphql} from "gatsby"
 import Img from "gatsby-image"
 import Masonry from 'react-masonry-css'
+import {
+    FeaturedWorkWrapper,
+    FeaturedWorkHeader,
+    FeaturedWorkSubHeading,
+    FeaturedWorkHeading,
+    FeaturedWorkMasonryStyle,
+    FeaturedWorkItem,
+    FeaturedWorkItemCard,
+    FeaturedWorkItemCardLink,
+    FeaturedWorkProjectLatter,
+    FeaturedWorkItemCardCategory,
+    FeaturedWorkItemCardTitle
+} from "styles/home/FeaturedWork.Style";
+
+
+const useStyles = FeaturedWorkMasonryStyle
 
 const FeaturedWork = () => {
     const breakpointColumns = {
@@ -9,87 +25,86 @@ const FeaturedWork = () => {
         767: 1,
     };
 
+    const classes = useStyles();
+
     const data = useStaticQuery(graphql`
-    {
-      items: featuredWorksJson {
-        header {
-          subTitle
-          title
-        }
-        works {
-          backgroundColor
-          title
-          image {
-            alt
-            url {
-              childImageSharp {
-               fluid(quality: 100) {
-                    ...GatsbyImageSharpFluid
+        {
+            items: featuredWorksJson {
+                header {
+                    subTitle
+                    title
                 }
-              }
-            }
-            width
-          }
+                works {
+                    backgroundColor
+                    title
+                    image {
+                        alt
+                        url {
+                            childImageSharp {
+                                fluid(quality: 100) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                        width
+                    }
 
-          logo {
-            alt
-            width
-            url {
-              childImageSharp {
-                 fluid(quality: 100) {
-                    ...GatsbyImageSharpFluid
+                    logo {
+                        alt
+                        width
+                        url {
+                            childImageSharp {
+                                fluid(quality: 100) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
+
+                    linkUrl
+                    category
                 }
-              }
             }
-          }
-
-          linkUrl
-          category
         }
-      }
-    }
-  `)
+    `)
 
     return (
-        <section className={`c-featured-work`}>
-            <div className={`container`}>
-                <div className={`c-featured-work__header`}>
-                    <strong className={`c-featured-work__lead-text`}>{data.items.header.subTitle}</strong>
-                    <h2 className={`c-featured-work__heading`}
-                        title={data.items.header.title}>{data.items.header.title}</h2>
-                </div>
+        <FeaturedWorkWrapper>
+            <div className={`l-container`}>
+                <FeaturedWorkHeader>
+                    <FeaturedWorkSubHeading>{data.items.header.subTitle}</FeaturedWorkSubHeading>
+                    <FeaturedWorkHeading title={data.items.header.title}>{data.items.header.title}</FeaturedWorkHeading>
+                </FeaturedWorkHeader>
                 <Masonry
                     breakpointCols={breakpointColumns}
-                    className="c-featured-work__grid"
-                    columnClassName={`c-featured-work__column`}>
+                    className={classes.featuredWorkGrid}
+                    columnClassName={classes.featuredWorkColumn}>
                     {data.items.works.map((data, i) => {
                         return (
-                            <div className={`c-featured-work__item`} key={i}>
-                                <div className={`c-featured-work__card`} style={{background: data.backgroundColor}}>
-                                    <a href={data.linkUrl}
-                                       target={`_blank`} rel={'noopener noreferrer'}>
-                                        <span className={`screen-reader-text`}>{data.title}</span>
-                                    </a>
-
-                                    <Img className="c-featured-work__logo" fluid={data.logo.url.childImageSharp.fluid}
+                            <FeaturedWorkItem key={i}>
+                                <FeaturedWorkItemCard style={{background: data.backgroundColor}}>
+                                    <FeaturedWorkItemCardLink href={data.linkUrl} target={`_blank`}
+                                                              rel={'noopener noreferrer'}>
+                                        <span className={`visually-hidden`}
+                                              dangerouslySetInnerHTML={{__html: data.title}}/>
+                                    </FeaturedWorkItemCardLink>
+                                    <Img className={classes.featuredWorkLogo}
+                                         fluid={data.logo.url.childImageSharp.fluid}
                                          alt={data.logo.alt} style={{maxWidth: data.logo.width}}/>
-
-
-                                    <h3 className={`c-featured-work__title`}>{data.title}</h3>
-                                    <p className={`c-featured-work__category`}>{data.category}</p>
-                                    <figure className="c-featured-work__letter">
-                                        <Img fluid={data.image.url.childImageSharp.fluid}
-                                            alt={data.image.alt} style={{maxWidth: data.image.width}}/>
-                                    </figure>
-                                </div>
-                            </div>
+                                    <FeaturedWorkItemCardTitle dangerouslySetInnerHTML={{__html: data.title}}/>
+                                    <FeaturedWorkItemCardCategory dangerouslySetInnerHTML={{__html: data.category}}/>
+                                    <FeaturedWorkProjectLatter>
+                                        <Img fluid={data.image.url.childImageSharp.fluid} alt={data.image.alt}
+                                             style={{maxWidth: data.image.width}}/>
+                                    </FeaturedWorkProjectLatter>
+                                </FeaturedWorkItemCard>
+                            </FeaturedWorkItem>
                         )
                     })}
                 </Masonry>
-
             </div>
 
-        </section>
+        </FeaturedWorkWrapper>
     )
 }
 

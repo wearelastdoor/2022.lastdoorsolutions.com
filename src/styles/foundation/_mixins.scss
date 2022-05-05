@@ -69,7 +69,7 @@
   letter-spacing: $spacing-value / 1000 * $font-size;
 }
 
-@mixin letter-stroke($stroke-color,$color) {
+@mixin letter-stroke($stroke-color, $color) {
   @supports ((text-stroke: 1px white) or (-webkit-text-stroke: 1px white)) {
     color: $color;
     -webkit-text-stroke: 1px $stroke-color;

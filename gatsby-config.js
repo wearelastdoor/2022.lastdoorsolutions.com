@@ -10,6 +10,15 @@ module.exports = {
     },
 
     plugins: [
+        `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-image`,
+        `gatsby-plugin-sass`,
+        `gatsby-transformer-remark`,
+        `gatsby-plugin-preload-fonts`,
+        `gatsby-plugin-styled-components`,
+        `gatsby-plugin-jss`,
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-gatsby-cloud`,
         {
             resolve: `gatsby-plugin-google-gtag`,
             options: {
@@ -21,12 +30,6 @@ module.exports = {
                 },
             },
         },
-        `gatsby-plugin-react-helmet`,
-        `gatsby-plugin-image`,
-        `gatsby-plugin-sass`,
-        `gatsby-transformer-remark`,
-        `gatsby-plugin-preload-fonts`,
-
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -34,7 +37,6 @@ module.exports = {
                 path: `${__dirname}/src/images`,
             },
         },
-        `gatsby-transformer-sharp`,
         {
             resolve: `gatsby-plugin-sharp`,
             options: {
@@ -122,7 +124,6 @@ module.exports = {
                 path: `${__dirname}/src/fonts/`,
             },
         },
-        `gatsby-plugin-gatsby-cloud`,
         {
             resolve: `gatsby-plugin-offline`,
             options: {

@@ -1,120 +1,118 @@
 .c-loader {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    background: linear-gradient(135.23deg, #2e3f4d 0.2%, #17212a 99.79%);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: linear-gradient(135.23deg, #2e3f4d 0.2%, #17212a 99.79%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 200ms ease forwards;
+  z-index: 99;
+
+  &.completed {
+    animation: fadeOut 600ms ease forwards;
+  }
+
+  .c-loader__counter {
+    color: $c-white;
+    font-size: clamp(2.125rem, 5vw, 3.125rem);
+    font-family: $ff-primary-black;
+    line-height: 1;
+    width: 100%;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fadeIn 200ms ease forwards;
-    z-index: 99;
+    opacity: 0;
 
-    &.completed {
-        animation: fadeOut 600ms ease forwards;
+    &.visible {
+      animation: fadeIn 200ms ease forwards;
     }
 
-    .c-loader__graphic {
-        display: none;
+    span {
+      letter-spacing: -3px;
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: normal;
+      font-size: clamp(3.5625rem, 5vw, 5.5625rem);
+      margin-bottom: -3px;
+
+      @media #{$phone} {
+        letter-spacing: -1px;
+      }
     }
-    .c-loader__counter {
-        color: $c-white;
-        font-size: clamp(2.125rem, 5vw, 3.125rem);
-        font-family: $ff-primary-black;
-        line-height: 1;
-    
-        width: 100%;
-        text-align: center;
-        opacity: 0;
 
-        &.visible {
-            animation: fadeIn 200ms ease forwards;
-        }
-        span {
-            letter-spacing: -3px;
-            display: inline-block;
-            vertical-align: middle;
-            font-weight: normal;
-            font-size: clamp(3.5625rem, 5vw, 5.5625rem);
-            margin-bottom: -3px;
-
-            @media #{$phone} {
-                letter-spacing: -1px;
-            }
-        }
-
-        sub {
-            left: 4px;
-            bottom: -1rem;
-        }
+    sub {
+      left: 4px;
+      bottom: -1rem;
     }
+  }
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        pointer-events: none;
-        opacity: 0;
-    }
+  from {
+    opacity: 1;
+  }
+  to {
+    pointer-events: none;
+    opacity: 0;
+  }
 }
 
 .animate-overlay {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    clip-path: inset(0% 0% 0% 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  clip-path: inset(0% 0% 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    .content-loaded & {
-        pointer-events: none;
-    }
+  .content-loaded & {
+    pointer-events: none;
+  }
 
-    &.animate-overlay--first {
-        background-color: #8ed2dc;
-    }
-    &.animate-overlay--second {
-        background-color: #dca08e;
-    }
+  &.animate-overlay--first {
+    background-color: #8ed2dc;
+  }
 
-    &.animate-overlay--third {
-        background-color: #8edc97;
-    }
+  &.animate-overlay--second {
+    background-color: #dca08e;
+  }
 
-    .animate-overlay__loader {
-        // margin-bottom: -100px;
-        animation: rotate 2s linear infinite;
-        svg {
-            @media #{$phone} {
-                transform: scale(0.6) translateZ(0);
-                backface-visibility: hidden;
-            }
-        }
+  &.animate-overlay--third {
+    background-color: #8edc97;
+  }
+
+  .animate-overlay__loader {
+    animation: rotate 2s linear infinite;
+
+    svg {
+      @media #{$phone} {
+        transform: scale(0.6) translateZ(0);
+        backface-visibility: hidden;
+      }
     }
+  }
 }
 
 @keyframes rotate {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

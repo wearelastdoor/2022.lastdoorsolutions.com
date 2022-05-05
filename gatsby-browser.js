@@ -4,10 +4,70 @@
  * See: https://www.gatsbyjs.com/docs/browser-apis/
  */
 import $ from "jquery"
-import "./src/styles/style.scss"
+import {Expo, TimelineMax} from "gsap";
+
+// import "./src/styles/style.scss"
 
 
 export const onInitialClientRender = () => {
+
+
+    let tl = new TimelineMax()
+    $(".c-header__ico-menu").click(function () {
+        $("body").removeClass("content-loaded")
+
+        tl.to($(".c-main-nav"), 1, {
+            clipPath: "inset(0% 0% 0% 0%)",
+            ease: Expo.easeInOut,
+        })
+            .to(
+                $(".c-main-nav__menu-close"),
+                0.6,
+                {
+                    rotate: 360,
+                    opacity: 1,
+                },
+                "-=.2"
+            )
+            .staggerTo(
+                ".main-menu  li,.main-nav__contact li",
+                0.9,
+                {
+                    opacity: 1,
+                    ease: Expo.easeInOut,
+                },
+                +0.1,
+                "-=.3"
+            )
+    })
+
+    $(".c-main-nav__menu-close").click(function () {
+        tl.to($(".c-main-nav__menu-close"), 0.6, {rotate: 0, opacity: 0})
+            .staggerTo(
+                ".main-menu  li, .main-nav__contact li",
+                0.9,
+                {
+                    opacity: 0,
+                    ease: Expo.easeInOut,
+                },
+                -0.1,
+                "-=.6"
+            )
+            .to(
+                $(".c-main-nav"),
+                1.2,
+                {
+                    clipPath: "inset(0%  0% 0% 100%)",
+                    opacity: 1,
+                    ease: Expo.easeInOut,
+                    onComplete: function () {
+                        $("body").addClass("content-loaded")
+                    },
+                },
+                "-=.6"
+            )
+    })
+
     $(".c-loader__counter").each(function () {
         $(this).addClass("visible")
         $(this)
@@ -36,7 +96,6 @@ export const onInitialClientRender = () => {
             )
     })
 
-
     $('.c-accordion__header').on('click', function () {
         var _this = $(this),
             parent = _this.closest('.c-accordion__item'),
@@ -50,16 +109,6 @@ export const onInitialClientRender = () => {
             parent.addClass('is-open')
         }
     })
-
-
-
-
-
-
-
-
-
-
 
 
 }

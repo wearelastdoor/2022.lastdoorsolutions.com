@@ -142,15 +142,15 @@ const ScaleCarousel = (callbacks) => {
                     }
 
 
-                    // setInterval(loop, 10000);
+                    setInterval(loop, 10000);
 
-                    // function loop() {
-                    //     dataIndex++;
-                    //     if (dataIndex >= itemLength) {
-                    //         dataIndex = 0;
-                    //     }
-                    //     autoLoop(dataIndex)
-                    // }
+                    function loop() {
+                        dataIndex++;
+                        if (dataIndex >= itemLength) {
+                            dataIndex = 0;
+                        }
+                        autoLoop(dataIndex)
+                    }
 
                     var animation = false,
                         distOfLetGo = slideGrid.width() * 0.01;

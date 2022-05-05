@@ -11,6 +11,8 @@ import HighlightContent from "../components/home/HighlightContent.js"
 import HighlightCta from "../components/HighlightCta.js"
 import Footer from "../components/footer";
 
+
+
 const IndexPage = () => {
     return (
         <>

@@ -1,38 +1,39 @@
 import * as React from "react"
 import TransitionLink from "gatsby-plugin-transition-link"
-import {newContent, animateObjects} from "./../layout"
-import estdBadge from '../../images/estd-badge.png'
+import {newContent, animateObjects} from "components/layout"
+import ESTDBadge from 'images/estd-badge.png'
+import {ButtonStyle} from "styles/defaults/Button.Style";
+import {
+    MainHeroWrapper,
+    MainHeroContainer,
+    MainHeroBadge,
+    MainHeroTitle,
+    MainHeroDescription
+} from "styles/home/MainHero.Style";
+
+const useStyles = ButtonStyle;
 
 const MainHero = ({title, description, linkUrl, linkTitle}) => {
+
     function createHTML(props) {
         return {__html: props}
     }
 
+    const classes = useStyles()
 
     return (
-        <section className="c-hero" data-scroll-container>
-            <div className="l-container">
-                <div className="c-hero__badge" data-scroll data-scroll-sticky
-                     data-scroll-target=".c-hero__title ">
-                    <img src={estdBadge} alt={`18 years of experience badge.`} height={200} width={200}/>
-                    <span className={`screen-reader-text`}>18 years of experience.</span>
-                </div>
-                <h1
-                    className="c-hero__title"
-                    title={title} data-scroll data-scroll-speed="3"
-                    data-scroll-position="top"
-                    dangerouslySetInnerHTML={createHTML(title)}
-                />
-                <div
-                    className="c-hero__description"
-                    data-scroll data-scroll-speed="2"
-                    data-scroll-position="top"
-                    dangerouslySetInnerHTML={createHTML(description)}
-                />
-
+        <MainHeroWrapper>
+            <MainHeroContainer className={`l-container`}>
+                <MainHeroBadge>
+                    <img src={ESTDBadge} alt={`18 years of experience badge.`} height={200} width={200}/>
+                    <span className={`visually-hidden`}
+                          dangerouslySetInnerHTML={{__html: '18 years of experience.'}}></span>
+                </MainHeroBadge>
+                <MainHeroTitle title={title} dangerouslySetInnerHTML={createHTML(title)}/>
+                <MainHeroDescription dangerouslySetInnerHTML={createHTML(description)}/>
                 <TransitionLink
                     to={linkUrl}
-                    className="c-btn c-btn--primary"
+                    className={`${classes.button} ${classes.buttonLightDark}`}
                     exit={{
                         length: 0.6,
                         trigger: ({exit, e, node}) => animateObjects(exit, node),
@@ -41,16 +42,12 @@ const MainHero = ({title, description, linkUrl, linkTitle}) => {
                         delay: 0.7,
                         trigger: ({entry, node}) => newContent(node),
                     }}
-
-
-                    data-scroll data-scroll-speed="1"
-                    data-scroll-position="top"
                 >
                     {linkTitle}
                     <span></span>
                 </TransitionLink>
-            </div>
-        </section>
+            </MainHeroContainer>
+        </MainHeroWrapper>
     )
 }
 

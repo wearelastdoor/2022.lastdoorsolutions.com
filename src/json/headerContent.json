@@ -1,0 +1,36 @@
+[
+  {
+    "menuLink": [
+      {
+        "link": "/",
+        "title": "Home"
+      },
+      {
+        "link": "/about/",
+        "title": "About"
+      },
+      {
+        "link": "/work/",
+        "title": "Works"
+      },
+      {
+        "link": "/contact/",
+        "title": "Contact"
+      }
+    ],
+    "contactMenu": [
+      {
+        "title": "USA: +1 631 419 3281"
+      },
+      {
+        "title": "UK: +44 20 3286 6194"
+      },
+      {
+        "title": "NP: +977 98 5116 7777"
+      },
+      {
+        "title": "hello@lastdoorsolutions.com"
+      }
+    ]
+  }
+]

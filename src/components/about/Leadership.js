@@ -43,17 +43,6 @@ const Leadership = () => {
           <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--outline">
               <StaticImage
-               src={`../../images/dummy-face.png`}
-               alt="Bikash Maharjan"
-               className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Bikash Maharjan</h3>
-              <p className="c-leadership-card__subTitle">Senior . NET Developer</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
                src={`../../images/team/bishal_mishra.png`}
                alt="Bishal Mishra"
                className="c-leadership-card__image"

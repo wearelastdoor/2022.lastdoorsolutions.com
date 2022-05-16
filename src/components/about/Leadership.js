@@ -48,18 +48,7 @@ const Leadership = () => {
                className="c-leadership-card__image"
               ></StaticImage>
               <h3 className="c-leadership-card__title">Bishal Mishra</h3>
-              <p className="c-leadership-card__subTitle">Product Head</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-               src={`../../images/team/dinesh_khadka.png`}
-               alt="Dinesh Khadka"
-               className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Dinesh Khadka</h3>
-              <p className="c-leadership-card__subTitle">FrontEnd Developer</p>
+              <p className="c-leadership-card__subTitle">Product Lead</p>
             </div>
           </div>
           <div className="l-grid__column">
@@ -82,17 +71,6 @@ const Leadership = () => {
               ></StaticImage>
               <h3 className="c-leadership-card__title">Manish Kumar</h3>
               <p className="c-leadership-card__subTitle">Data Analyst</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-               src={`../../images/team/payas_chettri.png`}
-               alt="Payas Chettri"
-               className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Payas Chettri</h3>
-              <p className="c-leadership-card__subTitle">Creative Head</p>
             </div>
           </div>
           <div className="l-grid__column">
@@ -126,17 +104,6 @@ const Leadership = () => {
               ></StaticImage>
               <h3 className="c-leadership-card__title">Purna Shakya</h3>
               <p className="c-leadership-card__subTitle">HR &amp; Finance</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-               src={`../../images/team/rajan_lama.png`}
-               alt="Rajan lama"
-               className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Rajan lama</h3>
-              <p className="c-leadership-card__subTitle">WP Programmer</p>
             </div>
           </div>
           <div className="l-grid__column">

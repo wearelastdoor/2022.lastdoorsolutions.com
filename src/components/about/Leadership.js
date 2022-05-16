@@ -150,21 +150,6 @@ const Leadership = () => {
               <a href="mailto:hello@lastdoorsolutions.com" className="cover-link">
                 <span className="visually-hidden">hello@lastdoorsolutions.com</span>
               </a>
-              {/* 
-              <TransitionLink
-                to="/contact/"
-                className="cover-link"
-                exit={{
-                  length: 0.6,
-                  trigger: ({ exit, e, node }) => animateObjects(exit, node),
-                }}
-                entry={{
-                  delay: 0.8,
-                  trigger: ({ entry, node }) => newContent(node),
-                }}
-              >
-                <span className="visually-hidden">want to join?</span>
-              </TransitionLink> */}
             </div>
           </div>
         </div>

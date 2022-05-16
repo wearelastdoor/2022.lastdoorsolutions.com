@@ -3,7 +3,7 @@
 1.  **Clone Repo**
 
 ```shell
- git clone https://ldsdev@bitbucket.org/lastdoor/lastdoorsolutions.com_2022.git
+ git clone https://github.com/wearelastdoor/2022.lastdoorsolutions.com.git
 ```
 
 2.  **install dependencies in the project**
@@ -11,7 +11,7 @@
     Navigate into your new site’s directory and start it up.
 
 ```shell
-cd idealaya.com.np/
+cd 2022.lastdoorsolutions.com
 then run: npm install
 ```
 
@@ -35,5 +35,4 @@ And upload all files from `/public` to inside the `/www` to the server.
 <strong>Enjoy!!!</strong>
 
 ## For more information please visit
-
 <a href="https://www.gatsbyjs.com/" target="_blank">https://www.gatsbyjs.com/</a>

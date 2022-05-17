@@ -1,7 +1,7 @@
 import {useEffect} from "react"
 import $ from "jquery"
 
-const ScaleCarousel = (callbacks) => {
+const ScaleCarousel = () => {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -11,7 +11,12 @@ const ScaleCarousel = (callbacks) => {
                         getItems = _this.children('.c-front-showcase__image'),
                         itemLength = getItems.length,
                         trackWidth = 0,
-                        dataIndex = 1;
+                        dataIndex = 1,
+                        scaleNum = .6667;
+
+                    if (_this.attr('data-scale')) {
+                        scaleNum = _this.attr('data-scale')
+                    }
 
                     if (!getItems.parent().hasClass("scale-carousel__item")) {
                         getItems.wrap('<div class="scale-carousel__item">')
@@ -45,7 +50,7 @@ const ScaleCarousel = (callbacks) => {
                             gapBetweenModified = gapBetween > 0 ? gapBetween : 0;
                         slideItem.slice(0, currentIndex).each(function () {
                             if (!$(this).hasClass('current')) {
-                                slideWidth += -Math.ceil((slideGrid.width()) * .6667) - gapBetweenModified;
+                                slideWidth += -Math.ceil((slideGrid.width()) * scaleNum) - gapBetweenModified;
                             }
                         })
 
@@ -67,7 +72,7 @@ const ScaleCarousel = (callbacks) => {
                                 })
                             } else {
                                 $(this).css({
-                                    width: Math.ceil(slideGrid.width() * .6667)
+                                    width: Math.ceil(slideGrid.width() * scaleNum)
                                 })
                             }
                         })
@@ -201,7 +206,7 @@ const ScaleCarousel = (callbacks) => {
             });
         }
 
-    })
+    }, [])
     return null
 }
 

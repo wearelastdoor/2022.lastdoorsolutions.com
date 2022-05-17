@@ -2,6 +2,7 @@
   position: relative;
   z-index: 2;
   padding-top: 82px;
+  text-align: center;
 
   @media #{$phone} {
     padding-top: 20px;
@@ -10,16 +11,101 @@
     padding-top: 0;
   }
 
+  &.c-showcase--large {
+    padding-bottom: 35px;
+    @media #{$phone} {
+      padding-bottom: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+
+      height: calc(1060px * .75);
+      @media screen and (max-width: 1320px) {
+        max-width: 820px;
+        height: calc(820px * .75);
+      }
+
+      @media screen and (max-width: 860px) {
+        max-width: 680px;
+        height: calc(680px * .75);
+      }
+
+      @media screen and (max-width: 560px) {
+        aspect-ratio: 1060/795;
+        height: 100%;
+      }
+    }
+  }
+
   .container {
     max-width: 1440px;
+    z-index: 2;
     height: calc(900px * .594444444444444);
+
     @media screen and (max-width: 1320px) {
-      max-width: 720px;
-      height: calc(720px * .594444444444444);
+      max-width: 820px;
+      height: calc(820px * .594444444444444);
     }
+
     @media screen and (max-width: 860px) {
-      max-width: 480px;
-      height: calc(480px * .594444444444444);
+      max-width: 680px;
+      height: calc(680px * .594444444444444);
+    }
+
+    @media screen and (max-width: 560px) {
+      aspect-ratio: 900/525;
+      height: 100%;
+    }
+  }
+}
+
+.c-showcase__title {
+  font-size: clamp(3.2875rem, 12vw, 10.625rem);
+  font-family: $ff-primary-black;
+  font-weight: normal;
+  color: transparent;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  letter-spacing: -9px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  transform: translateY(-67%);
+
+  @media #{$tablet} {
+    letter-spacing: -6px;
+  }
+
+  @media #{$phone} {
+    letter-spacing: -3px;
+    width: 100%;
+  }
+
+  &:after {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    color: transparent;
+    z-index: -1;
+    display: inline-block;
+    vertical-align: top;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    transform: translate(5px, 5px) translateZ(0);
+    backface-visibility: hidden;
+    @include letter-stroke(rgba($c-primary, 0.75), 1px);
+
+
+    @media #{$phone} {
+      transform: translate(3px, 3px) translateZ(0);
     }
   }
 }
@@ -69,22 +155,43 @@
   left: 50%;
   position: absolute;
 
+  .c-showcase--large & {
+    height: calc(1060px * .75);
+    max-width: 1060px;
+  }
+
   @media screen and (max-width: 1320px) {
-    max-width: 720px;
-    height: calc(720px * .594444444444444);
+    max-width: 820px;
+    height: calc(820px * .594444444444444);
+    .c-showcase--large & {
+      height: calc(820px * .75);
+    }
   }
+
   @media screen and (max-width: 860px) {
-    max-width: 480px;
-    height: calc(480px * .594444444444444);
+    max-width: 680px;
+    height: calc(680px * .594444444444444);
+    .c-showcase--large & {
+      height: calc(680px * .75);
+    }
   }
+
   @media screen and (max-width: 560px) {
     max-width: calc(100% - 40px);
-    height: calc(480px * .594444444444444);
+    aspect-ratio: 900/525;
+    height: auto;
+
+    .c-showcase--large & {
+      aspect-ratio: 1060/795;
+      height: auto;
+    }
   }
 }
 
 .scale-carousel {
   cursor: move;
+  position: relative;
+  z-index: 2;
 }
 
 .scale-carousel__grid {
@@ -123,7 +230,23 @@
   padding: 93px 0;
 
   @media #{$phone} {
-    padding: 70px 0;
+    padding: 40px 0 70px;
+  }
+
+  + .c-showcase-detail {
+    padding-top: 0;
+  }
+
+  &.c-showcase-detail--bg-secondary {
+    &:after {
+      background-color: $c-primary;
+    }
+  }
+
+  &.c-showcase-detail--bg-transparent {
+    &:after {
+      background-color: transparent;
+    }
   }
 
   .container {

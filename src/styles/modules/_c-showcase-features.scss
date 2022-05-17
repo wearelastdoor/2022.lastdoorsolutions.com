@@ -1,0 +1,120 @@
+.c-showcase-features {
+    padding-bottom: 40px;
+  
+    @media #{$phone} {
+      padding-bottom: 60px;
+    }
+  
+    .container {
+      max-width: 1220px;
+      padding-right: 160px;
+      @media screen and (max-width: 1280px) {
+        padding-right: 80px;
+      }
+      @media #{$desktop} {
+        padding-right: 20px;
+      }
+    }
+  }
+  
+  .c-showcase-features__title {
+    color: $c-white;
+    margin-bottom: 40px;
+    font-size: clamp(2.125rem, 6vw, 2.875rem);
+    line-height: 1;
+    max-width: 414px;
+    letter-spacing: -2px;
+    @media #{$phone} {
+      margin-bottom: 30px;
+      letter-spacing: -1px;
+    }
+  }
+  
+  .c-showcase-features__card {
+    background-color: $c-brand;
+    color: $c-white;
+    padding: 120px 140px 100px;
+    position: relative;
+    z-index: 1;
+    margin-left: -160px;
+  
+    @media screen and (max-width: 1280px) {
+      padding: 80px 80px 60px;
+      margin-left: -80px;
+    }
+  
+    @media #{$desktop} {
+      margin-left: 0;
+      padding: 80px 80px 60px 40px;
+    }
+    @media #{$phone} {
+      padding: 40px 40px 40px 20px;
+    }
+  
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -999px;
+      right: 0;
+      z-index: -1;
+      background-color: $c-brand;
+    }
+  }
+  
+  .c-showcase-features__grid {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -45px;
+  
+  }
+  
+  .c-showcase-features__column {
+    padding: 0 45px;
+  
+    &:first-child {
+      width: 55%;
+  
+      @media #{$tablet} {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+  
+    &:nth-child(2) {
+      width: 45%;
+      @media #{$tablet} {
+        width: 100%;
+      }
+    }
+  }
+  
+  .c-showcase-features_list {
+    list-style-type: none;
+    display: flex;
+    margin: 0 -23px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  
+    li {
+      padding: 0 23px;
+      margin-bottom: 16px;
+      line-height: 1.25;
+  
+      &:nth-child(odd) {
+        width: 46%;
+        @media #{$phone} {
+          width: 100%;
+        }
+      }
+  
+      &:nth-child(even) {
+        width: 54%;
+        @media #{$phone} {
+          width: 100%;
+        }
+      }
+    }
+  }

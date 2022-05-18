@@ -41,7 +41,10 @@ const AnchorwavePage = () => {
   return (
     <>
       <main className="main">
-        <Seo />
+        <Seo
+          title="Last Door's Client and Partner, Anchor Wave Internet Solutions, LLC"
+          description="Our remote partnership has lasted more than a decade, thanks in part to our coordination skills and ability to get stuff done."
+        />
         <ScaleCarousel />
         <motion.div
           initial={({ x: 0 }, false)}
@@ -472,9 +475,7 @@ const AnchorwavePage = () => {
                 </button>
               </div>
               <div className={`c-accordion__body`}>
-                <p>
-                WordPress Websites.
-                </p>
+                <p>WordPress Websites.</p>
               </div>
             </div>
           </div>

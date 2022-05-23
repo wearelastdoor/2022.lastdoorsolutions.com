@@ -1,6 +1,9 @@
 import * as React from "react"
 import {useStaticQuery, graphql} from "gatsby"
 import Img from "gatsby-image"
+import {useEffect, useRef, useState} from "react";
+import gsap from "gsap";
+
 
 // Import svg Image
 import graphic_2 from "images/graphic-02.svg"
@@ -18,6 +21,22 @@ import {
 
 
 const OurClient = () => {
+    const section = useRef()
+    const title = useRef()
+
+
+    useEffect(() => {
+        gsap.to(title.current, {
+            scrollTrigger: {
+                trigger: section.current,
+                start: 'center center',
+                scrub: 1,
+            },
+            y: -300,
+            duration: 5
+        })
+    }, [])
+
     function createHTML(props) {
         return {__html: props}
     }
@@ -48,12 +67,12 @@ const OurClient = () => {
         }
     `)
     return (
-        <OurClientWrapper>
+        <OurClientWrapper >
             <div className={`l-container`}>
                 <OurClientHeader>
                     <OurClientHeaderContent>
                         <OurClientHeaderSubTitle dangerouslySetInnerHTML={createHTML(data.items.header.subTitle)}/>
-                        <OurClientHeaderTitle title={data.items.header.title}
+                        <OurClientHeaderTitle ref={title} title={data.items.header.title}
                                               dangerouslySetInnerHTML={createHTML(data.items.header.title)}/>
                         <OurClientHeaderDescription
                             dangerouslySetInnerHTML={createHTML(data.items.header.description)}/>

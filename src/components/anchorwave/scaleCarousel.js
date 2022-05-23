@@ -1,12 +1,12 @@
-import {useEffect} from "react"
+import { useEffect } from "react"
 import $ from "jquery"
 
-const ScaleCarousel = (callbacks) => {
+const ScaleCarousel = () => {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
             function carousel() {
-                $('.scale-carousel').each(function () {
+                $('.scale-carousel').each(function() {
                     var _this = $(this),
                         getItems = _this.children('.c-front-showcase__image'),
                         itemLength = getItems.length,
@@ -19,7 +19,7 @@ const ScaleCarousel = (callbacks) => {
 
                     var slideItem = _this.find('.scale-carousel__item');
 
-                    slideItem.each(function (i) {
+                    slideItem.each(function(i) {
                         $(this).attr('data-index', i)
                     })
 
@@ -43,7 +43,7 @@ const ScaleCarousel = (callbacks) => {
                         slideWidth = 0;
                         var gapBetween = slideItem.outerWidth(true) - slideItem.innerWidth(),
                             gapBetweenModified = gapBetween > 0 ? gapBetween : 0;
-                        slideItem.slice(0, currentIndex).each(function () {
+                        slideItem.slice(0, currentIndex).each(function() {
                             if (!$(this).hasClass('current')) {
                                 slideWidth += -Math.ceil((slideGrid.width()) * .6667) - gapBetweenModified;
                             }
@@ -60,7 +60,7 @@ const ScaleCarousel = (callbacks) => {
                     function defaultVal() {
                         trackWidth = slideItem.outerWidth(true);
 
-                        slideItem.each(function (i) {
+                        slideItem.each(function(i) {
                             if ($(this).hasClass('current')) {
                                 $(this).css({
                                     width: Math.ceil(slideGrid.width())
@@ -72,7 +72,7 @@ const ScaleCarousel = (callbacks) => {
                             }
                         })
 
-                        slideItem.each(function (i) {
+                        slideItem.each(function(i) {
                             trackWidth += Math.ceil($(this).outerWidth(true))
                         });
                     }
@@ -82,7 +82,7 @@ const ScaleCarousel = (callbacks) => {
 
                     currentSlide(dataIndex);
 
-                    $(window).resize(function () {
+                    $(window).resize(function() {
                         currentSlide(dataIndex);
                     })
                     slideTrack.css({
@@ -104,11 +104,11 @@ const ScaleCarousel = (callbacks) => {
                     }
 
 
-                    $('.next').click(function () {
+                    $('.next').click(function() {
                         slideNext()
                     })
 
-                    $('.prev').click(function () {
+                    $('.prev').click(function() {
                         slidePrev()
                     })
 
@@ -123,7 +123,7 @@ const ScaleCarousel = (callbacks) => {
                     slideItem.mousedown(onMouseDown).mouseup(onMouseUp);
 
                     function onMouseDown() {
-                        holdStarter = setTimeout(function () {
+                        holdStarter = setTimeout(function() {
                             holdStarter = null;
                         }, holdDelay);
                     }
@@ -156,17 +156,17 @@ const ScaleCarousel = (callbacks) => {
                         distOfLetGo = slideGrid.width() * 0.01;
                     let diff = 0;
 
-                    _this.on('mousedown touchstart', slideItem, function (e) {
+                    _this.on('mousedown touchstart', slideItem, function(e) {
                         if (animation) return;
                         let startX = e.pageX || e.originalEvent.touches[0].pageX;
 
-                        $(document).on('mousemove touchmove', function (e) {
+                        $(document).on('mousemove touchmove', function(e) {
                             let x = e.pageX || e.originalEvent.touches[0].pageX;
                             diff = startX - x;
                         });
                     });
 
-                    _this.on('mouseup touchend', function (e) {
+                    _this.on('mouseup touchend', function(e) {
                         slideTrack.css({
                             'transition': 'all 600ms ease'
                         })
@@ -181,12 +181,12 @@ const ScaleCarousel = (callbacks) => {
                         }
                     });
 
-                    $(document).on('keydown', function (e) {
+                    $(document).on('keydown', function(e) {
                         if (e.which === 39) slideNext();
                         if (e.which === 37) slidePrev();
                     });
 
-                    _this.on('mousewheel DOMMouseScroll', function (e) {
+                    _this.on('mousewheel DOMMouseScroll', function(e) {
                         if (animation) return;
                         let delta = e.originalEvent.wheelDelta;
                         if (delta > 0 || e.originalEvent.detail < 0) slidePrev();
@@ -196,12 +196,12 @@ const ScaleCarousel = (callbacks) => {
             }
 
             carousel()
-            $(window).resize(function () {
+            $(window).resize(function() {
                 carousel()
             });
         }
 
-    })
+    }, [])
     return null
 }
 

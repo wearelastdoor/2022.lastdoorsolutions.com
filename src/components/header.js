@@ -1,7 +1,6 @@
 import * as React from "react"
 import TransitionLink from "gatsby-plugin-transition-link"
 import {useStaticQuery, graphql} from "gatsby"
-
 import {
     newContent,
     animateObjects,
@@ -20,10 +19,11 @@ import {
     MainHeaderContactList,
     MainHeaderContactWrapper,
     MainHeaderNavContainer
-} from "styles/header/Header.Style";
+} from "styles/parts/Header.Style";
 
 
 const Header = ({logoImage, headerVisible}) => {
+
     const data = useStaticQuery(graphql`
         {
             headerData: headerContentJson {
@@ -40,7 +40,7 @@ const Header = ({logoImage, headerVisible}) => {
 
     return (
         <MainHeader className={headerVisible}>
-            <MainHeaderWrap>
+            <MainHeaderWrap className={`navigation`}>
                 <TransitionLink
                     to="/"
                     className={`c-header__logo`}

@@ -10,13 +10,19 @@ import PropTypes from "prop-types"
 import {gsap, Power2, TimelineMax, Expo} from "gsap"
 import {Location} from "@reach/router";
 import Header from "components/header"
-import $ from "jquery"
 import {GlobalStyles} from "styles/GlobleStyles";
 import logo from "images/logo.svg"
+import SvgSprite from "components/parts/svg-sprite"
+import SmoothScroll from "./smoothScroll/SmoothScroll";
+import Loader from "./loader/loader";
+import {useState, useRef, useEffect} from "react";
+import {heroSectionAnimate} from "./loader/loader";
 
 // hidden object animation
 export function animateObjects() {
-    $("body").removeClass("content-loaded")
+    document.getElementById('page-wrapper').style.height = "auto";
+    document.getElementById('page-wrapper').style.overflow = "visible";
+
     const tl = gsap.timeline()
     const overlayBg = document.querySelectorAll(".animate-overlay")
     tl.fromTo(
@@ -36,7 +42,8 @@ export function animateObjects() {
             ease: Power2.easeInOut,
             onComplete: () => {
                 setTimeout(() => {
-                    $("body").addClass("content-loaded")
+                    document.getElementById('page-wrapper').style.height = "100vh";
+                    document.getElementById('page-wrapper').style.overflow = "hidden";
                 }, 200)
             },
         },
@@ -57,9 +64,9 @@ export function animateObjectsFromMainMenu() {
             onComplete: () => {
                 let tlMenu = new TimelineMax()
                 tlMenu
-                    .to($(".c-main-nav__menu-close"), 0.1, {rotate: 0, opacity: 0})
+                    .to('.c-main-nav__menu-close', 0.1, {rotate: 0, opacity: 0})
                     .staggerTo(
-                        ".main-menu  li, .main-nav__contact li",
+                        '.main-menu  li, .main-nav__contact li',
                         0.1,
                         {
                             opacity: 0,
@@ -68,8 +75,7 @@ export function animateObjectsFromMainMenu() {
                         -0.01,
                         "-=2"
                     )
-                    .to(
-                        $(".c-main-nav"),
+                    .to('.c-main-nav',
                         0.1,
                         {
                             clipPath: "inset(0%  0% 0% 100%)",
@@ -88,44 +94,50 @@ export function animateObjectsFromMainMenu() {
             clearProps: "all",
             ease: Power2.easeInOut,
             onComplete: () => {
-                $("body").addClass("content-loaded")
+                document.getElementById('page-wrapper').style.height = "100vh";
             },
         },
         "+=.7"
     )
+    document.getElementById('page-wrapper').style.overflow = "visible";
 }
 
 // new content to be faded in after animation
+
 export function newContent(node) {
-    return gsap.from(
-        node.querySelectorAll("h1, h2, h3, h4, p, a, img, table, ul, pre"),
-        {
-            // opacity: 0,
-            // delay: 1,
-            // duration: 2,
-            // stagger: 0.08,
+    document.getElementById('page-wrapper').style.overflow = "hidden";
+    const tl = gsap.timeline({
+        defaults: {
+            ease: Expo.easeOut,
+            duration: 1,
+            autoAlpha: 1,
         }
-    )
+    });
+
+    tl.to('#c-loader', {
+        clipPath: 'inset(0% 0%  0% 100%)',
+    })
+
+    heroSectionAnimate(tl)
 }
 
 const overlayBg = [
     {
         svg: `<svg width="172" height="172" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M86 171C39.1121 171 1 132.888 1 86C1 39.1121 39.1121 1 86 1C132.888 1 171 39.1121 171 86V86C171 132.888 132.888 171 86 171Z" fill="#F5F6F0" stroke="#17212A"/>
-          </svg> `,
+              </svg> `,
         additionalClass: "animate-overlay--first",
     },
     {
         svg: `<svg width="211" height="211" viewBox="0 0 211 211" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M210 210H1V1H210V210Z" fill="#F5F6F0" stroke="#17212A"/>
-</svg>
-    `,
+                <path d="M210 210H1V1H210V210Z" fill="#F5F6F0" stroke="#17212A"/>
+              </svg>`,
         additionalClass: "animate-overlay--second",
     },
     {
         svg: `<svg width="206" height="196" viewBox="0 0 206 196" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M103.259 2L134.551 65.4767L204.519 75.6545L153.89 125.063L165.841 194.829L103.259 161.891L40.6767 194.829L52.6294 125.063L2 75.6545L71.9686 65.4767L103.259 2Z" fill="#F5F6F0" stroke="#17212A"/>
-    </svg>`,
+                <path d="M103.259 2L134.551 65.4767L204.519 75.6545L153.89 125.063L165.841 194.829L103.259 161.891L40.6767 194.829L52.6294 125.063L2 75.6545L71.9686 65.4767L103.259 2Z" fill="#F5F6F0" stroke="#17212A"/>
+              </svg>`,
         additionalClass: "animate-overlay--third",
     },
 ]
@@ -168,13 +180,47 @@ const Numbers = props => {
     )
 }
 
+// const isLoadingCompleted = localStorage.getItem("isLoading")
+// if (isLoadingCompleted !== 'completed') {
+//     localStorage.setItem('isLoading', 'completed')
+// } else {
+//     localStorage.setItem('isLoading', '')
+// }
+
 
 const Layout = ({children}) => {
     const randomized = getRandomOrder(overlayBg)
+    const [preLoader, setPreLoader] = useState(true)
+    const [timer, setTimer] = useState(3)
+    const id = useRef(null);
+
+    const clear = () => {
+        window.clearInterval(id.current)
+        setPreLoader(false)
+    }
+
+
+    useEffect(() => {
+        id.current = window.setInterval(() => {
+            setTimer((timer) => timer - 1)
+        }, 1000)
+    }, [])
+
+    useEffect(() => {
+        if (timer === 0) {
+            clear()
+        }
+    }, [timer])
+
     return (
         <>
             <GlobalStyles/>
-            <div className="page-wrapper">
+            <Loader/>
+            <SmoothScroll/>
+            <div className={`circle`}></div>
+            <div className={`circle-follow`}></div>
+            <div id={`page-wrapper`} className={`page-wrapper is-overflow`}>
+
                 <Numbers data={randomized}/>
                 <Location>
                     {({location}) => {
@@ -190,7 +236,9 @@ const Layout = ({children}) => {
                 </Location>
                 {children}
             </div>
+            <SvgSprite title="Svg Sprite"/>
         </>
+
     )
 }
 

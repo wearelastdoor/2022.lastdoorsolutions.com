@@ -11,7 +11,7 @@
     Navigate into your new site’s directory and start it up.
 
 ```shell
-cd idealaya.com.np/
+cd astdoorsolutions.com_2022/
 then run: npm install
 ```
 

@@ -12,8 +12,8 @@ import Footer from "../components/footer";
 
 const AboutPage = () => (
     < >
+        <Seo/>
         <main className="main">
-            <Seo/>
             <motion.div
                 initial={({x: 0}, false)}
                 animate={{x: "100%"}}

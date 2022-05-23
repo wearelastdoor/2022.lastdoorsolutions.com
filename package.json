@@ -21,7 +21,7 @@
     "gatsby-plugin-gatsby-cloud": "^2.4.1",
     "gatsby-plugin-google-gtag": "^3.7.1",
     "gatsby-plugin-image": "^1.4.0",
-    "gatsby-plugin-jss": "^4.13.0",
+    "gatsby-plugin-jss": "^4.14.0",
     "gatsby-plugin-load-script": "^1.1.0",
     "gatsby-plugin-manifest": "^3.5.0",
     "gatsby-plugin-offline": "^4.4.0",
@@ -29,7 +29,7 @@
     "gatsby-plugin-react-helmet": "^4.4.0",
     "gatsby-plugin-sass": "^4.4.0",
     "gatsby-plugin-sharp": "^4.8.0",
-    "gatsby-plugin-styled-components": "^5.13.0",
+    "gatsby-plugin-styled-components": "^5.14.0",
     "gatsby-plugin-transition-link": "^1.20.5",
     "gatsby-plugin-zopfli": "^2.0.0",
     "gatsby-remark-images": "^6.8.0",
@@ -40,7 +40,7 @@
     "gatsby-transformer-remark": "^4.2.0",
     "gatsby-transformer-sharp": "^4.8.0",
     "gatsby-transformer-sqip": "^3.5.0",
-    "gsap": "^3.6.1",
+    "gsap": "^3.10.4",
     "jquery": "^3.6.0",
     "locomotive-scroll": "^4.1.4",
     "node-sass": "^6.0.0",
@@ -58,12 +58,14 @@
     "react-visibility-sensor": "^5.1.1",
     "sass": "^1.32.12",
     "slick-carousel": "^1.8.1",
-    "smooth-scrollbar": "^8.6.2",
+    "smooth-scrollbar": "^8.7.4",
     "styled-components": "^5.3.5",
+    "styled-reset": "^4.3.4",
     "uuidv4": "^6.2.8",
     "yup": "^0.32.9"
   },
   "devDependencies": {
+    "@barba/css": "^2.1.15",
     "prettier": "2.2.1"
   },
   "keywords": [

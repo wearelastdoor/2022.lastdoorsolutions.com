@@ -1,6 +1,5 @@
 import * as React from "react"
 import Seo from "../components/seo"
-import Scroll from "../components/locomotiveScroll/locomotiveScroll";
 
 // Import Components
 import MainHero from "../components/home/MainHero.js"
@@ -15,7 +14,6 @@ import Footer from "../components/footer";
 const Animated = (location) => {
     return (
         <>
-            <Scroll callbacks={location}/>
             <div className={`locomotiveScroll`}>
                 <main className="main">
                     <Seo/>

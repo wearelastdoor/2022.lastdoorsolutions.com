@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useEffect, useRef } from "react";
-import gsap, { Expo, Power3, TimelineMax, Circ } from "gsap";
+import gsap, { Expo, Power3} from "gsap";
 
 const PreLoader = () => {
   const loader = useRef();

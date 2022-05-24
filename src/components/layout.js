@@ -1,23 +1,16 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react";
 import PropTypes from "prop-types";
 import { gsap, Power2, TimelineMax, Expo } from "gsap";
 import { Location } from "@reach/router";
 import Header from "./header";
 import PreLoader from "./PreLoader/PreLoader";
+import SmoothScroll from "./smoothScrollbar/smoothScrollbar";
 import $ from "jquery";
 
 import logo from "../images/logo.svg";
 
 // hidden object animation
 export function animateObjects() {
-  $("body").removeClass("content-loaded");
   const tl = gsap.timeline();
   const overlayBg = document.querySelectorAll(".animate-overlay");
   tl.fromTo(
@@ -35,11 +28,6 @@ export function animateObjects() {
       clipPath: "inset(0% 100% 0% 0%)",
       clearProps: "all",
       ease: Power2.easeInOut,
-      onComplete: () => {
-        setTimeout(() => {
-          $("body").addClass("content-loaded");
-        }, 200);
-      },
     },
     "+=.7"
   );
@@ -176,19 +164,20 @@ const Layout = ({ children }) => {
   return (
     <div className="app">
       <PreLoader />
+      <SmoothScroll />
+      <Location>
+        {({ location }) => {
+          const url = location.pathname;
+          const slug = ["/anchorwave/", "/anchorwave"];
+          return url === slug[0] ? (
+            <Header logoImage={logo} headerVisible={"hidden"} />
+          ) : (
+            <Header logoImage={logo} headerVisible={`show`} />
+          );
+        }}
+      </Location>
       <div className="page-wrapper">
         <Numbers data={randomized} />
-        <Location>
-          {({ location }) => {
-            const url = location.pathname;
-            const slug = ["/anchorwave/", "/anchorwave"];
-            return url === slug[0] ? (
-              <Header logoImage={logo} headerVisible={"hidden"} />
-            ) : (
-              <Header logoImage={logo} headerVisible={`show`} />
-            );
-          }}
-        </Location>
         {children}
       </div>
     </div>

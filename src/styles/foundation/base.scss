@@ -3,11 +3,11 @@ html {
 }
 
 body {
-  overflow: hidden;
+  // overflow: hidden;
 
-  &.content-loaded {
-    overflow-y: auto;
-  }
+  // &.content-loaded {
+  //   overflow-y: auto;
+  // }
 }
 
 *,
@@ -41,9 +41,12 @@ dd {
   }
 }
 
+.app {
+  overflow: hidden;
+}
+
 .page-wrapper {
   position: relative;
-  overflow: hidden;
 }
 
 .l-container {

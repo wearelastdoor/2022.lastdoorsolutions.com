@@ -8,34 +8,7 @@
  
  
  export const onInitialClientRender = () => {
-     $(".c-loader__counter").each(function () {
-         $(this).addClass("visible")
-         $(this)
-             .find("span")
-             .prop("Counter", 0)
-             .animate(
-                 {
-                     Counter: $(this).text(),
-                 },
-                 {
-                     duration: 3000,
-                     easing: "swing",
-                     step: function (now) {
-                         $(this).text(Math.ceil(now))
-                     },
- 
-                     complete: function () {
-                         setTimeout(function () {
-                             $("#c-loader").addClass("completed")
-                         }, 1000)
-                         setTimeout(function () {
-                             $("body").addClass("content-loaded")
-                         }, 1000)
-                     },
-                 }
-             )
-     })
- 
+  
      $('.c-accordion__header').on('click', function () {
          var _this = $(this),
              parent = _this.closest('.c-accordion__item'),

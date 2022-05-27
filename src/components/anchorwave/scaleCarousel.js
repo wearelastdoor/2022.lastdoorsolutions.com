@@ -1,4 +1,4 @@
-import {useEffect, useLayoutEffect} from "react"
+import {useLayoutEffect} from "react"
 import $ from "jquery"
 
 const ScaleCarousel = () => {

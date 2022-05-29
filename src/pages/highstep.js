@@ -20,7 +20,6 @@ import projectImage10 from "../images/projects_anchorwave/never_ending_cashflow_
 import projectImage11 from "../images/projects_anchorwave/stephen_larsen_last_door.webp";
 import projectImage12 from "../images/projects_anchorwave/valeria_grunbaum_last_door.webp";
 
-import toolLogo1 from "../images/tool-logo-1.png";
 import toolLogo2 from "../images/tool-logo-2.png";
 import toolLogo3 from "../images/tool-logo-3.png";
 import toolLogo4 from "../images/tool-logo-4.png";
@@ -290,13 +289,6 @@ const AnchorwavePage = () => {
                   TOOLS THAT HELP
                 </h3>
                 <ul className="c-list-content__tools-list">
-                  <li>
-                    <img
-                      src={toolLogo1}
-                      alt="ConnectWise"
-                      style={{ maxWidth: `191px` }}
-                    />
-                  </li>
                   <li>
                     <img
                       src={toolLogo2}

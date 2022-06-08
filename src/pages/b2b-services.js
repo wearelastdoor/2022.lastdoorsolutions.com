@@ -1,13 +1,9 @@
 import * as React from "react"
 import Seo from "../components/seo"
-import wordpressLogo from '../images/wordpress-logotype-standard.webp'
-import serviceCardImg from '../images/service-card-img.webp'
 import PageBanner from "../components/pageBanner.js";
 import strategyIllustration from '../images/working-illustration.svg'
 
-import svgOval from '../images/svg-oval.svg'
-import svgTriangle from '../images/svg-triangle.svg'
-import svgRectangle from '../images/svg-rectangle.svg'
+
 
 import partnerImg from '../images/anchorwave_white_label_partner.jpg'
 import partnerImg2 from '../images/highstep_white_label_partner.jpg'

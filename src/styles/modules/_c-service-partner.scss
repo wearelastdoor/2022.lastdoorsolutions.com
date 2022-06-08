@@ -6,6 +6,10 @@
   }
 }
 
+.c-service-partner--alt {
+  padding-top: 30px;
+}
+
 .c-service-partner__header {
   max-width: 810px;
   margin: 0 auto 60px;
@@ -121,8 +125,11 @@
   background-repeat: no-repeat;
   background-position: center;
   color: $c-white;
-  padding: 36px 40px;
+  padding: 30px 30px;
   box-shadow: 0 20px 30px rgba($c-black, .25);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: ease all .25s;
   @media screen and (max-width: 1024px) {
     padding: 30px;
   }
@@ -135,7 +142,7 @@
 
   &:after {
     content: '';
-    background-image: url("data:image/svg+xml,%0A%3Csvg width='360px' height='219px' viewBox='0 0 360 219' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3ClinearGradient x1='50%25' y1='0%25' x2='50%25' y2='100%25' id='linearGradient-2s8-uk7o65-1'%3E%3Cstop stop-color='%23000000' stop-opacity='0.65' offset='0%25'%3E%3C/stop%3E%3Cstop stop-color='%23000000' stop-opacity='0' offset='100%25'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cg id='WIP' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Crect id='Rectangle' fill='url(%23linearGradient-2s8-uk7o65-1)' x='0' y='0' width='360' height='219'%3E%3C/rect%3E%3C/g%3E%3C/svg%3E");
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 65%);
     top: 0;
     bottom: 0;
     left: 0;
@@ -145,6 +152,15 @@
     display: block;
     background-size: cover;
     background-position: center top;
+  }
+
+  &:hover, &:focus {
+    transition: ease all .25s;
+    box-shadow: 0 35px 60px rgb(0 0 0 / 35%);
+
+    .c-service-partner__title {
+      bottom: 5px;
+    }
   }
 
   a {
@@ -172,6 +188,10 @@
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   letter-spacing: -2px;
   line-height: 1;
+  font-family: $ff-primary-bold;
+  position: absolute;
+  bottom: 0;
+  transition: ease all .25s;
   @media #{$phone} {
     letter-spacing: -1px;
   }

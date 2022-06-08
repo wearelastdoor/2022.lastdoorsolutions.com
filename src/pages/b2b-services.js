@@ -8,7 +8,9 @@ import svgOval from '../images/svg-oval.svg'
 import svgTriangle from '../images/svg-triangle.svg'
 import svgRectangle from '../images/svg-rectangle.svg'
 
-import partnerImg from '../images/partner-01.webp'
+import partnerImg from '../images/anchorwave_white_label_partner.jpg'
+import partnerImg2 from '../images/highstep_white_label_partner.jpg'
+import partnerImg3 from '../images/e11group_white_label_partner.jpg'
 
 // Import Components
 import Footer from "../components/footer";
@@ -17,13 +19,48 @@ import HighlightCta from "../components/HighlightCta";
 const ServiceSingle = () => {
     return (
         <>
-            <Seo/>
+            <Seo
+                title="B2B Partnership with Last Door"
+                description="We extend our hands with partners around the world to help them extend their reach."
+            />
             <main className="main">
                 <PageBanner
                     pageName={`B2B Services`}
                     title={`Hands that help you achieve anything.`}
                     pageDescription={`You can expect us to do literally anything that your comapny does or doesn’t. Since our inception in 2006, we have been tied with Business to Business working model. It has been fun to work with people at different time zones.`}
                 />
+
+                <div className={`c-service-partner c-service-partner--alt`}>
+                    <div className={`l-container`}>
+                        <div className={`c-service-partner__grid`}>
+                            <div className={`c-service-partner__item`}>
+                                <div className={`c-service-partner__card`}
+                                     style={{backgroundImage: `url(${partnerImg})`}}>
+                                    <h3 className={`c-service-partner__title`}>Anchorwave</h3>
+                                    <a href="/anchorwave/"><span
+                                        className={`screen-reader-text`}>anchorwave</span></a>
+                                </div>
+                            </div>
+                            <div className={`c-service-partner__item`}>
+                                <div className={`c-service-partner__card`}
+                                     style={{backgroundImage: `url(${partnerImg2})`}}>
+                                    <h3 className={`c-service-partner__title`}>Higstep Technologies</h3>
+                                    <a href="/highstep/"> 
+                                        <span className={`screen-reader-text`}>Higstep Technologies</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className={`c-service-partner__item`}>
+                                <div className={`c-service-partner__card`} style={{backgroundImage: `url(${partnerImg3})`}}>
+                                    <h3 className={`c-service-partner__title`}>e11group</h3>
+                                    <a href="/e11group/">
+                                        <span className={`screen-reader-text`}>e11group</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div className={`c-featured-service`}>
                     <div className={`l-container`}>
@@ -36,9 +73,9 @@ const ServiceSingle = () => {
                                     <li>WordPress with React</li>
                                     <li>WordPress Themes</li>
                                     <li>White Label Dev</li>
-                                    <li>Support & Maintenance</li>
+                                    <li>Support &amp; Maintenance</li>
                                     <li>WooCommerce Store</li>
-                                    <li>Performance & Speed</li>
+                                    <li>Performance &amp; Speed</li>
                                     <li>Server-side management</li>
                                 </ul>
                             </div>
@@ -184,47 +221,7 @@ const ServiceSingle = () => {
                     </div>
                 </div>
 
-                <div className={`c-service-partner`}>
-                    <div className={`l-container`}>
-                        <div className={`c-service-partner__header`}>
-                            <h2 className={`c-service-partner__heading`} title={`White-label Development`}>White-label
-                                Development</h2>
-                            <div className={`c-service-partner__description`}>
-                                <p>We will build the entire code with all your branding, conventions, systems, or
-                                    requirements to maintain the project's white labels.</p>
-                            </div>
-                        </div>
-                        <div className={`c-service-partner__grid`}>
-                            <div className={`c-service-partner__item`}>
-                                <div className={`c-service-partner__card`}
-                                     style={{backgroundImage: `url(${partnerImg})`}}>
-                                    <strong className={`c-service-partner__label`}>White Label partner</strong>
-                                    <h3 className={`c-service-partner__title`}>Anchorwave</h3>
-                                    <a href="https://anchorwave.com/" target={`_blank`}><span
-                                        className={`screen-reader-text`}>anchorwave</span></a>
-                                </div>
-                            </div>
-                            <div className={`c-service-partner__item`}>
-                                <div className={`c-service-partner__card`}
-                                     style={{backgroundImage: `url(${partnerImg})`}}>
-                                    <strong className={`c-service-partner__label`}>White Label partner</strong>
-                                    <h3 className={`c-service-partner__title`}>Higstep Technologies</h3>
-                                    <a href="https://highstep.com/" target={`_blank`}><span
-                                        className={`screen-reader-text`}>Higstep Technologies</span></a>
-                                </div>
-                            </div>
-                            <div className={`c-service-partner__item`}>
-                                <div className={`c-service-partner__card`}
-                                     style={{backgroundImage: `url(${partnerImg})`}}>
-                                    <strong className={`c-service-partner__label`}>White Label partner</strong>
-                                    <h3 className={`c-service-partner__title`}>e11group</h3>
-                                    <a href="https://e11group.com/" target={`_blank`}><span
-                                        className={`screen-reader-text`}>e11group</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
                 <HighlightCta/>
             </main>
             <Footer/>

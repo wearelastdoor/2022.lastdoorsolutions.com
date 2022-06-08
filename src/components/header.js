@@ -109,7 +109,7 @@ const Header = ({logoImage, headerVisible}) => {
                         <li>
                             <TransitionLink
                                 to="/"
-                                title="home"
+                                title="Home"
                                 exit={{
                                     length: 0.6,
                                     trigger: ({exit, e, node}) =>
@@ -120,13 +120,13 @@ const Header = ({logoImage, headerVisible}) => {
                                     trigger: ({entry, node}) => newContent(node),
                                 }}
                             >
-                                home
+                                Home
                             </TransitionLink>
                         </li>
                         <li>
                             <TransitionLink
                                 to="/about/"
-                                title="about"
+                                title="About"
                                 exit={{
                                     length: 0.6,
                                     trigger: ({exit, e, node}) =>
@@ -137,13 +137,13 @@ const Header = ({logoImage, headerVisible}) => {
                                     trigger: ({entry, node}) => newContent(node),
                                 }}
                             >
-                                about
+                                About
                             </TransitionLink>
                         </li>
                         <li>
                             <TransitionLink
                                 to="/work/"
-                                title="cases"
+                                title="Cases"
                                 exit={{
                                     duration: 2,
                                     trigger: ({exit, e, node}) =>
@@ -154,7 +154,7 @@ const Header = ({logoImage, headerVisible}) => {
                                     trigger: ({entry, node}) => newContent(node),
                                 }}
                             >
-                                cases
+                                Cases
                             </TransitionLink>
                         </li>
                         <li>
@@ -177,7 +177,7 @@ const Header = ({logoImage, headerVisible}) => {
                         <li>
                             <TransitionLink
                                 to="/contact/"
-                                title="contact"
+                                title="Contact"
                                 exit={{
                                     duration: 2,
                                     trigger: ({exit, e, node}) =>
@@ -188,7 +188,7 @@ const Header = ({logoImage, headerVisible}) => {
                                     trigger: ({entry, node}) => newContent(node),
                                 }}
                             >
-                                contact
+                                Contact
                             </TransitionLink>
                         </li>
                     </ul>

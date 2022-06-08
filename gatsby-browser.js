@@ -18,7 +18,7 @@
                      Counter: $(this).text(),
                  },
                  {
-                     duration: 3000,
+                     duration: 1000,
                      easing: "swing",
                      step: function (now) {
                          $(this).text(Math.ceil(now))
@@ -27,10 +27,10 @@
                      complete: function () {
                          setTimeout(function () {
                              $("#c-loader").addClass("completed")
-                         }, 1000)
+                         }, 500)
                          setTimeout(function () {
                              $("body").addClass("content-loaded")
-                         }, 1000)
+                         }, 500)
                      },
                  }
              )

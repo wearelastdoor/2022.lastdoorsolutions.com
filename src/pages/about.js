@@ -24,7 +24,7 @@ const AboutPage = () => (
       />
       <PageBanner
         pageName={`Our Story`}
-        title={`Create,  excel, grow, & repeat.`}
+        title={`Create, excel, grow, & repeat.`}
       />
       <AboutIntro />
       <Stats />

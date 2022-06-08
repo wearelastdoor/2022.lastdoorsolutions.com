@@ -1,6 +1,6 @@
 import * as React from "react"
 
-const PageBanner = ({ title, pageName, themeType, containerWidth }) => {
+const PageBanner = ({ title, pageName, themeType, containerWidth, pageDescription }) => {
 
   return (
     <section
@@ -14,10 +14,13 @@ const PageBanner = ({ title, pageName, themeType, containerWidth }) => {
           <h1
             className="c-page-banner__title"
             title={title}
-            style={{ maxWidth: containerWidth ? containerWidth : 620 }}
+            style={{ maxWidth: containerWidth ? containerWidth : 810 }}
           >
             {title}
           </h1>
+          <div className={`c-hero-intro__description`}>
+              <p>{pageDescription}</p>
+          </div>
         </div>
       </div>
     </section>

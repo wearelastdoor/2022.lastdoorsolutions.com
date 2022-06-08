@@ -8,7 +8,9 @@ import svgOval from '../images/svg-oval.svg'
 import svgTriangle from '../images/svg-triangle.svg'
 import svgRectangle from '../images/svg-rectangle.svg'
 
-import partnerImg from '../images/partner-01.webp'
+import partnerImg from '../images/anchorwave_white_label_partner.jpg'
+import partnerImg2 from '../images/highstep_white_label_partner.jpg'
+import partnerImg3 from '../images/e11group_white_label_partner.jpg'
 
 // Import Components
 import Footer from "../components/footer";
@@ -215,7 +217,7 @@ const ServiceSingle = () => {
                             </div>
                             <div className={`c-service-partner__item`}>
                                 <div className={`c-service-partner__card`}
-                                     style={{backgroundImage: `url(${partnerImg})`}}>
+                                     style={{backgroundImage: `url(${partnerImg2})`}}>
                                     <strong className={`c-service-partner__label`}>White Label partner</strong>
                                     <h3 className={`c-service-partner__title`}>Higstep Technologies</h3>
                                     <a href="https://highstep.com/" target={`_blank`}><span
@@ -224,7 +226,7 @@ const ServiceSingle = () => {
                             </div>
                             <div className={`c-service-partner__item`}>
                                 <div className={`c-service-partner__card`}
-                                     style={{backgroundImage: `url(${partnerImg})`}}>
+                                     style={{backgroundImage: `url(${partnerImg3})`}}>
                                     <strong className={`c-service-partner__label`}>White Label partner</strong>
                                     <h3 className={`c-service-partner__title`}>e11group</h3>
                                     <a href="https://e11group.com/" target={`_blank`}><span

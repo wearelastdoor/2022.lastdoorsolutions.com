@@ -5,7 +5,7 @@ import TransitionLink from "gatsby-plugin-transition-link";
 import { animateObjects, newContent } from "../components/layout";
 import Footer from "../components/footer";
 
-import anchorwave_logo from "../images/anchorwave-logo-white.png";
+import highstep_logo from "../images/highsep-white-logo.png";
 import welcome_illustration from "../images/grapic-welcome.svg";
 import projectImage1 from "../images/projects_anchorwave/agency_coach_last_door.webp";
 import projectImage2 from "../images/projects_anchorwave/amg_aesthetics_last_door.webp";
@@ -72,7 +72,7 @@ const AnchorwavePage = () => {
             </TransitionLink>
 
             <img
-              src={anchorwave_logo}
+              src={highstep_logo}
               className="c-case-study-hero__logo"
               alt={`anchorwave branding`}
             />
@@ -83,7 +83,7 @@ const AnchorwavePage = () => {
             <dl className={`c-case-study-hero__meta`}>
               <div>
                 <dt>Partner:</dt>
-                <dd>Highstep Technologies Inc.</dd>
+                <dd>8+ years of working together</dd>
               </div>
               <div>
                 <dt>Locaiton:</dt>
@@ -130,7 +130,7 @@ const AnchorwavePage = () => {
               <h2 className={`c-concentration__title`}>concentrations</h2>
               <ul className={`c-concentration__list`}>
                 <li>UX and Strategy</li>
-                <li> Digital Marketing</li>
+                <li>Digital Marketing</li>
                 <li> Web Development</li>
                 <li>Software Development</li>
                 <li>Programming</li>

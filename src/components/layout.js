@@ -180,7 +180,11 @@ const Layout = ({children}) => {
                         const url = location.pathname
                         const slug = [
                             "/anchorwave/",
-                            "/anchorwave"
+                            "/anchorwave",
+                            "/highstep/",
+                            "/highstep",
+                            "/e11group/",
+                            "/e11group"
                         ]
                         return url === slug[0] ? (
                             <Header logoImage={logo} headerVisible={'hidden'}/>

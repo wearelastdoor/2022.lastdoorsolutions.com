@@ -138,7 +138,8 @@ module.exports = {
                     `/animated/`,
                     `/wordpress/`,
                     `/b2b-services/`,
-                    `/ux-design/`
+                    `/ux-design/`,
+                    `/e11group/`
                 ],
             },
         },

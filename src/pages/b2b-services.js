@@ -70,27 +70,68 @@ const ServiceSingle = () => {
                                 <img src={strategyIllustration} alt={`strategy Illustration`}/>
                             </figure>
                             <div className={`c-strategy__card`}>
-                                <div className="c-strategy__description">
-                                    <p>We help ignite the creative spark and direct that energy toward tangible results.
-                                        Important and user-centred insights with business validities lead us to grasp
-                                        the correct balance.</p>
-                                    <p>We believe that organizations aspiring for market leadership should instead rally
-                                        around an experience-led value proposition to carve out their competitive
-                                        advantage. This will lead them in the long term, as it’s an integral and
-                                        critical component of how you attract customers. We’ll work closely with you and
-                                        your team to make it happen.</p>
-                                </div>
-                                <div className="c-strategy__additional">
-
-                                    <p>This will lead them in the long term, as it’s an integral and critical component
-                                        of how you attract customers; feel confident about what they’re buying from your
-                                        company because there was plenty of thought put into each step during the
-                                        purchase process - all this leads up towards building strong relationships with
-                                        clients/prospects which can help drive sales (longer-lasting).</p>
-                                    <p>However, this can be difficult to capture with numbers alone. So instead, these
-                                        businesses should focus on an experience-led value proposition that will help
-                                        them attract more clients while also making sure employees feel like stars every
-                                        day at work because it has been exhilarating for everyone involved!</p>
+                                <div className="c-strategy__columns">
+                                    <section className="c-strategy__column">
+                                        <a href="/ux-design">Full-fledged UX</a>
+                                        <h3 className="c-strategy__columnTitle">Full-fledged UX</h3>
+                                        <p>User Experience stands at the heart of our agency and helps drive the products and projects to excellence.</p>
+                                        
+                                    </section>
+                                    <section className="c-strategy__column">
+                                        <a href="/ux-design">Product Strategy</a>
+                                        <h3 className={`c-strategy__columnTitle`}>Product Strategy</h3>
+                                        <p>User Experience stands at the heart of our agency and helps drive the products and projects to excellence.</p>
+                                    </section>
+                                    <section className="c-strategy__column">
+                                        <a href="/ux-design">High-Conversion Landing pages</a>
+                                        <h3 className={`c-strategy__columnTitle`}>Product Strategy</h3>
+                                        <p>User Experience stands at the heart of our agency and helps drive the products and projects to excellence.</p>
+                                    </section>
+                                    <section className="c-strategy__column">
+                                        <a href="/ux-design">Frontend</a>
+                                        <h3 className={`c-strategy__columnTitle`}>Frontend</h3>
+                                        <p>User Experience stands at the heart of our agency and helps drive the products and projects to excellence.</p>
+                                    </section>
+                                    <section className="c-strategy__column">
+                                        <a href="/ux-design">Custom WordPress Websites</a>
+                                        <h3 className={`c-strategy__columnTitle`}>Custom WordPress Websites</h3>
+                                        <p>User Experience stands at the heart of our agency and helps drive the products and projects to excellence.</p>
+                                    </section>
+                                    <section className="c-strategy__column">
+                                        <a href="/ux-design">Performance &amp; Speed Optimization</a>
+                                        <h3 className={`c-strategy__columnTitle`}>Performance &amp; Speed Optimization</h3>
+                                        <p>User Experience stands at the heart of our agency and helps drive the products and projects to excellence.</p>
+                                    </section>
+                                    <section className="c-strategy__column">
+                                        <a href="/ux-design">Custom WordPress Plugin Development</a>
+                                        <h3 className={`c-strategy__columnTitle`}>Custom WordPress Plugin Development</h3>
+                                        <p>User Experience stands at the heart of our agency and helps drive the products and projects to excellence.</p>
+                                    </section>
+                                    <section className="c-strategy__column">
+                                        <a href="/ux-design">WooCommerce Store</a>
+                                        <h3 className={`c-strategy__columnTitle`}>WooCommerce Store</h3>
+                                        <p>User Experience stands at the heart of our agency and helps drive the products and projects to excellence.</p>
+                                    </section>
+                                    <section className="c-strategy__column">
+                                        <a href="/ux-design">Custom PHP &amp; Laravel Sites</a>
+                                        <h3 className={`c-strategy__columnTitle`}>Custom PHP &amp; Laravel Sites</h3>
+                                        <p>User Experience stands at the heart of our agency and helps drive the products and projects to excellence.</p>
+                                    </section>
+                                    <section className="c-strategy__column">
+                                        <a href="/ux-design">React Web Apps</a>
+                                        <h3 className={`c-strategy__columnTitle`}>React Web Apps</h3>
+                                        <p>User Experience stands at the heart of our agency and helps drive the products and projects to excellence.</p>
+                                    </section>
+                                    <section className="c-strategy__column">
+                                        <a href="/ux-design">Gatsby Sites</a>
+                                        <h3 className={`c-strategy__columnTitle`}>Gatsby Sites</h3>
+                                        <p>User Experience stands at the heart of our agency and helps drive the products and projects to excellence.</p>
+                                    </section>
+                                    <section className="c-strategy__column">
+                                        <a href="/ux-design">Page Builder Sites</a>
+                                        <h3 className={`c-strategy__columnTitle`}>Page Builder Sites</h3>
+                                        <p>User Experience stands at the heart of our agency and helps drive the products and projects to excellence.</p>
+                                    </section>
                                 </div>
                             </div>
                         </div>

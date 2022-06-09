@@ -28,6 +28,53 @@
   }
 }
 
+.c-strategy__columns {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.c-strategy__column {
+  width: 44.5%;
+  @include fsz(20px);
+  letter-spacing: -0.38;
+  line-height: 1.5;
+  padding-top: 10px;
+  position: relative;
+  margin-bottom: 70px;
+
+  p {
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(23,33,42,1) 0%, rgba(23,33,42,0) 100%);
+  }
+
+  a {
+    position: absolute;
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+}
+
+.c-strategy__columnTitle {
+  @include fsz(20px);
+  font-family: $ff-primary-bold;
+  margin-bottom: 20px;
+}
+
 .c-strategy__header {
   max-width: 600px;
   width: 100%;

@@ -136,7 +136,8 @@ module.exports = {
                     `/battigayo/`,
                     `/anchorwave/`,
                     `/animated/`,
-                    `/service-single/`,
+                    `/wordpress/`,
+                    `/b2b-services/`,
                     `/ux-design/`
                 ],
             },

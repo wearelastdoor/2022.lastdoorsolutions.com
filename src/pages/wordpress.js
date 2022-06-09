@@ -168,8 +168,7 @@ const ServiceSingle = () => {
                                      alt={`Triangle`} width={124} height={132}/>
                                 <h3 className={`c-offering__title`}>WooCommerce Store</h3>
                                 <div className={`c-offering__description`}>
-                                    <p>We build custom plugins bespoke to your needs when it comes to security,
-                                        tailor-made features, and project needs.</p>
+                                    <p>We can literally do anything on WordPress, which makes us an expert in delivering world-classs WooCommerce products.</p>
                                 </div>
                             </div>
                             <div className={`c-offering__item`}>

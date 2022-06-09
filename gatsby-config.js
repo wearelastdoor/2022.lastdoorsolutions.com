@@ -139,6 +139,7 @@ module.exports = {
                     `/wordpress/`,
                     `/b2b-services/`,
                     `/ux-design/`,
+                    `/highstep/`,
                     `/e11group/`
                 ],
             },

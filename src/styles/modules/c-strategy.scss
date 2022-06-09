@@ -43,6 +43,12 @@
   position: relative;
   margin-bottom: 70px;
 
+  @media #{$phone} {
+    @include fsz(18px);
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
   p {
     &:last-child {
       margin-bottom: 10px;
@@ -73,6 +79,10 @@
   @include fsz(20px);
   font-family: $ff-primary-bold;
   margin-bottom: 20px;
+
+  @media #{$phone} {
+    margin-bottom: 15px;
+  }
 }
 
 .c-strategy__header {

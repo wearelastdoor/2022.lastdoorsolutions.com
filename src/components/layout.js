@@ -186,7 +186,7 @@ const Layout = ({children}) => {
                             "/e11group/",
                             "/e11group"
                         ]
-                        return url === slug[0] ? (
+                        return url === slug[0] || url === slug[1] || url === slug[2] ? (
                             <Header logoImage={logo} headerVisible={'hidden'}/>
                         ) : <Header logoImage={logo} headerVisible={`show`}/>
                     }}

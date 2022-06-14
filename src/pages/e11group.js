@@ -434,11 +434,7 @@ const AnchorwavePage = () => {
               </div>
               <div className={`c-accordion__body`}>
                 <p>
-                  Less than five meetings a year. This is because we use our
-                  project management tools at their maximum capacity. Rather
-                  than having meetings, we document almost everything and use
-                  Loom and similar apps to explain issues, tasks, and briefs if
-                  needed.
+                  This depends on the nature of the product we are working on. Mostly, every team member constantly communicates with the stake holders, and while the project is running, they conduct meetings at least 3-4 times a week. For other ongoing tasks, we don't do meetings. That's because generally, the distributed team of Last Door and Highstep communicate in Microsoft Teams to keep things on track. 
                 </p>
               </div>
             </div>

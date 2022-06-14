@@ -13,12 +13,6 @@ import projectImage3 from "../images/projects_anchorwave/amore_events_last_door.
 import projectImage4 from "../images/projects_anchorwave/boyce_thompson_arboretum_last_door.webp";
 import projectImage5 from "../images/projects_anchorwave/bryan_dulaney_last_door.webp";
 import projectImage6 from "../images/projects_anchorwave/foothills_club_last_door.webp";
-import projectImage7 from "../images/projects_anchorwave/gaon_plastic_surgery_last_door.webp";
-import projectImage8 from "../images/projects_anchorwave/glhn_last_door.webp";
-import projectImage9 from "../images/projects_anchorwave/interiors_in_design_last_door.webp";
-import projectImage10 from "../images/projects_anchorwave/never_ending_cashflow_last_door.webp";
-import projectImage11 from "../images/projects_anchorwave/stephen_larsen_last_door.webp";
-import projectImage12 from "../images/projects_anchorwave/valeria_grunbaum_last_door.webp";
 
 import toolLogo2 from "../images/tool-logo-2.png";
 import toolLogo3 from "../images/tool-logo-3.png";
@@ -371,39 +365,6 @@ const AnchorwavePage = () => {
             </div>
           </div>
         </div>
-        <div className={`c-showcase c-showcase--alt`}>
-          <div className={`container`}>
-            <div className={`c-showcase__carousel scale-carousel`}>
-              <div className={`c-front-showcase__image`}>
-                <img
-                  src={projectImage7}
-                  alt={`Gaon Plastic Surgery Last Door`}
-                />
-              </div>
-              <div className={`c-front-showcase__image`}>
-                <img src={projectImage8} alt={`GLHN Last Door`} />
-              </div>
-              <div className={`c-front-showcase__image`}>
-                <img
-                  src={projectImage9}
-                  alt={`Interiors in Design Last Door`}
-                />
-              </div>
-              <div className={`c-front-showcase__image`}>
-                <img
-                  src={projectImage10}
-                  alt={`Never Ending Cashflow Last Door`}
-                />
-              </div>
-              <div className={`c-front-showcase__image`}>
-                <img src={projectImage11} alt={`Stephen Larsen Last Door`} />
-              </div>
-              <div className={`c-front-showcase__image`}>
-                <img src={projectImage12} alt={`Valeria Grunbaum Last Door`} />
-              </div>
-            </div>
-          </div>
-        </div>
 
         <section className={`c-accordion`}>
           <div className={`container`}>
@@ -425,18 +386,15 @@ const AnchorwavePage = () => {
               </div>
               <div className={`c-accordion__body`}>
                 <p>
-                  Less than five meetings a year. This is because we use our
-                  project management tools at their maximum capacity. Rather
-                  than having meetings, we document almost everything and use
-                  Loom and similar apps to explain issues, tasks, and briefs if
-                  needed.
+                This depends on the nature of the product we are working on. Mostly, every team member constantly communicates with the stake holders, and while the project is running, they conduct meetings at least 3-4 times a week. For other ongoing tasks, we don't do meetings. That's because generally, the distributed team of Last Door and Highstep communicate in Microsoft Teams to keep things on track. 
+
                 </p>
               </div>
             </div>
             <div className={`c-accordion__item`}>
               <div className={`c-accordion__header`}>
                 <h3 className={`c-accordion__title`}>
-                  How many resources do you allocate for Anchorwave?
+                  How many resources do you allocate for Higstep?
                 </h3>
                 <button type={`button`} className={`c-accordion__button`}>
                   <span className={`screen-reader-text`}>
@@ -446,11 +404,7 @@ const AnchorwavePage = () => {
               </div>
               <div className={`c-accordion__body`}>
                 <p>
-                  Resources are subject to change according to the flow of
-                  projects and yearly plans. However, at least 1-3 dedicated
-                  human resources are allocated each year. P.S. The flexibility
-                  to increase/decrease resources helps our partners achieve
-                  their goals accordingly.
+                  We are highly flexible with resources. However, minimum 1 resource is allocated at all times.
                 </p>
               </div>
             </div>
@@ -466,7 +420,7 @@ const AnchorwavePage = () => {
                 </button>
               </div>
               <div className={`c-accordion__body`}>
-                <p>WordPress Websites.</p>
+                <p>DotNet Web Apps</p>
               </div>
             </div>
           </div>

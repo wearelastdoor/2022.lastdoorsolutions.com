@@ -48,7 +48,7 @@ const ServiceSingle = () => {
                             <div className={`c-service-partner__item`}>
                                 <div className={`c-service-partner__card`} style={{backgroundImage: `url(${partnerImg3})`}}>
                                     <h3 className={`c-service-partner__title`}>e11group</h3>
-                                    <a href="/e11group/">
+                                    <a href="https://e11group.com/" target="_blank" rel="noopener noreferrer">
                                         <span className={`screen-reader-text`}>e11group</span>
                                     </a>
                                 </div>

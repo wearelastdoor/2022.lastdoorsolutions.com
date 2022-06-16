@@ -21,9 +21,9 @@ const Leadership = () => {
           <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--outline">
               <StaticImage
-               src={`../../images/team/anibesh_thapa.png`}
-               alt="Anibesh Thapa"
-               className="c-leadership-card__image"
+                src={`../../images/team/anibesh_thapa.png`}
+                alt="Anibesh Thapa"
+                className="c-leadership-card__image"
               ></StaticImage>
               <h3 className="c-leadership-card__title">Anibesh Thapa</h3>
               <p className="c-leadership-card__subTitle">Web Developer</p>
@@ -32,9 +32,9 @@ const Leadership = () => {
           <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--outline">
               <StaticImage
-               src={`../../images/team/ankit_dhakal.png`}
-               alt="Ankit Dhakal"
-               className="c-leadership-card__image"
+                src={`../../images/team/ankit_dhakal.png`}
+                alt="Ankit Dhakal"
+                className="c-leadership-card__image"
               ></StaticImage>
               <h3 className="c-leadership-card__title">Ankit Dhakal</h3>
               <p className="c-leadership-card__subTitle">Database Engineer</p>
@@ -43,9 +43,9 @@ const Leadership = () => {
           <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--outline">
               <StaticImage
-               src={`../../images/team/bishal_mishra.png`}
-               alt="Bishal Mishra"
-               className="c-leadership-card__image"
+                src={`../../images/team/bishal_mishra.png`}
+                alt="Bishal Mishra"
+                className="c-leadership-card__image"
               ></StaticImage>
               <h3 className="c-leadership-card__title">Bishal Mishra</h3>
               <p className="c-leadership-card__subTitle">Product Lead</p>
@@ -54,9 +54,9 @@ const Leadership = () => {
           <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--outline">
               <StaticImage
-               src={`../../images/team/harry_chaudhary.png`}
-               alt="Harry Chaudhary"
-               className="c-leadership-card__image"
+                src={`../../images/team/harry_chaudhary.png`}
+                alt="Harry Chaudhary"
+                className="c-leadership-card__image"
               ></StaticImage>
               <h3 className="c-leadership-card__title">Harry Chaudhary</h3>
               <p className="c-leadership-card__subTitle">FrontEnd Developer</p>
@@ -65,9 +65,9 @@ const Leadership = () => {
           <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--outline">
               <StaticImage
-               src={`../../images/team/manish_kunwar.png`}
-               alt="Manish Kumar"
-               className="c-leadership-card__image"
+                src={`../../images/team/manish_kunwar.png`}
+                alt="Manish Kumar"
+                className="c-leadership-card__image"
               ></StaticImage>
               <h3 className="c-leadership-card__title">Manish Kumar</h3>
               <p className="c-leadership-card__subTitle">Data Analyst</p>
@@ -76,9 +76,20 @@ const Leadership = () => {
           <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--outline">
               <StaticImage
-               src={`../../images/team/prashidha_shrestha.png`}
-               alt="Prashidha Shrestha"
-               className="c-leadership-card__image"
+                src={`../../images/team/pradeep_thapa.png`}
+                alt="Pradeep Thapa"
+                className="c-leadership-card__image"
+              ></StaticImage>
+              <h3 className="c-leadership-card__title">Pradeep Thapa</h3>
+              <p className="c-leadership-card__subTitle">Copy Writer</p>
+            </div>
+          </div>
+          <div className="l-grid__column">
+            <div className="c-leadership-card c-leadership-card--outline">
+              <StaticImage
+                src={`../../images/team/prashidha_shrestha.png`}
+                alt="Prashidha Shrestha"
+                className="c-leadership-card__image"
               ></StaticImage>
               <h3 className="c-leadership-card__title">Prashidha Shrestha</h3>
               <p className="c-leadership-card__subTitle">Data Analyst</p>
@@ -87,9 +98,9 @@ const Leadership = () => {
           <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--outline">
               <StaticImage
-               src={`../../images/team/pravash_karki.png`}
-               alt="Pravash Karki"
-               className="c-leadership-card__image"
+                src={`../../images/team/pravash_karki.png`}
+                alt="Pravash Karki"
+                className="c-leadership-card__image"
               ></StaticImage>
               <h3 className="c-leadership-card__title">Pravash Karki</h3>
               <p className="c-leadership-card__subTitle">Founder/CEO</p>
@@ -98,9 +109,9 @@ const Leadership = () => {
           <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--outline">
               <StaticImage
-               src={`../../images/team/purna_man_shakya.png`}
-               alt="Purna Shakya"
-               className="c-leadership-card__image"
+                src={`../../images/team/purna_man_shakya.png`}
+                alt="Purna Shakya"
+                className="c-leadership-card__image"
               ></StaticImage>
               <h3 className="c-leadership-card__title">Purna Shakya</h3>
               <p className="c-leadership-card__subTitle">HR &amp; Finance</p>
@@ -109,9 +120,31 @@ const Leadership = () => {
           <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--outline">
               <StaticImage
-               src={`../../images/team/saramsh_khadka.png`}
-               alt="Saramsh Khadka"
-               className="c-leadership-card__image"
+                src={`../../images/team/saijeet_upadhyay.png`}
+                alt="Saijeet Upadhyay"
+                className="c-leadership-card__image"
+              ></StaticImage>
+              <h3 className="c-leadership-card__title">Saijeet Upadhyay</h3>
+              <p className="c-leadership-card__subTitle">Associate FrontEnd Dev</p>
+            </div>
+          </div>
+          <div className="l-grid__column">
+            <div className="c-leadership-card c-leadership-card--outline">
+              <StaticImage
+                src={`../../images/team/sandesh_thapa.png`}
+                alt="Sandesh Thapa"
+                className="c-leadership-card__image"
+              ></StaticImage>
+              <h3 className="c-leadership-card__title">Sandesh Thapa</h3>
+              <p className="c-leadership-card__subTitle">Associate FrontEnd Dev</p>
+            </div>
+          </div>
+          <div className="l-grid__column">
+            <div className="c-leadership-card c-leadership-card--outline">
+              <StaticImage
+                src={`../../images/team/saramsh_khadka.png`}
+                alt="Saramsh Khadka"
+                className="c-leadership-card__image"
               ></StaticImage>
               <h3 className="c-leadership-card__title">Saramsh Khadka</h3>
               <p className="c-leadership-card__subTitle">Data Analyst</p>
@@ -120,9 +153,9 @@ const Leadership = () => {
           <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--outline">
               <StaticImage
-               src={`../../images/team/sujal_karki.png`}
-               alt="Sujal Karki"
-               className="c-leadership-card__image"
+                src={`../../images/team/sujal_karki.png`}
+                alt="Sujal Karki"
+                className="c-leadership-card__image"
               ></StaticImage>
               <h3 className="c-leadership-card__title">Sujal Karki</h3>
               <p className="c-leadership-card__subTitle">Project Manager</p>
@@ -131,9 +164,9 @@ const Leadership = () => {
           <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--outline">
               <StaticImage
-               src={`../../images/team/sunita_pathak.png`}
-               alt="Sunita Pathak"
-               className="c-leadership-card__image"
+                src={`../../images/team/sunita_pathak.png`}
+                alt="Sunita Pathak"
+                className="c-leadership-card__image"
               ></StaticImage>
               <h3 className="c-leadership-card__title">Sunita Pathak</h3>
               <p className="c-leadership-card__subTitle">Operations Executive</p>

@@ -66,10 +66,10 @@ const Leadership = () => {
             <div className="c-leadership-card c-leadership-card--outline">
               <StaticImage
                 src={`../../images/team/manish_kunwar.png`}
-                alt="Manish Kumar"
+                alt="Manish Kunwar"
                 className="c-leadership-card__image"
               ></StaticImage>
-              <h3 className="c-leadership-card__title">Manish Kumar</h3>
+              <h3 className="c-leadership-card__title">Manish Kunwar</h3>
               <p className="c-leadership-card__subTitle">Data Analyst</p>
             </div>
           </div>

@@ -153,6 +153,17 @@ const Leadership = () => {
           <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--outline">
               <StaticImage
+                src={`../../images/dummy-face.png`}
+                alt="Shreya Chakradhar"
+                className="c-leadership-card__image"
+              ></StaticImage>
+              <h3 className="c-leadership-card__title">Shreya Chakradhar</h3>
+              <p className="c-leadership-card__subTitle">Business Dev</p>
+            </div>
+          </div>
+          <div className="l-grid__column">
+            <div className="c-leadership-card c-leadership-card--outline">
+              <StaticImage
                 src={`../../images/team/sujal_karki.png`}
                 alt="Sujal Karki"
                 className="c-leadership-card__image"
@@ -170,6 +181,17 @@ const Leadership = () => {
               ></StaticImage>
               <h3 className="c-leadership-card__title">Sunita Pathak</h3>
               <p className="c-leadership-card__subTitle">Operations Executive</p>
+            </div>
+          </div>
+          <div className="l-grid__column">
+            <div className="c-leadership-card c-leadership-card--outline">
+              <StaticImage
+                src={`../../images/team/sushant_pokharel.png`}
+                alt="Sushant Pokharel"
+                className="c-leadership-card__image"
+              ></StaticImage>
+              <h3 className="c-leadership-card__title">Sushant Pokharel</h3>
+              <p className="c-leadership-card__subTitle">Machine Learning Engineer</p>
             </div>
           </div>
           <div className="l-grid__column">

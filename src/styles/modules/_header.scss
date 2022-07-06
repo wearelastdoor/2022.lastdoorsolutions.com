@@ -110,7 +110,7 @@
   }
 
   .l-container {
-    max-width: 1004px;
+    max-width: 1100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -140,11 +140,11 @@
     opacity: 0;
 
     &:not(:last-child) {
-      margin-bottom: 18px;
+      margin-bottom: 22px;
     }
 
     a {
-      font-size: clamp(4.375rem, 10vw, 9.375rem);
+      font-size: clamp(3.5rem, 10vw, 6.8rem);
       text-decoration: none;
       font-family: $ff-primary-black;
       font-weight: normal;

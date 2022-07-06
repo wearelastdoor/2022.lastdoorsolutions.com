@@ -160,7 +160,7 @@ const Header = ({logoImage, headerVisible}) => {
                         <li>
                             <TransitionLink
                                 to="/b2b-services/"
-                                title="B2B"
+                                title="B2B Services"
                                 exit={{
                                     duration: 2,
                                     trigger: ({exit, e, node}) =>
@@ -171,7 +171,24 @@ const Header = ({logoImage, headerVisible}) => {
                                     trigger: ({entry, node}) => newContent(node),
                                 }}
                             >
-                                B2B
+                                B2B Services
+                            </TransitionLink>
+                        </li>
+                        <li>
+                            <TransitionLink
+                                to="/blog/"
+                                title="Blog"
+                                exit={{
+                                    duration: 2,
+                                    trigger: ({exit, e, node}) =>
+                                        animateObjectsFromMainMenu(exit, node),
+                                }}
+                                entry={{
+                                    delay: 0.8,
+                                    trigger: ({entry, node}) => newContent(node),
+                                }}
+                            >
+                                Blog
                             </TransitionLink>
                         </li>
                         <li>

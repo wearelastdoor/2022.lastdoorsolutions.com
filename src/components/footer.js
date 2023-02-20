@@ -2,7 +2,7 @@ import * as React from "react";
 import TransitionLink from "gatsby-plugin-transition-link";
 import { newContent, animateObjects } from "./layout";
 import SvgSprite from "../components/parts/svg-sprite";
-import {StaticImage} from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image";
 
 const Footer = () => (
   <footer className="c-footer">
@@ -91,70 +91,93 @@ const Footer = () => (
               </TransitionLink>
             </li>
           </ul>
-          <p className="c-footer__copyright">
+          <p className="c-footer__copyright desktop">
             &copy; {new Date().getFullYear()} lastdoor
           </p>
         </div>
         <div className="c-footer__contact">
-          <h2 className="c-footer__title">Talk to Us</h2>
-          <div className="c-footer__contactWrap">
-            <address className="contactPerson">
-              <div className="contactPerson__wrap">
-                <figure>
-                  <StaticImage
-                    src={`../images/footer/pravash_karki.png`}
-                    alt={`Display Picture of Pravash Karki`}
-                    className="contactPerson__image"
-                ></StaticImage>
-                </figure>
-                <div className="contactPerson__details">
-                  <h3 className="contactPerson__name">
-                    Pravash <span>Karki</span>
-                  </h3>
-                  <a
-                    href="mailto:pravash@lastdoorsolutions.com"
-                    rel="noreferrer"
-                    target="_blank"
-                  >pravash@lastdoorsolutions.com</a>
-                  <a
-                    href="tel:+9779851167777"
-                    rel="noreferrer"
-                    target="_blank"
-                    className="contactPerson__phone"
-                  >+977 9851 167 777</a>
+          <div className="c-footer__contactInner">
+            <h2 className="c-footer__title">Talk to Us</h2>
+            <div className="c-footer__contactWrap">
+              <address className="contactPerson">
+                <div className="contactPerson__wrap">
+                  <figure>
+                    <StaticImage
+                      src={`../images/footer/pravash_karki.png`}
+                      alt={`Display Picture of Pravash Karki`}
+                      className="contactPerson__image"
+                    ></StaticImage>
+                    <span className="contactPerson__location">NP</span>
+                  </figure>
+                  <div className="contactPerson__details">
+                    <h3 className="contactPerson__name">
+                      Pravash <span>Karki</span>
+                    </h3>
+                    <a
+                      href="mailto:pravash@lastdoorsolutions.com"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      pravash@lastdoorsolutions.com
+                    </a>
+                    <a
+                      href="tel:+9779851167777"
+                      rel="noreferrer"
+                      target="_blank"
+                      className="contactPerson__phone"
+                    >
+                      +977 9851 167 777
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </address>
-            <address className="contactPerson">
-              <div className="contactPerson__wrap">
-                <figure>
-                  <StaticImage
-                    src={`../images/footer/bishal_mishra.png`}
-                    alt={`Display Picture of Bishal Mishra`}
-                    className="contactPerson__image"
-                  ></StaticImage>
-                </figure>
-                <div className="contactPerson__details">
-                  <h3 className="contactPerson__name">
-                    Bishal <span>Mishra</span>
-                  </h3>
-                  <a
-                    href="mailto:bishal@lastdoorsolutions.com"
-                    rel="noreferrer"
-                    target="_blank"
-                  >bishal@lastdoorsolutions.com</a>
-                  <a
-                    href="tel:+9779851167777"
-                    rel="noreferrer"
-                    target="_blank"
-                    className="contactPerson__phone"
-                  >+977 9851 167 777</a>
+              </address>
+              <address className="contactPerson">
+                <div className="contactPerson__wrap">
+                  <figure>
+                    <StaticImage
+                      src={`../images/footer/bishal_mishra.png`}
+                      alt={`Display Picture of Bishal Mishra`}
+                      className="contactPerson__image"
+                    ></StaticImage>
+                    <span className="contactPerson__location">USA</span>
+                  </figure>
+                  <div className="contactPerson__details">
+                    <h3 className="contactPerson__name">
+                      Bishal <span>Mishra</span>
+                    </h3>
+                    <a
+                      href="mailto:bishal@lastdoorsolutions.com"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      bishal@lastdoorsolutions.com
+                    </a>
+                    <a
+                      href="tel:+9779851167777"
+                      rel="noreferrer"
+                      target="_blank"
+                      className="contactPerson__phone"
+                    >
+                      +1 (267) 278 3588
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </address>
+              </address>
+            </div>
           </div>
+          <a
+            href="mailto:hello@lastdoorsolutions.com"
+            rel="noreferrer"
+            target="_blank"
+            className="c-footer__link"
+          >
+            Looking for a job? Email us.
+          </a>
         </div>
       </div>
+      <p className="c-footer__copyright responsive">
+        &copy; {new Date().getFullYear()} lastdoor
+      </p>
     </div>
     <SvgSprite title="Svg Sprite" />
   </footer>

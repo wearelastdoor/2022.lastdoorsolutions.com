@@ -102,3 +102,60 @@
     order: 2;
   }
 }
+
+
+.contactPerson {
+  color: $c-white;
+  font-style: normal;
+  a {
+    display: block;
+    color: $c-white;
+    text-decoration: none;
+    @include fsz(16px);
+
+    &:hover, &:focus {
+      color: $c-tertiary;
+    }
+  }
+}
+
+.contactPerson__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.contactPerson__image {
+  max-width: 80px;
+  margin-right: 10px;
+}
+
+.contactPerson__name {
+  color: $c-white;
+  font-family: $ff-primary-bold;
+  @include fsz(22px);
+  letter-spacing: -1px;
+  margin-bottom: 0;
+
+  span {
+    font-family: $ff-primary;
+    opacity: .5;
+  }
+}
+
+a.contactPerson__phone {
+  @include fsz(20px);
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba($c-white, .25);
+  }
+}

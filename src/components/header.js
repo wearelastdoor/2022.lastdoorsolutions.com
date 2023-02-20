@@ -211,13 +211,10 @@ const Header = ({logoImage, headerVisible}) => {
                     </ul>
                     <ul className="main-nav__contact">
                         <li>
-                            <a href="tel:+16314193281">USA: +1 631 419 3281</a>
+                            <a href="tel:+12672783588">USA: +1 (267) 278 3588</a>
                         </li>
                         <li>
-                            <a href="tel:+442032866194">UK: +44 20 3286 6194</a>
-                        </li>
-                        <li>
-                            <a href="tel:+9779851167777">NP: +977 98 5116 7777</a>
+                            <a href="tel:+9779851167777">NP: +977 9851 167 777</a>
                         </li>
                         <li>
                             <a href="mailto:hello@lastdoorsolutions.com">hello@lastdoorsolutions.com</a>

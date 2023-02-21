@@ -17,7 +17,7 @@ const IndexPage = () => {
             <Seo/>
             <main className="main">
                 <MainHero
-                    title={`WordPress & Drupal development for agencies`}
+                    title={`Mastery of wordpress, drupal and frontend.`}
                     description={`<p>We shake hands with agencies to back their team by providing dedicated developers in tech stack like WordPress, Drupal, Laravel, Shopify, React, NextJS  and other web technologies.</p>`}
                     linkUrl="/contact/"
                     linkTitle={`Contact us`}

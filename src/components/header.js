@@ -160,7 +160,7 @@ const Header = ({logoImage, headerVisible}) => {
                         <li>
                             <TransitionLink
                                 to="/b2b-services/"
-                                title="B2B Services"
+                                title="For Agencies"
                                 exit={{
                                     duration: 2,
                                     trigger: ({exit, e, node}) =>

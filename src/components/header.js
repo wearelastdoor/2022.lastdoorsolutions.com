@@ -171,7 +171,7 @@ const Header = ({logoImage, headerVisible}) => {
                                     trigger: ({entry, node}) => newContent(node),
                                 }}
                             >
-                                B2B Services
+                                For Agencies
                             </TransitionLink>
                         </li>
                         <li>

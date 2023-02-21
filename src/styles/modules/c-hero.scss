@@ -38,7 +38,7 @@
     }
 
     .c-hero__title {
-        font-size: clamp(4.6875rem, 10vw, 7.5rem);
+        font-size: clamp(3.38rem, 10vw, 7.5rem);
         font-family: $ff-primary-black;
         font-weight: normal;
         color: $c-brand;
@@ -48,7 +48,7 @@
         position: relative;
         z-index: 1;
         margin-bottom: clamp(25px, 5vw, 33px);
-        width: 82.9%;
+        width: 89%;
         letter-spacing: -0.437475rem;
 
         @media screen and (max-width: 1300px) {

@@ -1,6 +1,6 @@
 //FontSize
 @function calculateRem($size) {
-  $remSize: $size / 16px;
+  $remSize: calc($size / 16px);
   @return $remSize * 1rem;
 }
 
@@ -50,8 +50,10 @@
       weight: normal;
       style: normal;
     }
+
     src: url('#{$file-path+$font-name}.eot');
-    src: local($font-family), local($font-family),
+    src: local($font-family),
+    local($font-family),
     url('#{$file-path+$font-name}.eot?#iefix') format('embedded-opentype'),
     url('#{$file-path+$font-name}.woff') format('woff'),
     url('#{$file-path+$font-name}.ttf') format('truetype');
@@ -59,17 +61,17 @@
 }
 
 @mixin line-height($font-size, $line-height) {
-  line-height: $line-height / $font-size;
+  line-height: calc($line-height / $font-size);
 }
 
 /* Mixing for letter-spacing
   eg: letter-spacing(100, 30px); The result will be in px like 1.2px
 */
 @mixin letter-spacing($spacing-value, $font-size) {
-  letter-spacing: $spacing-value / 1000 * $font-size;
+  letter-spacing: calc($spacing-value / 1000 * $font-size);
 }
 
-@mixin letter-stroke($stroke-color,$color) {
+@mixin letter-stroke($stroke-color, $color) {
   @supports ((text-stroke: 1px white) or (-webkit-text-stroke: 1px white)) {
     color: $color;
     -webkit-text-stroke: 1px $stroke-color;

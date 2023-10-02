@@ -227,7 +227,7 @@
     color: $c-white;
     margin-right: -85px;
 
-    @media screen and(max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       padding: 0 20px 30px;
       margin: 0;
     }
@@ -265,7 +265,7 @@
 .show-on-desktop {
   display: none;
 
-  @media screen and(min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     display: flex;
   }
 }
@@ -273,7 +273,7 @@
 .show-on-tablet {
   display: none;
 
-  @media screen and(max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     display: flex;
   }
 }

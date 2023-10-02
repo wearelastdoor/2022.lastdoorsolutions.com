@@ -166,7 +166,7 @@ const Footer = () => (
             </div>
           </div>
           <a
-            href="mailto:hello@lastdoorsolutions.com"
+            href="mailto:pravash@lastdoorsolutions.com"
             rel="noreferrer"
             target="_blank"
             className="c-footer__link"

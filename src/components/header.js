@@ -217,7 +217,7 @@ const Header = ({logoImage, headerVisible}) => {
                             <a href="tel:+9779851167777">NP: +977 9851 167 777</a>
                         </li>
                         <li>
-                            <a href="mailto:hello@lastdoorsolutions.com">hello@lastdoorsolutions.com</a>
+                            <a href="mailto:pravash@lastdoorsolutions.com">pravash@lastdoorsolutions.com</a>
                         </li>
                     </ul>
                 </div>

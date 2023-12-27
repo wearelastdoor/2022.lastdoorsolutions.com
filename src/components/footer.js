@@ -44,7 +44,7 @@ const Footer = () => (
             </li>
             <li>
               <TransitionLink
-                to="/B2B/"
+                to="/b2b-services/"
                 title="For Agencies"
                 exit={{
                   length: 0.6,
@@ -97,7 +97,7 @@ const Footer = () => (
         </div>
         <div className="c-footer__contact">
           <div className="c-footer__contactInner">
-            <h2 className="c-footer__title">Talk to Us</h2>
+            <h2 className="c-footer__title">BOOK A DISCOVERY CALL</h2>
             <div className="c-footer__contactWrap">
               <address className="contactPerson">
                 <div className="contactPerson__wrap">
@@ -176,7 +176,7 @@ const Footer = () => (
         </div>
       </div>
       <p className="c-footer__copyright responsive">
-        &copy; {new Date().getFullYear()} lastdoor
+        &copy; {new Date().getFullYear()} Last Door
       </p>
     </div>
     <SvgSprite title="Svg Sprite" />

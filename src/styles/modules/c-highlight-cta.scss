@@ -15,6 +15,7 @@
     position: relative;
     z-index: 1;
     padding: 0 0 220px;
+
     @media #{$phone} {
       padding: 0 0 120px;
     }
@@ -39,9 +40,11 @@
   padding: 60px;
   position: relative;
   z-index: 1;
+
   @media #{$tablet} {
     padding: 40px;
   }
+
   @media #{$phone} {
     padding: 20px 0 20px 20px;
     margin-left: -20px;
@@ -53,9 +56,11 @@
   position: relative;
   z-index: 1;
   padding: 139px 60px 40px;
+
   @media #{$tablet} {
     padding: 139px 40px 60px;
   }
+
   @media #{$phone} {
     padding: 100px 20px 80px;
   }
@@ -95,7 +100,8 @@
   bottom: 0;
   z-index: -1;
 
-  &:after, &:before {
+  &:after,
+  &:before {
     content: '';
     position: absolute;
     display: block;
@@ -109,9 +115,11 @@
     background-color: $c-white;
     right: -999%;
     bottom: -60px;
+
     @media #{$tablet} {
       bottom: -40px;
     }
+
     @media #{$phone} {
       bottom: -20px
     }
@@ -180,6 +188,7 @@
 .c-highlight-cta__description {
   max-width: 534px;
   width: 100%;
+
   @media screen and (max-width: 820px) {
     max-width: 420px;
   }
@@ -219,10 +228,12 @@
   transition: ease all 0.25s;
   transform-origin: center center;
 }
+
 #text {
   animation: rotation 12s linear infinite;
   transform-origin: 50% 50%;
 }
+
 #contactIcon {
   transition: ease all 0.25s;
   cursor: pointer;
@@ -234,7 +245,8 @@
     transform: scale(1.1);
     transform-origin: center;
 
-    #fence,.stage {
+    #fence,
+    .stage {
       opacity: 0;
     }
 
@@ -244,11 +256,12 @@
     }
 
     #text {
-      animation: rotation 4s cubic-bezier(0.46,0.03,0.52,0.96) infinite;
+      animation: rotation 4s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
     }
+
     #arrow {
       transform-origin: center;
-      animation: tilt 4s  ease-in-out infinite;
+      animation: tilt 4s ease-in-out infinite;
     }
   }
 }
@@ -271,9 +284,11 @@
   0% {
     transform: rotate(178deg);
   }
+
   50% {
     transform: rotate(235deg);
   }
+
   100% {
     transform: rotate(178deg);
   }

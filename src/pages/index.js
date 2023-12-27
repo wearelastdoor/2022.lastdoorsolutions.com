@@ -17,10 +17,10 @@ const IndexPage = () => {
             <Seo/>
             <main className="main">
                 <MainHero
-                    title={`Mastery of wordpress, drupal and frontend.`}
-                    description={`<p>We shake hands with agencies to back their team by providing dedicated developers in tech stack like WordPress, Drupal, Laravel, Shopify, React, NextJS  and other web technologies.</p>`}
-                    linkUrl="/contact/"
-                    linkTitle={`Contact us`}
+                    title={`Crafting Exceptional Digital Experiences.`}
+                    description={`<p>At Last Door, we are architects of the digital world, designing and building beautiful, impactful digital products, brands, and experiences.</p>`}
+                    linkUrl="/about/"
+                    linkTitle={`About Us`}
                 />
 
                 <Intro title={`A seamless travel booking experience.`}

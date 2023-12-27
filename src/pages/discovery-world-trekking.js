@@ -68,12 +68,12 @@ const DiscoveryWorldTrekkingPage = () => {
                 />
 
                 <ImageContent
-                    id="1" //id from imageContent.json to get the content from respective object
+                    id={1} //id from imageContent.json to get the content from respective object
                     themeType="dark" //use "dark" for dark & "light" for light theme || or null: On default it`s light
                     layout="" //use "reversed" for reversed layout or "" empty for detault layout
                 />
                 <ImageContent
-                    id="2"
+                    id={2}
                     themeType="dark" //use "dark" for dark & "light" for light theme || or null: On default it`s light
                     layout="reversed" //use "reversed" for reversed layout or "" empty for detault layout
                 />
@@ -86,12 +86,12 @@ const DiscoveryWorldTrekkingPage = () => {
                     designation="Founder, Discovery World Trekking"
                 />
                 <ImageContent
-                    id="3"
+                    id={3}
                     themeType="dark" //use "dark" for dark & "light" for light theme || or null: On default it`s light
                     layout="" //use "reversed" for reversed layout & "" empty for detault or remove layout
                 />
                 <ImageContent
-                    id="4"
+                    id={4}
                     themeType="dark" //use "dark" for dark & "light" for light theme || or null: On default it`s light
                     layout="reversed" //use "reversed" for reversed layout or "" empty for detault layout
                 />

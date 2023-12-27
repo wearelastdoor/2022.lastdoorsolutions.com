@@ -1,68 +1,35 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import TransitionLink from "gatsby-plugin-transition-link";
-import {animateObjects, newContent} from "./layout";
-import {useEffect} from "react"
-import $ from 'jquery'
-// import {TweenMax} from "gsap";
+import { animateObjects, newContent } from "./layout";
+import { motion, useAnimation } from "framer-motion";
+const HighlightCta = ({ themeColor }) => {
+  function createHTML(props) {
+    return { __html: props };
+  }
 
-const HighlightCta = ({themeColor}) => {
+  const textArray = ["Team", "Project", "Partnership"];
+  const [currentText, setCurrentText] = useState("");
+  const controls = useAnimation();
+  let currentIdx = 0;
 
-    function createHTML(props) {
-        return {__html: props}
-    }
+  useEffect(() => {
+    const changeText = async () => {
+      await controls.start({ opacity: 0 });
+      setCurrentText(textArray[currentIdx]);
+      currentIdx = (currentIdx + 1) % textArray.length;
+      await controls.start({ opacity: 1 });
+    };
 
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            $(document).ready(function () {
-                var text = ["Team", "Project", "Partnership"],
-                    counter = 0,
-                    elem = $(".c-highlight-cta__title"),
-                    elemChild = elem.find('strong');
-                setInterval(change, 3500);
+    changeText();
+    const intervalId = setInterval(() => {
+      changeText();
+    }, 3500);
 
-                function change() {
-                    elemChild.fadeOut(function () {
-                        elem.prop('title', elem.text())
-                        elemChild.html(text[counter]);
-                        counter++;
-                        if (counter >= text.length) {
-                            counter = 0;
-                        }
-                        elemChild.fadeIn();
-                    });
-                }
-            })
-            //
-            // const svgWrapper = document.getElementById('contactIcon')
-            // const svgText = document.getElementById('text')
-            // const speed = 12;
-            // const speedHover = 4;
-            // const easingNormal = 'linear';
-            // const easingHover = 'cubic-bezier(0.46,0.03,0.52,0.96)';
-            //
-            // const animation = function (element, speed, easingS) {
-            //     TweenMax.to(element, speed, {
-            //         rotation: '+=360',
-            //         transformOrigin: 'center center',
-            //         ease: easingS,
-            //         repeat: -1
-            //     });
-            // };
-            //
-            // animation(svgText, speed, easingNormal);
-            //
-            // svgWrapper.addEventListener('mouseenter', function () {
-            //     animation(svgText, speedHover, easingHover);
-            // });
-            //
-            // svgWrapper.addEventListener('mouseleave', function () {
-            //     animation(svgText, speed, easingNormal);
-            // });
-
-        }
-    })
-
-    const badgeSvg = `
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [controls]);
+  const badgeSvg = `
 <svg id="contactIcon" width="195px" height="195px" viewBox="0 0 195 195" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>contact</title>
     <defs>
@@ -80,44 +47,58 @@ const HighlightCta = ({themeColor}) => {
             <circle id="stage" stroke="#1B252E" stroke-width="0.75" fill="#1B252E" cx="97" cy="97" r="42.625"></circle>
             <polygon id="arrow" fill="#FCF113" fill-rule="nonzero" transform="translate(97.000000, 97.000000) scale(-1, -1) translate(-97.000000, -97.000000) " points="109.812995 82 85.0427892 106.770206 85.0427892 92.22187 82 92.22187 82 112 101.77813 112 101.77813 108.957211 87.229794 108.957211 112 84.1870048"></polygon>
         </g>
-    </g>
-</svg>`
+    </g></svg>`;
 
+  return (
+    <section className={`c-highlight-cta ${themeColor}`}>
+      <div className={`container`}>
+        <div className="c-highlight-cta__holder">
+          <span className={`c-highlight-cta__decorate`}>
+            <span className={`screen-reader-text`}>decorate</span>
+          </span>
+          <div className="c-highlight-cta__card">
+            <TransitionLink
+              className={`c-highlight-cta__btn`}
+              to="/contact/"
+              title="Contact"
+              exit={{
+                length: 0.6,
+                trigger: ({ exit, e, node }) => animateObjects(exit, node),
+              }}
+              entry={{
+                delay: 0.7,
+                trigger: ({ entry, node }) => newContent(node),
+              }}
+              dangerouslySetInnerHTML={createHTML(badgeSvg)}
+            />
 
-    return (
-        <section className={`c-highlight-cta ${themeColor}`}>
-            <div className={`container`}>
-                <div className="c-highlight-cta__holder">
-                        <span className={`c-highlight-cta__decorate`}><span
-                            className={`screen-reader-text`}>decorate</span></span>
-                    <div className="c-highlight-cta__card">
-                        <TransitionLink className={`c-highlight-cta__btn`}
-                                        to="/contact/" title="Contact" exit={{
-                            length: 0.6,
-                            trigger: ({exit, e, node}) => animateObjects(exit, node),
-                        }}
-                                        entry={{
-                                            delay: 0.7,
-                                            trigger: ({entry, node}) => newContent(node),
-                                        }}
-                                        dangerouslySetInnerHTML={createHTML(badgeSvg)}
-                        />
-
-                        <div className="c-highlight-cta__content">
-                            <h2 className={`c-highlight-cta__title`} title={`Let’s
-                                build your ideal Team today!`}>Let’s
-                                build your ideal <strong>Team</strong> today!</h2>
-                            <div className={`c-highlight-cta__description`}>
-                                <p>Please tell us a bit about you, your project, and how best to reach you. We’ll
-                                    get right back to you.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className="c-highlight-cta__content">
+              <h2
+                className={`c-highlight-cta__title`}
+                title={`Let’s build your ideal ${currentText} today!`}
+              >
+                Let’s build your ideal{" "}
+                <motion.strong
+                  initial={{ opacity: 1 }}
+                  animate={controls}
+                  transition={{ duration: 0.3 }}
+                >
+                  {currentText}
+                </motion.strong>{" "}
+                today!
+              </h2>
+              <div className={`c-highlight-cta__description`}>
+                <p>
+                  Please tell us a bit about you, your project, and how best to
+                  reach you. We’ll get right back to you.
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-    )
-}
-
-export default HighlightCta
+export default HighlightCta;

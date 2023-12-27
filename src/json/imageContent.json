@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "contentId": 1,
     "title": "Much longer surfing than ever",
     "description": "<p>The average surfing time increased from 2 minutes to 8 and a half. Customer questionnaires were decreased by 90%.</p>",
     "image": {
@@ -11,7 +11,7 @@
   },
 
   {
-    "id": 2,
+    "contentId": 2,
     "title": "More users,<br/> easy checkout, more conversions",
     "description": "<p>We saw a rise in conversion rate and bookings. And, that was a 7 times increase in comparison to the old site.</p>",
     "image": {
@@ -21,7 +21,7 @@
     }
   },
   {
-    "id": 3,
+    "contentId": 3,
     "title": "Vast growth in organic travelers",
     "description": "<p>DWT saw its all-time high usage on the site backed by our strong SEO which eventually helped to grow the organic customers.</p>",
     "image": {
@@ -32,7 +32,7 @@
   },
 
   {
-    "id": 4,
+    "contentId": 4,
     "title": "Happy users, <br/>happy customers, proud creators",
     "description": "<p>The feedback from customers and clients were pretty amazing with a few flaws, which the team solved later on.</p>",
     "image": {

@@ -7,12 +7,13 @@ const HighlightCta = ({ themeColor }) => {
     return { __html: props };
   }
 
-  const textArray = ["Team", "Project", "Partnership"];
   const [currentText, setCurrentText] = useState("");
   const controls = useAnimation();
-  let currentIdx = 0;
 
   useEffect(() => {
+    let currentIdx = 0;
+    const textArray = ["Team", "Project", "Partnership"];
+
     const changeText = async () => {
       await controls.start({ opacity: 0 });
       setCurrentText(textArray[currentIdx]);

@@ -8,6 +8,7 @@
 
   .c-case-study__header {
     margin-bottom: 54px;
+
     @media #{$small-screen} {
       margin-bottom: 34px;
     }
@@ -22,6 +23,7 @@
     font-weight: normal;
     margin-bottom: 15px;
     text-transform: uppercase;
+
     @media #{$small-screen} {
       margin-bottom: 5px;
     }
@@ -78,6 +80,7 @@
     @media #{$tablet} {
       margin-bottom: 140px;
     }
+
     @media #{$phone} {
       margin-bottom: 80px;
     }
@@ -100,6 +103,7 @@
     padding: 40px 50px 0;
     position: relative;
     z-index: 1;
+
     @media #{$tablet} {
       padding: 40px;
     }
@@ -110,41 +114,42 @@
     }
   }
 
-  .c-case-study__logo {
-    margin-bottom: -3px;
-  }
 
   .c-case-study__logo-name {
     font-size: clamp(1.1rem, 4vw, 1.25rem);
     color: $c-white;
     letter-spacing: -0.5px;
+    width: min(350px, 100%);
   }
 
   .c-case-study__first-letter {
-    filter: drop-shadow(24px 24px 35px rgba($c-black, 0.15));
     position: absolute;
     bottom: -80px;
     left: 80px;
+    right: 80px;
 
     @media screen and (max-width: 1024px) {
       max-width: 350px;
       left: 60px;
+      right: 60px;
     }
 
     @media #{$phone} {
       position: relative;
       left: 0;
+      right: 0;
       margin-top: -60px;
     }
 
     .gatsby-image-wrapper {
-      margin-bottom: -10px;
-      margin-left: -10px;
+      filter: drop-shadow(24px 24px 35px rgba($c-black, 0.15));
+      margin: -10px auto 0;
     }
   }
 
   .c-case-study__content {
-    padding: 100px 80px;
+    padding: 100px 60px;
+
     @media screen and (max-width: 1024px) {
       padding: 60px 50px;
     }
@@ -163,7 +168,7 @@
 
     .c-case-study__title {
       font-size: clamp(2rem, 5vw, 3.75rem);
-      width: min(322px, 100%);
+      width: min(402px, 100%);
       letter-spacing: -4px;
       line-height: 1;
       margin-bottom: 28px;

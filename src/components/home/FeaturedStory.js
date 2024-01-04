@@ -42,7 +42,7 @@ const FeaturedStory = () => {
       }
     }
   `);
-  console.log(data);
+
   return (
     <section className={`c-featured-story`}>
       <div className={`container`}>

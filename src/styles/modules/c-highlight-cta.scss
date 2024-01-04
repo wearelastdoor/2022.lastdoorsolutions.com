@@ -62,7 +62,7 @@
   }
 
   @media #{$phone} {
-    padding: 100px 20px 80px;
+    padding: 120px 20px 80px;
   }
 
 
@@ -205,8 +205,8 @@
   transition: none;
 
   @media #{$phone} {
-    right: 20px;
-    top: -60px;
+    right: 40px;
+    top: -90px;
     max-width: 140px;
   }
 }

@@ -125,7 +125,7 @@
     bottom: 0;
     right: 0;
     z-index: 1;
-    opacity: 0;
+    opacity: 1;
     cursor: pointer;
 
     .gatsby-image-wrapper {
@@ -134,60 +134,42 @@
     }
     &.c-3d-carousel__item-active {
         z-index: 6;
-        opacity: 1;
     }
 
-    // &.c-3d-carousel__item-before--1,
-    // &.c-3d-carousel__item-after--1 {
-    //     z-index: 2;
-    // }
-
-    // &.c-3d-carousel__item-before--2,
-    // &.c-3d-carousel__item-after--2 {
-    //     z-index: 1;
-    // }
 
     &.c-3d-carousel__item-after--1 {
         transform: translate3d(150px, 0, 0) scale(0.8);
-        opacity: 1;
         z-index: 4;
     }
 
     &.c-3d-carousel__item-after--2 {
         transform: translate3d(300px, 0, 0) scale(0.6);
-        opacity: 1;
         z-index: 3;
     }
 
     &.c-3d-carousel__item-after--3 {
         transform: translate3d(380px, 0, 0) scale(0.4);
-        opacity: 1;
         z-index: 2;
     }
     &.c-3d-carousel__item-after--4 {
         transform: translate3d(420px, 0, 0) scale(0.2);
-        opacity: 1;
         z-index: 1;
     }
 
     &.c-3d-carousel__item-before--1 {
         transform: translate3d(-150px, 0, 0) scale(0.8);
-        opacity: 1;
     }
 
     &.c-3d-carousel__item-before--2 {
         transform: translate3d(-300px, 0, 0) scale(0.6);
-        opacity: 1;
     }
 
     &.c-3d-carousel__item-before--3 {
         transform: translate3d(-380px, 0, 0) scale(0.4);
-        opacity: 1;
     }
 
     &.c-3d-carousel__item-before--4 {
         transform: translate3d(-420px, 0, 0) scale(0.2);
-        opacity: 1;
     }
 }
 

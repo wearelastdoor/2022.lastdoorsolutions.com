@@ -47,8 +47,8 @@ const AnchorwavePage = () => {
         <section className={`c-case-study-hero`}>
           <div className={`container`}>
             <TransitionLink
-              to="/"
-              title="Home"
+              to="/work/"
+              title="Work"
               className={"c-case-study-hero__back"}
               exit={{
                 length: 0.6,
@@ -386,8 +386,13 @@ const AnchorwavePage = () => {
               </div>
               <div className={`c-accordion__body`}>
                 <p>
-                This depends on the nature of the product we are working on. Mostly, every team member constantly communicates with the stake holders, and while the project is running, they conduct meetings at least 3-4 times a week. For other ongoing tasks, we don't do meetings. That's because generally, the distributed team of Last Door and Highstep communicate in Microsoft Teams to keep things on track. 
-
+                  This depends on the nature of the product we are working on.
+                  Mostly, every team member constantly communicates with the
+                  stake holders, and while the project is running, they conduct
+                  meetings at least 3-4 times a week. For other ongoing tasks,
+                  we don't do meetings. That's because generally, the
+                  distributed team of Last Door and Highstep communicate in
+                  Microsoft Teams to keep things on track.
                 </p>
               </div>
             </div>
@@ -404,7 +409,8 @@ const AnchorwavePage = () => {
               </div>
               <div className={`c-accordion__body`}>
                 <p>
-                  We are highly flexible with resources. However, minimum 1 resource is allocated at all times.
+                  We are highly flexible with resources. However, minimum 1
+                  resource is allocated at all times.
                 </p>
               </div>
             </div>

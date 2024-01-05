@@ -54,8 +54,8 @@ const AnchorwavePage = () => {
         <section className={`c-case-study-hero`}>
           <div className={`container`}>
             <TransitionLink
-              to="/"
-              title="Home"
+              to="/work/"
+              title="Work"
               className={"c-case-study-hero__back"}
               exit={{
                 length: 0.6,

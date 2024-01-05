@@ -92,7 +92,7 @@ const Footer = () => (
             </li>
           </ul>
           <p className="c-footer__copyright desktop">
-            &copy; {new Date().getFullYear()} lastdoor
+            &copy; {new Date().getFullYear()} Last Door
           </p>
         </div>
         <div className="c-footer__contact">
@@ -166,7 +166,7 @@ const Footer = () => (
             </div>
           </div>
           <a
-            href="mailto:pravash@lastdoorsolutions.com"
+            href="mailto:hr@lastdoorsolutions.com"
             rel="noreferrer"
             target="_blank"
             className="c-footer__link"

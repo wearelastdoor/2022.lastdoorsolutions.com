@@ -1,0 +1,86 @@
+[
+  {
+    "teams": [
+      {
+        "name": "Pravash Karki",
+        "designation": "Founder/CEO",
+        "image": {
+          "baseUrl": "../images/team/pravash_karki.png",
+          "alt": "Pravash Karki"
+        }
+      },
+      {
+        "name": "Sunita Pathak",
+        "designation": "Operations Executive",
+        "image": {
+          "baseUrl": "../images/team/sunita_pathak.png",
+          "alt": "Sunita Pathak"
+        }
+      },
+      {
+        "name": "Bishal Mishra",
+        "designation": "Product Lead",
+        "image": {
+          "baseUrl": "../images/team/bishal_mishra.png",
+          "alt": "Bishal Mishra"
+        }
+      },
+      {
+        "name": "Sachit Tandukar",
+        "designation": "Senior Programmer",
+        "image": {
+          "baseUrl": "../images/team/sachit_tandukar.png",
+          "alt": "Sachit Tandukar"
+        }
+      },
+      {
+        "name": "Sujal Karki",
+        "designation": "Project Lead",
+        "image": {
+          "baseUrl": "../images/team/sujal_karki.png",
+          "alt": "Sujal Karki"
+        }
+      },
+      {
+        "name": "Anibesh Thapa",
+        "designation": "Lead Developer",
+        "image": {
+          "baseUrl": "../images/team/anibesh_thapa.png",
+          "alt": "Anibesh Thapa"
+        }
+      },
+      {
+        "name": "Harry Chaudhary",
+        "designation": "Senior Developer",
+        "image": {
+          "baseUrl": "../images/team/harry_chaudhary.png",
+          "alt": "Harry Chaudhary"
+        }
+      },
+      {
+        "name": "Saijeet Upadhyay",
+        "designation": "Web Developer",
+        "image": {
+          "baseUrl": "../images/team/saijeet_upadhyay.png",
+          "alt": "Saijeet Upadhyay"
+        }
+      },
+      {
+        "name": "Sandesh Thapa",
+        "designation": "Web Developer",
+        "image": {
+          "baseUrl": "../images/team/sandesh_thapa.png",
+          "alt": "Sandesh Thapa"
+        }
+      },
+      {
+        "name": "Sujan Danai",
+        "designation": "HR & Finance",
+        "image": {
+          "baseUrl": "../images/team/sujan_danai.png",
+          "alt": "Sujan Danai"
+        }
+      }
+    ]
+  }
+]

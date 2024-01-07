@@ -1,7 +1,32 @@
-import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Leadership = () => {
+  const imageSize = 180;
+  const data = useStaticQuery(graphql`
+    {
+      ourTeam: ourTeamJson {
+        id
+        teams {
+          name
+          designation
+          image {
+            baseUrl {
+              childImageSharp {
+                fluid(quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            alt
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <section className="c-leadership">
       <div className="l-container">
@@ -18,199 +43,47 @@ const Leadership = () => {
           </div>
         </div>
         <div className="l-grid">
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-                src={`../../images/team/anibesh_thapa.png`}
-                alt="Anibesh Thapa"
-                className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Anibesh Thapa</h3>
-              <p className="c-leadership-card__subTitle">Web Developer</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-                src={`../../images/team/ankit_dhakal.png`}
-                alt="Ankit Dhakal"
-                className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Ankit Dhakal</h3>
-              <p className="c-leadership-card__subTitle">Database Engineer</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-                src={`../../images/team/bishal_mishra.png`}
-                alt="Bishal Mishra"
-                className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Bishal Mishra</h3>
-              <p className="c-leadership-card__subTitle">Product Lead</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-                src={`../../images/team/harry_chaudhary.png`}
-                alt="Harry Chaudhary"
-                className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Harry Chaudhary</h3>
-              <p className="c-leadership-card__subTitle">FrontEnd Developer</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-                src={`../../images/team/manish_kunwar.png`}
-                alt="Manish Kunwar"
-                className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Manish Kunwar</h3>
-              <p className="c-leadership-card__subTitle">Data Analyst</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-                src={`../../images/team/pradeep_thapa.png`}
-                alt="Pradeep Thapa"
-                className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Pradeep Thapa</h3>
-              <p className="c-leadership-card__subTitle">Copy Writer</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-                src={`../../images/team/prashidha_shrestha.png`}
-                alt="Prashidha Shrestha"
-                className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Prashidha Shrestha</h3>
-              <p className="c-leadership-card__subTitle">Data Analyst</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-                src={`../../images/team/pravash_karki.png`}
-                alt="Pravash Karki"
-                className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Pravash Karki</h3>
-              <p className="c-leadership-card__subTitle">Founder/CEO</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-                src={`../../images/team/purna_man_shakya.png`}
-                alt="Purna Shakya"
-                className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Purna Shakya</h3>
-              <p className="c-leadership-card__subTitle">HR &amp; Finance</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-                src={`../../images/team/saijeet_upadhyay.png`}
-                alt="Saijeet Upadhyay"
-                className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Saijeet Upadhyay</h3>
-              <p className="c-leadership-card__subTitle">Associate FrontEnd Dev</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-                src={`../../images/team/sandesh_thapa.png`}
-                alt="Sandesh Thapa"
-                className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Sandesh Thapa</h3>
-              <p className="c-leadership-card__subTitle">Associate FrontEnd Dev</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-                src={`../../images/team/saramsh_khadka.png`}
-                alt="Saramsh Khadka"
-                className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Saramsh Khadka</h3>
-              <p className="c-leadership-card__subTitle">Data Analyst</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-                src={`../../images/dummy-face.png`}
-                alt="Shreya Chakradhar"
-                className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Shreya Chakradhar</h3>
-              <p className="c-leadership-card__subTitle">Business Dev</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-                src={`../../images/team/sujal_karki.png`}
-                alt="Sujal Karki"
-                className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Sujal Karki</h3>
-              <p className="c-leadership-card__subTitle">Project Manager</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-                src={`../../images/team/sunita_pathak.png`}
-                alt="Sunita Pathak"
-                className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Sunita Pathak</h3>
-              <p className="c-leadership-card__subTitle">Operations Executive</p>
-            </div>
-          </div>
-          <div className="l-grid__column">
-            <div className="c-leadership-card c-leadership-card--outline">
-              <StaticImage
-                src={`../../images/team/sushant_pokharel.png`}
-                alt="Sushant Pokharel"
-                className="c-leadership-card__image"
-              ></StaticImage>
-              <h3 className="c-leadership-card__title">Sushant Pokharel</h3>
-              <p className="c-leadership-card__subTitle">Machine Learning Engineer</p>
-            </div>
-          </div>
+          {data.ourTeam.teams.map((team) => {
+            const { id, title, designation, image } = team;
+            return (
+              <div className="l-grid__column" key={id}>
+                <div className="c-leadership-card c-leadership-card--outline">
+                  <Img
+                    className="c-leadership-card__image"
+                    fluid={image.baseUrl.childImageSharp.fluid}
+                    alt={image.alt}
+                    style={{ maxWidth: `${imageSize}px` }}
+                  />
+
+                  <h3 className="c-leadership-card__title">{title}</h3>
+                  <p className="c-leadership-card__subTitle">{designation}</p>
+                </div>
+              </div>
+            );
+          })}
+
           <div className="l-grid__column">
             <div className="c-leadership-card c-leadership-card--linked">
               <StaticImage
                 src={`../../images/dummy-face.png`}
                 alt="Dummy Face"
                 className="c-leadership-card__image"
-              ></StaticImage>
-              <p className="c-leadership-card__title">join us</p>
-              <a href="mailto:hello@lastdoorsolutions.com" className="cover-link">
-                <span className="visually-hidden">hello@lastdoorsolutions.com</span>
+              />
+              <p className="c-leadership-card__title">Join Us</p>
+              <a
+                href="mailto:hello@lastdoorsolutions.com"
+                className="cover-link"
+              >
+                <span className="visually-hidden">
+                  hello@lastdoorsolutions.com
+                </span>
               </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Leadership
+export default Leadership;

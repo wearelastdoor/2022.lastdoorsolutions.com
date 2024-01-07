@@ -45,7 +45,7 @@ const Footer = () => (
             <li>
               <TransitionLink
                 to="/b2b-services/"
-                title="For Agencies"
+                title="Partnership"
                 exit={{
                   length: 0.6,
                   trigger: ({ exit, e, node }) => animateObjects(exit, node),
@@ -55,7 +55,7 @@ const Footer = () => (
                   trigger: ({ entry, node }) => newContent(node),
                 }}
               >
-                For Agencies
+                Partnership
               </TransitionLink>
             </li>
             <li>

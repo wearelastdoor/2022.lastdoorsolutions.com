@@ -1,0 +1,28 @@
+.past-clients {
+    background-color: $c-white;
+    margin: 15px 0;
+    padding: 15px 0 15px 25px;
+
+    .slick-track {
+        display: flex;
+        align-items: center;
+
+        >div {
+            margin-right: 50px;
+            height: auto;
+
+            @media #{$tablet} {
+                margin-right: 30px;
+            }
+
+            @media #{$phone} {
+                margin-right: 20px;
+            }
+
+            >div {
+                display: flex;
+                align-items: center
+            }
+        }
+    }
+}

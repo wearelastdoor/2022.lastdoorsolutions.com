@@ -44,7 +44,7 @@ export const MainHeader = Styled.header`
     }
    }
   }
-`
+`;
 
 export const MainHeaderWrap = Styled.div`
   background-color: rgb(var(--c-brand-primary));
@@ -55,7 +55,7 @@ export const MainHeaderWrap = Styled.div`
 @media screen and (max-width: 640px) {
     padding: 15px 15px 15px 20px;
   }
-`
+`;
 
 export const IconMenuBar = Styled.button`
   height: 70px;
@@ -77,7 +77,7 @@ export const IconMenuBar = Styled.button`
     box-shadow: none;
     background-color: transparent;
   }
-`
+`;
 export const IconMenuBarClose = Styled.button`
 height: 70px;
   width: 70px;
@@ -114,7 +114,7 @@ height: 70px;
     border-color: rgba(var(--c-gray-light), 0.5);
     background-color: transparent;
   }
-`
+`;
 
 export const MainHeaderNav = Styled.nav`
  position: fixed;
@@ -149,7 +149,7 @@ export const MainHeaderNav = Styled.nav`
     padding: 130px 0 40px;
     align-items: flex-start;
   }
-`
+`;
 
 export const MainHeaderNavContainer = Styled.div`
     max-width: 1004px;
@@ -161,7 +161,7 @@ export const MainHeaderNavContainer = Styled.div`
       align-items: flex-start;
       flex-wrap: wrap;
     }
-`
+`;
 export const MainHeaderMenu = Styled.ul`
   list-style: none;
   padding: 0;
@@ -172,7 +172,7 @@ export const MainHeaderMenu = Styled.ul`
     width: 100%;
     margin-bottom: 40px;
   }
-`
+`;
 
 export const MainHeaderMenuList = Styled.li`
     line-height: 1;
@@ -247,8 +247,7 @@ export const MainHeaderMenuList = Styled.li`
     [aria-current="page"] {
       pointer-events: none;
     }
-`
-
+`;
 
 export const MainHeaderContactWrapper = Styled.ul`
   list-style: none;
@@ -259,8 +258,7 @@ export const MainHeaderContactWrapper = Styled.ul`
     width: 100%;
     text-align: left;
   }
-`
-
+`;
 
 export const MainHeaderContactList = Styled.li`
     line-height: 1;
@@ -269,7 +267,7 @@ export const MainHeaderContactList = Styled.li`
     &:not(:last-child) {
       margin-bottom: 20px;
     }
-`
+`;
 
 export const MainHeaderContactLink = Styled.a`
    font-size:20px;
@@ -286,4 +284,4 @@ export const MainHeaderContactLink = Styled.a`
         color: rgba(var(--c-primary),1);
       }
 
-`
+`;

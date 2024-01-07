@@ -16,11 +16,38 @@
 
 .c-header__wrap {
   background-color: $c-brand;
-  padding: 20px 15px 20px 30px;
+  padding: 20px 50px 20px 30px;
   display: flex;
   align-items: center;
-  @media #{$phone} {
+  position: relative;
+  z-index: 1;
+
+  @media #{$tablet} {
     padding: 15px 15px 15px 20px;
+  }
+
+
+  &:before,
+  &::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  &:before {
+    background-color: $c-brand;
+    z-index: -1;
+    left: 0;
+  }
+
+  &:after {
+    left: 5px;
+    top: 5px;
+    border: 1px solid $c-primary;
+    display: block;
+    z-index: -2;
+    background-color: transparent;
   }
 }
 
@@ -31,7 +58,7 @@
   z-index: 1;
   margin-right: 46px;
 
-  @media #{$phone} {
+  @media #{$tablet} {
     margin-right: 35px;
     max-width: 35px;
   }
@@ -45,9 +72,11 @@
     width: 1px;
     z-index: 1;
     background-color: rgba($c-white, .5);
+    display: none;
 
-    @media #{$phone} {
+    @media #{$tablet} {
       top: 5px;
+      display: block;
       bottom: 5px;
       right: -27px;
     }
@@ -63,6 +92,11 @@
   padding: 3px 0 0;
   transition: none;
   color: $c-white;
+  display: none;
+
+  @media #{$tablet} {
+    display: block;
+  }
 
   .icon-menu {
     height: 25px;
@@ -104,6 +138,7 @@
   @media #{$small-screen} {
     padding: 130px 12px 40px;
   }
+
   @media #{$phone} {
     padding: 130px 0 40px;
     align-items: flex-start;
@@ -114,8 +149,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media #{$small-screen} {
-    }
+
+    @media #{$small-screen} {}
 
     @media #{$phone} {
       align-items: flex-start;
@@ -155,6 +190,7 @@
       @include line-height(150px, 120px);
       position: relative;
       z-index: 1;
+
       @media screen and (min-width: 1024px) and (max-width: 1200px) {
         font-size: 5.375rem;
       }
@@ -192,6 +228,7 @@
       &:after {
         transform: translate(6px, 6px) translateZ(0);
         opacity: 1;
+
         @media #{$phone} {
           transform: translate(3px, 3px) translateZ(0);
         }
@@ -202,6 +239,11 @@
 
 [aria-current="page"] {
   pointer-events: none;
+  color: $c-link !important;
+
+  @media #{$tablet} {
+    color: $c-white !important;
+  }
 }
 
 .main-nav__contact {
@@ -275,5 +317,36 @@
     color: rgba(#f5f6ef, 1);
     border-color: rgba(#f5f6ef, 0.5);
     background-color: transparent;
+  }
+}
+
+.c-nav__menu {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  margin-bottom: 0;
+  padding: 0;
+
+  @media #{$tablet} {
+    display: none;
+  }
+
+  li {
+    a {
+      @include fsz(14px);
+      font-family: $ff-primary-black;
+      color: $c-white;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      vertical-align: top;
+
+      &:hover,
+      &:focus {
+        color: $c-link;
+      }
+    }
   }
 }

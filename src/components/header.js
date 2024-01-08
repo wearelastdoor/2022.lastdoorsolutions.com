@@ -8,6 +8,7 @@ import {
   animateObjectsFromMainMenu,
 } from "./layout";
 import $ from "jquery";
+
 const Header = ({ logoImage, headerVisible }) => {
   const menus = [
     {
@@ -35,6 +36,7 @@ const Header = ({ logoImage, headerVisible }) => {
       },
     },
   ];
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       $(document).ready(() => {
@@ -95,7 +97,7 @@ const Header = ({ logoImage, headerVisible }) => {
         });
       });
     }
-  });
+  }, []);
 
   return (
     <header className={`c-header ${headerVisible}`}>

@@ -10,14 +10,6 @@ const ContactForm = () => {
             <h2 className="c-contact__title" title="Easy talk">
               Easy talk
             </h2>
-            {/* <p>
-              Fill in the form, or, if you prefer,
-              <mark>
-                <a href="mailto:pravash@lastdoorsolutions.com">
-                  send us an email
-                </a>
-              </mark>
-            </p> */}
           </header>
           <div className="c-contact__body">
           <address className="contactPerson">

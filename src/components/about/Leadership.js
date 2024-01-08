@@ -44,7 +44,7 @@ const Leadership = () => {
         </div>
         <div className="l-grid">
           {data.ourTeam.teams.map((team) => {
-            const { id, title, designation, image } = team;
+            const { id, name, designation, image } = team;
             return (
               <div className="l-grid__column" key={id}>
                 <div className="c-leadership-card c-leadership-card--outline">
@@ -55,7 +55,7 @@ const Leadership = () => {
                     style={{ maxWidth: `${imageSize}px` }}
                   />
 
-                  <h3 className="c-leadership-card__title">{title}</h3>
+                  <h3 className="c-leadership-card__title">{name}</h3>
                   <p className="c-leadership-card__subTitle">{designation}</p>
                 </div>
               </div>

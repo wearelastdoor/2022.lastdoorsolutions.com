@@ -1,57 +1,93 @@
 [
   {
     "header": {
-      "subTitle": "Collaboration Partners",
+      "subTitle": "WE’RE YOUR PARTNERS",
       "title": "Augmenting teams for 16+ years",
-      "description": "These teams have less hassle to recruit developers and we on the other-side plugin to fulfill their technical skills."
+      "description": "We are the nearest experience to having an internal team for your agency, minus all the crazy costs & administrative burdens."
     },
     "clients": [
       {
-        "description": "<p>Last Door has been collaborating the anchorwave team as their web design & development partner since 2009. A dedicated team of experts at Last Door serves them.</p>",
         "image": {
-          "url": "../images/anchorwave-logo.png",
+          "baseUrl": "../images/anchorwave-logo.png",
           "alt": "Anchorwave branding",
           "width": 80
         }
       },
       {
-        "description": "<p>Last Door and highstep has worked together on a several projects including softwares, small to large scale websites, UX strategy and marketing campaigns for their clients.</p>",
         "image": {
-          "url": "../images/highstep-logo.png",
+          "baseUrl": "../images/highstep-logo.png",
           "alt": "Highstep branding",
           "width": 142
         }
       },
       {
-        "description": "<p>Last Door has worked with Kings college to build some wonderful websites to present the data and information for the Twins Department.</p>",
         "image": {
-          "url": "../images/kings-college-logo.png",
+          "baseUrl": "../images/kings-college-logo.png",
           "alt": "Kings Collage branding",
           "width": 64
         }
       },
       {
-        "description": "<p>Last Door has been working with Mila to power up their website since their inception. </p>",
         "image": {
-          "url": "../images/mila-care-logo.png",
+          "baseUrl": "../images/eleven-logo.png",
+          "alt": "eleven branding",
+          "width": 162
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/mila-care-logo.png",
           "alt": "Mila care branding",
           "width": 48
         }
       },
       {
-        "description": "<p>Last Door was brought in for their upcoming website. With a thorough ground research, we pulled-off a rocksolid website to express their project.</p>",
         "image": {
-          "url": "../images/british-gut-logo.png",
+          "baseUrl": "../images/british-gut-logo.png",
           "alt": "british gut branding",
           "width": 82
         }
       },
       {
-        "description": "<p>Since 2015, Last Door has been collaborating with eleven11 group to develop their clients’ websites from small to large scale. </p>",
         "image": {
-          "url": "../images/eleven-logo.png",
-          "alt": "eleven branding",
-          "width": 162
+          "baseUrl": "../images/glass-pixel.png",
+          "alt": "glass pixel branding",
+          "width": 168
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/dma-rge.png",
+          "alt": "glass pixel branding",
+          "width": 72
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/in8-logic.png",
+          "alt": "in8logic branding",
+          "width": 117
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/adventure-link.png",
+          "alt": "adventure link branding",
+          "width": 72
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/abt.png",
+          "alt": "Associated business technologies  branding",
+          "width": 156
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/ellamac.png",
+          "alt": "Ellamac  branding",
+          "width": 115
         }
       }
     ]

@@ -45,6 +45,7 @@ const PastClients = () => {
             <Img
               fluid={baseUrl.childImageSharp.fluid}
               alt={alt}
+              fadeIn={false}
               style={{ maxWidth: `${width}px` }}
             />
           </div>

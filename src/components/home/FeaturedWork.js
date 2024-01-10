@@ -96,6 +96,7 @@ const FeaturedWork = () => {
                     fluid={data.logo.url.childImageSharp.fluid}
                     alt={data.logo.alt}
                     style={{ maxWidth: data.logo.width }}
+                    fadeIn={false}
                   />
 
                   <h3 className={`c-featured-work__title`}>{data.title}</h3>
@@ -105,6 +106,7 @@ const FeaturedWork = () => {
                       fluid={data.image.url.childImageSharp.fluid}
                       alt={data.image.alt}
                       style={{ maxWidth: data.image.width }}
+                      fadeIn={false}
                     />
                   </figure>
                 </div>

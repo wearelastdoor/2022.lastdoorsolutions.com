@@ -196,7 +196,7 @@ const Header = ({ logoImage, headerVisible }) => {
                     exit={{
                       length: 0.6,
                       trigger: ({ exit, e, node }) =>
-                        animateObjects(exit, node),
+                      animateObjectsFromMainMenu(exit, node),
                     }}
                     entry={{
                       delay: 0.8,

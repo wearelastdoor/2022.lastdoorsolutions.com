@@ -37,6 +37,7 @@
   @media #{$tablet} {
     padding-right: 68px;
   }
+
   @media #{$phone} {
     padding-right: 48px;
     padding-top: 20px;
@@ -48,7 +49,7 @@
     right: 65px;
     top: 0;
     bottom: -426px;
-    z-index: -1;
+    z-index: -2;
     display: block;
     left: -999%;
     background-color: $c-brand;
@@ -59,11 +60,20 @@
   }
 
   .c-our-client__header-content {
-    max-width: 493px;
+    max-width: 770px;
     width: 100%;
-    padding: 42px 0 50px;
+    padding: 42px 0 60px;
     position: relative;
     z-index: 1;
+
+    @media #{$tablet} {
+      max-width: 420px;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 300px;
+    }
+
     @media #{$phone} {
       padding-bottom: 35px;
     }
@@ -78,6 +88,7 @@
       position: absolute;
       z-index: -1;
       height: 120px;
+
       @media screen and (max-width: 480px) {
         display: block;
       }
@@ -108,6 +119,7 @@
     position: relative;
     z-index: 1;
     margin-bottom: 0;
+
     @media #{$phone} {
       letter-spacing: -3.3px;
       max-width: min(264px, 100%);
@@ -124,12 +136,14 @@
       display: block;
       position: absolute;
       top: 140px;
-      bottom: calc(0px - 300px);
+      bottom: -484px;
+
       @media #{$tablet} {
         top: 90px;
         width: 40px;
         bottom: -340px;
       }
+
       @media screen and (max-width: 480px) {
         display: none;
       }
@@ -158,23 +172,44 @@
     color: $c-white;
     margin-top: 25px;
     margin-bottom: 0;
-    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-size: clamp(1.25rem, 3vw, 2.375rem);
+    letter-spacing: -1px;
+    max-width: 485px;
+    color: #C4E9FF;
+    line-height: calc(45/38);
+
+    @media screen and (max-width: 480px) {
+      padding-left: 32px;
+    }
   }
 
   .c-our-client__image {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    position: absolute;
+    z-index: -1;
+    right: 110px;
+    bottom: 0;
+
+    @media #{$tablet} {
+      right: 40px;
+    }
 
     @media #{$phone} {
-      position: absolute;
       bottom: -67px;
       right: 30px;
       opacity: .6;
+      display: none;
     }
 
     img {
       max-height: 434px;
+
+      @media #{$header} {
+        max-height: 300px;
+      }
+
       @media #{$phone} {
         max-height: 261px;
       }
@@ -185,47 +220,49 @@
 .c-our-client__card {
   background-color: $c-white;
   box-shadow: 0 30px 60px rgba($c-black, 0.1);
-  padding: 80px 80px 8px;
+  padding: 75px;
   position: relative;
   z-index: 2;
 
   @media #{$tablet} {
-    padding: 60px 40px 8px;
+    padding: 60px 40px;
   }
 
-  @media #{$phone}{
-    padding: 40px 40px 8px;
-  }
-
-  .l-grid {
-    margin: 0 -32px;
+  @media #{$phone} {
+    padding: 40px 30px;
   }
 }
 
 .l-grid {
   display: flex;
+  gap: 45px;
+  align-items: center;
   flex-wrap: wrap;
-  align-items: flex-start;
+  justify-content: space-between;
+
+  @media screen and (max-width:1024px) {
+    justify-content: center;
+  }
 }
 
 .c-client {
-  width: 33.33%;
-  padding: 0 32px;
-  margin-bottom: 52px;
+  // width: 33.33%;
+  // padding: 0 32px;
+  // margin-bottom: 52px;
 
-  @media #{$tablet} {
-    width: 50%;
-  }
+  // @media #{$tablet} {
+  //   width: 50%;
+  // }
 
-  &:last-child {
-    @media #{$phone}{
-      margin-bottom: 32px;
-    }
-  }
+  // &:last-child {
+  //   @media #{$phone} {
+  //     margin-bottom: 32px;
+  //   }
+  // }
 
-  @media #{$phone}{
-    width: 100%;
-  }
+  // @media #{$phone} {
+  //   width: 100%;
+  // }
 
   .c-client__logo {
     display: flex;
@@ -240,6 +277,41 @@
       @media screen and (max-width: 640px) {
         margin-bottom: 24px;
       }
+    }
+  }
+}
+
+.c-our-client__intro {
+  text-align: center;
+  border-top: 1px solid rgba($c-brand, .25);
+  position: relative;
+  z-index: 1;
+  padding: 40px 0 0;
+  margin-top: 25px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    border-top: 1px solid rgba($c-brand, .25);
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+  }
+}
+
+.c-our-client__details {
+  @include fsz(24px);
+  letter-spacing: -0.64px;
+  line-height: calc(35/24);
+  max-width: 870px;
+  width: 100%;
+  margin: 0 auto 40px;
+
+  p {
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }

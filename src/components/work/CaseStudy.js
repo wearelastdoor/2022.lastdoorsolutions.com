@@ -68,6 +68,7 @@ const CaseStudy = () => {
                   fluid={caseStudy.logo.baseUrl.childImageSharp.fluid}
                   alt={caseStudy.logo.alt}
                   style={{ maxWidth: `${caseStudy.logo.width}px` }}
+                  fadeIn={false}
                 />
               </div>
               <p className="c-case-study__logo-name">{caseStudy.name}</p>
@@ -77,6 +78,7 @@ const CaseStudy = () => {
                   fluid={caseStudy.image.baseUrl.childImageSharp.fluid}
                   alt={caseStudy.image.alt}
                   style={{ maxWidth: `${caseStudy.image.width}px` }}
+                  fadeIn={false}
                 />
               </div>
             </div>

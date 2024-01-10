@@ -3,6 +3,7 @@
   z-index: 1;
   background-color: #1C262E;
   padding: 206px 0 130px;
+
   @media #{$phone} {
     padding-bottom: 80px;
   }
@@ -79,6 +80,9 @@
   .l-grid {
     margin: 0 -20px;
     align-items: stretch;
+    gap: 0;
+    justify-content: flex-start;
+
     @media #{$tablet} {
       margin: 0 -15px;
     }
@@ -89,12 +93,15 @@
   margin-bottom: 40px;
   width: 33.33%;
   padding: 0 20px;
+
   @media #{$tablet} {
     padding: 0 15px;
   }
+
   @media screen and (max-width: 767px) {
     width: 50%;
   }
+
   @media screen and (max-width: 480px) {
     width: 100%;
   }
@@ -110,6 +117,7 @@
   @media #{$tablet} {
     padding: 40px 20px;
   }
+
   @media screen and (max-width: 480px) {
     max-width: 320px;
     margin: 0 auto;
@@ -120,8 +128,10 @@
   }
 
   &.c-leadership-card--linked {
+
     &:hover,
     &:focus {
+
       &:after,
       &:before {
         height: 100%;

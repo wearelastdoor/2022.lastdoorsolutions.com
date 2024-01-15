@@ -1,7 +1,7 @@
 import * as React from "react"
 import {StaticImage} from "gatsby-plugin-image"
 // Import Svg Images
-import ShapeGraphic from "../../images/Shapes-graphic.svg"
+import ShapeGraphic from "../../images/shapes-graphic.svg"
 import Graphic_4 from "../../images/graphic-04.svg"
 
 const AboutIntro = () => {

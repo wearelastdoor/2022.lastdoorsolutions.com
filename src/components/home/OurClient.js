@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
 // Import svg Image
-import teamWorkGraphic from "../../images/team-work.svg";
+import teamWorkGraphic from "../../images/team-work.svg"
 
 const OurClient = () => {
   const data = useStaticQuery(graphql`
@@ -76,13 +76,16 @@ const OurClient = () => {
           <div className="c-our-client__intro">
             <div className="c-our-client__details">
               <p>
-                We are the nearest experience to having an internal team for
-                your agency, minus all the crazy costs & administrative burdens.
-                We are the nearest experience to having an internal team for
-                your agency, minus all the crazy costs & administrative burdens.
+                You can expect us to do anything your company does or doesn’t.
+                Since our inception in 2006, we have been tied with the
+                business-to-business working model. It has been fun to work with
+                people in different time zones.
               </p>
             </div>
-            <a href="mailto:pravash@lastdoorsolutions.com" className="c-btn c-btn--dark-alt">
+            <a
+              href="mailto:pravash@lastdoorsolutions.com"
+              className="c-btn c-btn--dark-alt"
+            >
               REQUEST PARTNER WORK <span></span>
             </a>
           </div>

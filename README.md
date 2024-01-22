@@ -8,7 +8,7 @@
 
 2.  **install dependencies in the project**
 
-    Navigate into your new site’s directory and start it up
+    Navigate into your new site’s directory and start it up.
 
 ```shell
 cd 2022.lastdoorsolutions.com

@@ -80,7 +80,7 @@ const AnchorwavePage = () => {
                 <dd>8+ years of working together</dd>
               </div>
               <div>
-                <dt>Locaiton:</dt>
+                <dt>Location:</dt>
                 <dd>New Jersey, USA</dd>
               </div>
             </dl>

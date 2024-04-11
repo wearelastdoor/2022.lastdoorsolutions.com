@@ -87,7 +87,7 @@ const AnchorwavePage = () => {
                 <dd>Anchorwave Internet Solutions</dd>
               </div>
               <div>
-                <dt>Locaiton:</dt>
+                <dt>Location:</dt>
                 <dd>Tucson, Arizona</dd>
               </div>
             </dl>

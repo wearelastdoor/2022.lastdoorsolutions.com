@@ -25,14 +25,7 @@
           "alt": "Bishal Mishra"
         }
       },
-      {
-        "name": "Sachit Tandukar",
-        "designation": "Senior Programmer",
-        "image": {
-          "baseUrl": "../images/team/sachit_tandukar.png",
-          "alt": "Sachit Tandukar"
-        }
-      },
+ 
       {
         "name": "Sujal Karki",
         "designation": "Project Lead",

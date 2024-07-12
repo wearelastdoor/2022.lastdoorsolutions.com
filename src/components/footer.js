@@ -121,12 +121,12 @@ const Footer = () => (
                       pravash@lastdoorsolutions.com
                     </a>
                     <a
-                      href="tel:+9779851167777"
+                      href="tel:+9779708159473"
                       rel="noreferrer"
                       target="_blank"
                       className="contactPerson__phone"
                     >
-                      +977 9851 167 777
+                      +977 9708159473
                     </a>
                   </div>
                 </div>

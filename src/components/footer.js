@@ -122,8 +122,6 @@ const Footer = () => (
                     </a>
                     <a
                       href="tel:+9779708159473"
-                      rel="noreferrer"
-                      target="_blank"
                       className="contactPerson__phone"
                     >
                       +977 9708159473

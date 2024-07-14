@@ -115,16 +115,21 @@ const Footer = () => (
                     </h3>
                     <a
                       href="mailto:pravash@lastdoorsolutions.com"
-                      rel="noreferrer"
-                      target="_blank"
                     >
                       pravash@lastdoorsolutions.com
                     </a>
                     <a
-                      href="tel:+9779708159473"
+                      href="https://wa.me/9779708159473"
+                      className="contactPerson__phone" target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      +977 970 815 9473 (WhatsApp)
+                    </a> <br />
+                    <a
+                      href="tel:+16314193281"
                       className="contactPerson__phone"
                     >
-                      +977 9708159473
+                      +1 631 419 3281 (USA)
                     </a>
                   </div>
                 </div>
@@ -145,15 +150,11 @@ const Footer = () => (
                     </h3>
                     <a
                       href="mailto:bishal@lastdoorsolutions.com"
-                      rel="noreferrer"
-                      target="_blank"
                     >
                       bishal@lastdoorsolutions.com
                     </a>
                     <a
-                      href="tel:+9779851167777"
-                      rel="noreferrer"
-                      target="_blank"
+                      href="tel:+12672783588"
                       className="contactPerson__phone"
                     >
                       +1 (267) 278 3588

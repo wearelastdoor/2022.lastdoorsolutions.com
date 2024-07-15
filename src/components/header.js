@@ -135,7 +135,7 @@ const Header = ({ logoImage, headerVisible }) => {
                 link: { url, title },
               } = menu;
               return (
-                <li>
+                <li key={title}>
                   <TransitionLink
                     to={url}
                     title={title}
@@ -189,7 +189,7 @@ const Header = ({ logoImage, headerVisible }) => {
                 link: { url, title },
               } = menu;
               return (
-                <li>
+                <li key={title}>
                   <TransitionLink
                     to={url}
                     title={title}

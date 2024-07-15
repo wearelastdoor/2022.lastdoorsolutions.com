@@ -49,8 +49,6 @@
 
 .c-footer__wrap {
   display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
 
   @media #{$ipad} {
     display: block;
@@ -217,8 +215,9 @@
 .contactPerson {
   color: $c-white;
   font-style: normal;
-  padding: 0 30px;
   margin-bottom: 30px;
+  width: 100%;
+  display: flex;
 
   .c-contact__body & {
     color: $c-black;
@@ -228,13 +227,8 @@
 
   &:first-child {
     padding-left: 0;
-    border-right: 1px dashed rgba($c-white, 0.3);
-
-    @media screen and (max-width: 780px) {
-      border-right: 0;
-      border-bottom: 1px dashed rgba($c-white, 0.3);
-      padding-bottom: 20px;
-    }
+    padding-bottom: 30px;
+    border-bottom: 1px dashed rgba($c-white, 0.3);
   }
 
   &:last-child {
@@ -247,21 +241,41 @@
   }
 
   a {
-    display: block;
     color: $c-white;
-    text-decoration: none;
     @include fsz(16px);
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
 
-    .c-contact__body & {
-      color: $c-black;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgba($c-white, 0.25);
+      transition: ease all 0.25s;
+
+      .c-contact__body & {
+        background-color: rgba($c-black, 0.25);
+      }
     }
 
     &:hover,
     &:focus {
-      color: $c-tertiary;
-
       .c-contact__body & {
         color: darken($c-primary, 30%);
+      }
+
+      &:after {
+        background-color: $c-tertiary;
+        transition: ease all 0.25s;
+
+        .c-contact__body & {
+          background-color: darken($c-primary, 30%);
+        }
       }
     }
   }
@@ -324,7 +338,16 @@
     .c-contact__body & {
       opacity: 0.9;
     }
+  }
+}
 
+.contactPerson__links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  @media #{$phone} {
+    text-align: center;
+    justify-content: center;
   }
 }
 
@@ -349,44 +372,6 @@
   transform: translateX(-50%);
 }
 
-a.contactPerson__phone {
-  @include fsz(20px);
-  position: relative;
-  display: inline-block;
-  line-height: 1;
-
-  &:after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    height: 1px;
-    background-color: rgba($c-white, 0.25);
-    transition: ease all 0.25s;
-
-    .c-contact__body & {
-      background-color: rgba($c-black, 0.25);
-    }
-  }
-
-  &:hover,
-  &:focus {
-    .c-contact__body & {
-      color: darken($c-primary, 30%);
-    }
-
-    &:after {
-      background-color: $c-tertiary;
-      transition: ease all 0.25s;
-
-      .c-contact__body & {
-        background-color: darken($c-primary, 30%);
-      }
-    }
-  }
-}
-
 .c-footer__link {
   @include fsz(14px);
   text-transform: uppercase;
@@ -407,4 +392,12 @@ a.contactPerson__phone {
   @media screen and (max-width: 780px) {
     margin-top: 25px;
   }
+}
+
+.contactPerson__address {
+  color: rgba($c-white, 0.5);
+  font-style: normal;
+  @include fsz(16px);
+  display: block;
+  margin-bottom: 11px;
 }

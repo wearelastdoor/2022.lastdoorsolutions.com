@@ -126,10 +126,11 @@ const Footer = () => (
                       +977 970 815 9473 (WhatsApp)
                     </a> <br />
                     <a
-                      href="tel:+16314193281"
+                      href="https://wa.me/16314193281"
                       className="contactPerson__phone"
+                      target="_blank"
                     >
-                      +1 631 419 3281 (USA)
+                      +1 631 419 3281 (WhatsApp)
                     </a>
                   </div>
                 </div>

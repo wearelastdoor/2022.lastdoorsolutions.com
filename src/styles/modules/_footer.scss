@@ -59,6 +59,7 @@
 .c-footer__menu {
   padding: 20px 10% 20px 0;
   border-right: 1px solid rgba($c-white, 0.3);
+flex: 0 0 auto;
 
   @media #{$small-screen} {
     padding: 20px 5% 20px 0;

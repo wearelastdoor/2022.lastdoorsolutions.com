@@ -127,12 +127,12 @@ const Footer = () => (
                       </a>
             
                       <a
-                        href="https://wa.me/9779708159473"
+                        href="https://wa.me/9779851167777"
                         className="contactPerson__phone"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        970 815 9473
+                        985 116 7777
                       </a>
                       <a href="mailto:pravash@lastdoor.co">
                         pravash@lastdoor.co

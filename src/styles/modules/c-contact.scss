@@ -92,7 +92,7 @@
     padding: 180px 80px 100px 0;
   }
 
-  @media #{$tablet} {
+  @media #{$tablet} {   
     max-width: min(660px, 100%);
     padding: 180px 30px 120px 0;
   }

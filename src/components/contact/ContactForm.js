@@ -12,70 +12,73 @@ const ContactForm = () => {
             </h2>
           </header>
           <div className="c-contact__body">
-          <address className="contactPerson">
-                <div className="contactPerson__wrap">
-                  <figure>
-                    <StaticImage
-                      src={`../../images/footer/pravash_karki.png`}
-                      alt={`Display Picture of Pravash Karki`}
-                      className="contactPerson__image"
-                    ></StaticImage>
-                    <span className="contactPerson__location">NP</span>
-                  </figure>
-                  <div className="contactPerson__details">
-                    <h3 className="contactPerson__name">
-                      Pravash <span>Karki</span>
-                    </h3>
+            <address className="contactPerson">
+              <div className="contactPerson__wrap">
+                <figure>
+                  <StaticImage
+                    src={`../../images/footer/pravash_karki.png`}
+                    alt={`Display Picture of Pravash Karki`}
+                    className="contactPerson__image"
+                  ></StaticImage>
+                </figure>
+                <div className="contactPerson__details">
+                  <h3 className="contactPerson__name">
+                    Pravash <span>Karki</span>
+                  </h3>
+                  <address className="contactPerson__address">
+                      Kathmandu, Nepal
+                    </address>
+                  <div className="contactPerson__links">
                     <a
-                      href="mailto:pravash@lastdoorsolutions.com"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      pravash@lastdoorsolutions.com
-                    </a>
-                    <a
-                      href="tel:+9779851167777"
-                      rel="noreferrer"
-                      target="_blank"
+                      href="https://wa.me/16314193281"
                       className="contactPerson__phone"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      +977 9851 167 777
+                      (631) 419 3281
                     </a>
+
+                    <a
+                      href="https://wa.me/9779851167777"
+                      className="contactPerson__phone"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      985 116 7777
+                    </a>
+                    <a href="mailto:pravash@lastdoor.co">pravash@lastdoor.co</a>
                   </div>
                 </div>
-              </address>
-              <address className="contactPerson">
-                <div className="contactPerson__wrap">
-                  <figure>
-                    <StaticImage
-                      src={`../../images/footer/bishal_mishra.png`}
-                      alt={`Display Picture of Bishal Mishra`}
-                      className="contactPerson__image"
-                    ></StaticImage>
-                    <span className="contactPerson__location">USA</span>
-                  </figure>
-                  <div className="contactPerson__details">
-                    <h3 className="contactPerson__name">
-                      Bishal <span>Mishra</span>
-                    </h3>
-                    <a
-                      href="mailto:bishal@lastdoorsolutions.com"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      bishal@lastdoorsolutions.com
-                    </a>
-                    <a
-                      href="tel:+9779851167777"
-                      rel="noreferrer"
-                      target="_blank"
-                      className="contactPerson__phone"
-                    >
-                      +1 (267) 278 3588
-                    </a>
-                  </div>
+              </div>
+            </address>
+            <address className="contactPerson">
+              <div className="contactPerson__wrap">
+                <figure>
+                  <StaticImage
+                    src={`../../images/footer/bishal_mishra.png`}
+                    alt={`Display Picture of Bishal Mishra`}
+                    className="contactPerson__image"
+                  ></StaticImage>
+                </figure>
+                <div className="contactPerson__details">
+                  <h3 className="contactPerson__name">
+                    Bishal <span>Mishra</span>
+                  </h3>
+                  <address className="contactPerson__address">
+                      San Francisco, CA
+                    </address>
+                  <div className="contactPerson__links">
+                      <a
+                        href="tel:+12672783588"
+                        className="contactPerson__phone"
+                      >
+                        (267) 278 3588
+                      </a>
+                      <a href="mailto:bishal@lastdoor.co">bishal@lastdoor.co</a>
+                    </div>
                 </div>
-              </address>
+              </div>
+            </address>
           </div>
         </div>
         <div className="c-contact__image">

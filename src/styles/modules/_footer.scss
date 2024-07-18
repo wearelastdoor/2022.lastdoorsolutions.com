@@ -59,7 +59,7 @@
 .c-footer__menu {
   padding: 20px 10% 20px 0;
   border-right: 1px solid rgba($c-white, 0.3);
-flex: 0 0 auto;
+  flex: 0 0 auto;
 
   @media #{$small-screen} {
     padding: 20px 5% 20px 0;
@@ -248,7 +248,9 @@ flex: 0 0 auto;
     display: inline-block;
     line-height: 1;
     text-decoration: none;
-
+    .c-contact__body & {
+      color: $c-brand-secondary;
+    }
     &:after {
       content: "";
       position: absolute;
@@ -401,4 +403,8 @@ flex: 0 0 auto;
   @include fsz(16px);
   display: block;
   margin-bottom: 11px;
+  
+  .c-contact__body & {
+    color: rgba($c-brand-secondary, 0.5);
+  }
 }

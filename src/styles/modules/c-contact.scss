@@ -1,171 +1,177 @@
 .c-contact {
-    background-color: $c-secondary;
-    padding-bottom: 120px;
-    overflow: hidden;
+  background-color: $c-secondary;
+  padding-bottom: 120px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  @media #{$phone} {
+    padding-bottom: 100px;
+  }
+
+  .l-container {
     position: relative;
     z-index: 1;
+  }
+
+  .c-contact__header {
+    letter-spacing: -0.4px;
+    margin-bottom: 50px;
 
     @media #{$phone} {
-        padding-bottom: 100px;
+      text-align: center;
     }
 
-    .l-container {
-        position: relative;
-        z-index: 1;
-    }
+    .c-contact__title {
+      font-size: clamp(3rem, 8vw, 5.9375rem);
+      font-family: $ff-primary-black;
+      font-weight: normal;
+      color: $c-brand;
+      display: inline-block;
+      vertical-align: top;
+      letter-spacing: -6px;
+      line-height: 1;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 24px;
 
-    .c-contact__header {
-        letter-spacing: -0.4px;
-        margin-bottom: 50px;
+      @media #{$phone} {
+        letter-spacing: -3.3px;
+      }
+
+      &:after {
+        content: attr(title);
+        position: absolute;
+        top: 0;
+        color: transparent;
+        z-index: -1;
+        display: inline-block;
+        vertical-align: top;
+        left: 0;
+        transform: translate(5px, 5px) translateZ(0);
+        backface-visibility: hidden;
+        @include letter-stroke(rgba($c-primary, 0.5), 1px);
 
         @media #{$phone} {
-            text-align: center;
+          transform: translate(3px, 3px) translateZ(0);
         }
-
-        .c-contact__title {
-            font-size: clamp(3rem, 8vw, 5.9375rem);
-            font-family: $ff-primary-black;
-            font-weight: normal;
-            color: $c-brand;
-            display: inline-block;
-            vertical-align: top;
-            letter-spacing: -6px;
-            line-height: 1;
-            position: relative;
-            z-index: 1;
-            margin-bottom: 24px;
-
-            @media #{$phone} {
-                letter-spacing: -3.3px;
-            }
-
-            &:after {
-                content: attr(title);
-                position: absolute;
-                top: 0;
-                color: transparent;
-                z-index: -1;
-                display: inline-block;
-                vertical-align: top;
-                left: 0;
-                transform: translate(5px, 5px) translateZ(0);
-                backface-visibility: hidden;
-                @include letter-stroke(rgba($c-primary, 0.5), 1px);
-
-                @media #{$phone} {
-                    transform: translate(3px, 3px) translateZ(0);
-                }
-            }
-        }
-
-        mark {
-            padding: 1px 5px;
-
-            &:hover,
-            &:focus {
-                background: $c-primary;
-                transition: all 300ms ease;
-            }
-
-            a {
-                font-family: inherit;
-                font-weight: inherit;
-                font-size: inherit;
-                color: inherit;
-                text-decoration: inherit;
-                display: inline-block;
-                vertical-align: middle;
-            }
-        }
+      }
     }
+
+    mark {
+      padding: 1px 5px;
+
+      &:hover,
+      &:focus {
+        background: $c-primary;
+        transition: all 300ms ease;
+      }
+
+      a {
+        font-family: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+        color: inherit;
+        text-decoration: inherit;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
 }
 
 .c-contact__card {
-    max-width: min(740px, 100%);
-    position: relative;
-    z-index: 2;
-    padding-top: 244px;
-    padding: 229px 220px 100px 0;
+  max-width: min(740px, 100%);
+  position: relative;
+  z-index: 2;
+  padding-top: 244px;
+  padding: 229px 100px 100px 0;
+  
+  @media #{$small-screen} {
+    max-width: min(520px, 100%);
+    padding: 180px 80px 100px 0;
+  }
 
-    @media #{$small-screen} {
-        max-width: min(520px, 100%);
-        padding: 180px 80px 100px 0;
-    }
+  @media #{$tablet} {
+    max-width: min(660px, 100%);
+    padding: 180px 30px 120px 0;
+  }
 
-    @media #{$tablet} {
-        max-width: min(560px, 100%);
-        padding: 180px 80px 120px 0;
-    }
+  @media #{$phone} {
+    padding: 180px 20px 100px 0;
+  }
 
-    @media #{$phone} {
-        padding: 180px 20px 100px 0;
-    }
-
-    &:after {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: -9999%;
-        right: 0;
-        box-shadow: 0 30px 60px rgba($c-black, 0.1);
-        background-color: $c-white;
-        bottom: 0;
-    }
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -9999%;
+    right: 0;
+    box-shadow: 0 30px 60px rgba($c-black, 0.1);
+    background-color: $c-white;
+    bottom: 0;
+  }
 }
 
 .c-contact__image {
+  position: absolute;
+  top: 40.6754%;
+  right: -15px;
+  z-index: 1;
+
+  @media #{$tablet} {
+    position: relative;
+    top: -150px;
+    z-index: 4;
+    display: flex;
+    margin-bottom: -150px;
+    justify-content: flex-end;
+  }
+
+  @media #{$phone} {
+    top: -50px;
+    margin-bottom: -50px;
+  }
+
+  @media screen and (max-width: 460px) {
+    justify-content: flex-start;
+  }
+
+  &:after {
+    content: "";
+    background-image: url("../images/texture.png");
+    background-repeat: repeat;
     position: absolute;
-    top: 40.6754%;
-    right: -15px;
-    z-index: 1;
+    z-index: -1;
+    top: calc(100% - 10px);
+    left: -999%;
+    bottom: -200%;
+    right: -9999%;
+    display: block;
+  }
 
-    @media #{$tablet} {
-        position: relative;
-        top: -150px;
-        z-index: 4;
-        display: flex;
-        margin-bottom: -150px;
-        justify-content: flex-end;
-    }
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    top: calc(100% - 10px);
+    left: -9999%;
+    bottom: -200%;
+    right: -9999%;
+    display: block;
+    background-color: $c-brand;
+  }
 
-    @media #{$phone} {
-        top: -50px;
-        margin-bottom: -50px;
+  .gatsby-image-wrapper-constrained {
+    @media screen and (max-width: 690px) {
+      max-width: 330px;
     }
+  }
+}
 
-    @media screen and (max-width: 460px) {
-        justify-content: flex-start;
-    }
-
-    &:after {
-        content: "";
-        background-image: url("../images/texture.png");
-        background-repeat: repeat;
-        position: absolute;
-        z-index: -1;
-        top: calc(100% - 10px);
-        left: -999%;
-        bottom: -200%;
-        right: -9999%;
-        display: block;
-    }
-
-    &:before {
-        content: "";
-        position: absolute;
-        z-index: -2;
-        top: calc(100% - 10px);
-        left: -9999%;
-        bottom: -200%;
-        right: -9999%;
-        display: block;
-        background-color: $c-brand;
-    }
-
-    .gatsby-image-wrapper-constrained {
-        @media screen and (max-width: 690px) {
-            max-width: 330px;
-        }
-    }
+.c-contact__body {
+    border: 1px dashed rgba($c-brand-secondary, 0.3);
+    padding: 30px;
+     border-radius: 10px
 }

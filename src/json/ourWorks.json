@@ -154,28 +154,6 @@
           "alt": "Nepal Alternative Treks & Expedition First Letter",
           "width": 420
         }
-      },
-      {
-        "isCaseStudy": false,
-        "backgroundColor": "#1BA2E2",
-        "name": "nepal river runner",
-        "title": "Marketing a rafting agency",
-        "description": "<p>Last Door was brought in for Branding and Marketing of Nepal River Runners. With the perfect brand identity to define the company, we also built a rocksolid website to elevate their online presence. Strong and most succsesful marketing campaign supported by Digital assets, Printing and Design of signages, custom office stationeries, flyers were done.</p>",
-
-        "button": {
-          "title": "Visit website",
-          "url": "https://www.nepalriverrunner.com/"
-        },
-        "logo": {
-          "baseUrl": "../images/white-nrr-logo.png",
-          "alt": "Marketing a rafting agency",
-          "width": 62
-        },
-        "image": {
-          "baseUrl": "../images/nrr-first-letter.png",
-          "alt": "Marketing a rafting agency First Letter",
-          "width": 420
-        }
       }
     ]
   }

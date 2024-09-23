@@ -1,11 +1,15 @@
 .c-case-study {
   background-color: $c-secondary;
-  padding: 152px 0 346px;
+  padding: 152px 0 206px;
 
   @media #{$small-screen} {
-    padding: 100px 0 246px;
+    padding: 100px 0 146px;
   }
 
+  @media #{$phone} {
+    padding-bottom: 120px;
+  }
+  
   .c-case-study__header {
     margin-bottom: 54px;
 
@@ -113,7 +117,6 @@
       @extend .texture;
     }
   }
-
 
   .c-case-study__logo-name {
     font-size: clamp(1.1rem, 4vw, 1.25rem);

@@ -3,7 +3,7 @@
   "private": true,
   "description": "Last Door is a web design and digital marketing agency. we craft and design brands, experiences & products.",
   "version": "0.1.0",
-  "author": "Last Door <pravash@lastdoorsolutions.com>",
+  "author": "Last Door <pravo@lastdoorsolutions.com>",
   "dependencies": {
     "@fontsource/rubik": "^5.0.18",
     "@hookform/resolvers": "^3.3.4",

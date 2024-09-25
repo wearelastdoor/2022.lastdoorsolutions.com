@@ -83,7 +83,7 @@ const OurClient = () => {
               </p>
             </div>
             <a
-              href="mailto:pravash@lastdoorsolutions.com"
+              href="mailto:pravo@lastdoorsolutions.com"
               className="c-btn c-btn--dark-alt"
             >
               REQUEST PARTNER WORK <span></span>

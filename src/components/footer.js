@@ -104,20 +104,20 @@ const Footer = () => (
                   <figure>
                     <StaticImage
                       src={`../images/footer/pravash_karki.png`}
-                      alt={`Display Picture of Pravash Karki`}
+                      alt={`Display Picture of Prav O`}
                       className="contactPerson__image"
                     ></StaticImage>
                   </figure>
                   <div className="contactPerson__details">
                     <h3 className="contactPerson__name">
-                      Pravash <span>Karki</span>
+                      Prav <span>O</span>
                     </h3>
                     <address className="contactPerson__address">
                       Kathmandu, Nepal
                     </address>
 
                     <div className="contactPerson__links">
-                    <a
+                      <a
                         href="https://wa.me/16314193281"
                         className="contactPerson__phone"
                         target="_blank"
@@ -125,7 +125,7 @@ const Footer = () => (
                       >
                         (631) 419 3281
                       </a>
-            
+
                       <a
                         href="https://wa.me/9779851167777"
                         className="contactPerson__phone"
@@ -134,8 +134,8 @@ const Footer = () => (
                       >
                         985 116 7777
                       </a>
-                      <a href="mailto:pravash@lastdoor.co">
-                        pravash@lastdoor.co
+                      <a href="mailto:pravo@lastdoorsolutions.com">
+                        pravo@lastdoorsolutions.com
                       </a>
                     </div>
                   </div>

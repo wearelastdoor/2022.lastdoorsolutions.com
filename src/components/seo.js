@@ -108,7 +108,7 @@ function Seo({title, description, lang, meta}) {
                 },
                 {
                     property: `business:contact_data:email`,
-                    content: `pravash@lastdoorsolutions.com`,
+                    content: `pravo@lastdoorsolutions.com`,
                 },
                 {
                     property: `business:contact_data:phone_number`,
@@ -282,7 +282,7 @@ function Seo({title, description, lang, meta}) {
    "longitude":""},
    "openingHours":["Mo 9:00 AM-6:00 PM","Tu 9:00 AM-6:00 PM","We 9:00 AM-6:00 PM","Th 9:00 AM-6:00 PM",
    "Fr 9:00 AM-6:00 PM","Sa 9:00 AM-6:00 PM","Su 9:00 AM-6:00 PM"],
-   "email":"pravash@lastdoorsolutions.com",
+   "email":"pravo@lastdoorsolutions.com",
    "telePhone":"+9779851167777"}
        `}
             </script>

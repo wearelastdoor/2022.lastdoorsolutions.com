@@ -17,13 +17,13 @@ const ContactForm = () => {
                 <figure>
                   <StaticImage
                     src={`../../images/footer/pravash_karki.png`}
-                    alt={`Display Picture of Pravash Karki`}
+                    alt={`Display Picture of Pravash O`}
                     className="contactPerson__image"
                   ></StaticImage>
                 </figure>
                 <div className="contactPerson__details">
                   <h3 className="contactPerson__name">
-                    Pravash <span>Karki</span>
+                    Prav <span>O</span>
                   </h3>
                   <address className="contactPerson__address">
                       Kathmandu, Nepal
@@ -46,7 +46,7 @@ const ContactForm = () => {
                     >
                       985 116 7777
                     </a>
-                    <a href="mailto:pravash@lastdoor.co">pravash@lastdoor.co</a>
+                    <a href="mailto:pravo@lastdoorsolutions.com">pravo@lastdoorsolutions.com</a>
                   </div>
                 </div>
               </div>

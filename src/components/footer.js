@@ -141,7 +141,7 @@ const Footer = () => (
                   </div>
                 </div>
               </address>
-              <address className="contactPerson">
+              {/* <address className="contactPerson">
                 <div className="contactPerson__wrap">
                   <figure>
                     <StaticImage
@@ -168,7 +168,7 @@ const Footer = () => (
                     </div>
                   </div>
                 </div>
-              </address>
+              </address> */}
             </div>
           </div>
           <a

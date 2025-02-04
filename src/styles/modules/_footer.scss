@@ -216,9 +216,12 @@
 .contactPerson {
   color: $c-white;
   font-style: normal;
-  margin-bottom: 30px;
   width: 100%;
   display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   .c-contact__body & {
     color: $c-black;
@@ -228,7 +231,11 @@
   &:first-child {
     padding-left: 0;
     padding-bottom: 30px;
+  }
+
+  &:not(:first-child) {
     border-bottom: 1px dashed rgba($c-white, 0.3);
+
     .c-contact__body & {
       border-bottom: 1px dashed rgba($c-brand-secondary, 0.3);
       margin-bottom: 30px;
@@ -242,6 +249,7 @@
     @media screen and (max-width: 780px) {
       padding-left: 0;
     }
+
     .c-contact__body & {
       margin-bottom: 0;
     }
@@ -254,9 +262,11 @@
     display: inline-block;
     line-height: 1;
     text-decoration: none;
+
     .c-contact__body & {
       color: $c-brand-secondary;
     }
+
     &:after {
       content: "";
       position: absolute;
@@ -354,6 +364,7 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+
   @media #{$phone} {
     text-align: center;
     justify-content: center;

@@ -17,15 +17,7 @@
           "alt": "Sunita Pathak"
         }
       },
-      {
-        "name": "Bishal Mishra",
-        "designation": "Product Lead",
-        "image": {
-          "baseUrl": "../images/team/bishal_mishra.png",
-          "alt": "Bishal Mishra"
-        }
-      },
- 
+
       {
         "name": "Sujal Karki",
         "designation": "Project Lead",
@@ -34,14 +26,7 @@
           "alt": "Sujal Karki"
         }
       },
-      {
-        "name": "Anibesh Thapa",
-        "designation": "Lead Developer",
-        "image": {
-          "baseUrl": "../images/team/anibesh_thapa.png",
-          "alt": "Anibesh Thapa"
-        }
-      },
+
       {
         "name": "Harry Chaudhary",
         "designation": "Senior Developer",

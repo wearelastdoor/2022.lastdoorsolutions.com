@@ -51,7 +51,7 @@ const ContactForm = () => {
                 </div>
               </div>
             </address>
-            <address className="contactPerson">
+            {/* <address className="contactPerson">
               <div className="contactPerson__wrap">
                 <figure>
                   <StaticImage
@@ -78,7 +78,7 @@ const ContactForm = () => {
                     </div>
                 </div>
               </div>
-            </address>
+            </address> */}
           </div>
         </div>
         <div className="c-contact__image">

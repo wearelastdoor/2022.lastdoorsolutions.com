@@ -29,7 +29,7 @@ const ContactForm = () => {
                       Kathmandu, Nepal
                     </address>
                   <div className="contactPerson__links">
-                    <a
+                    {/* <a
                       href="https://wa.me/16314193281"
                       className="contactPerson__phone"
                       target="_blank"
@@ -45,7 +45,7 @@ const ContactForm = () => {
                       rel="noopener noreferrer"
                     >
                       985 116 7777
-                    </a>
+                    </a> */}
                     <a href="mailto:pravo@lastdoorsolutions.com">pravo@lastdoorsolutions.com</a>
                   </div>
                 </div>

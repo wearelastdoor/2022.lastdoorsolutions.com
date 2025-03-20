@@ -112,9 +112,9 @@ const Footer = () => (
                     <h3 className="contactPerson__name">
                       Prav <span>O</span>
                     </h3>
-                    <address className="contactPerson__address">
+                    {/* <address className="contactPerson__address">
                       Kathmandu, Nepal
-                    </address>
+                    </address> */}
 
                     <div className="contactPerson__links">
                       {/* <a

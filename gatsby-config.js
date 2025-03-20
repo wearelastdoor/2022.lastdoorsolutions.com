@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `Kathmandu Web Design & Digital Marketing Agency | Lastdoor`,
+        title: `Web Design & Digital Marketing Agency | Last Door`,
         description: `Lastdoor Website Solutions is a #1 leader in Web design & Digital Marketing services, helping businesses create a robust and successful web presence.`,
         author: `@Lastdoor`,
     },

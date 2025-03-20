@@ -2,16 +2,16 @@
   {
     "teams": [
       {
-        "name": "Pravash Karki",
+        "name": "Pravash O",
         "designation": "Founder/CEO",
         "image": {
           "baseUrl": "../images/team/pravash_karki.png",
-          "alt": "Pravash Karki"
+          "alt": "Pravash O"
         }
       },
       {
         "name": "Sunita Pathak",
-        "designation": "Operations Executive",
+        "designation": "Full-stack Developer",
         "image": {
           "baseUrl": "../images/team/sunita_pathak.png",
           "alt": "Sunita Pathak"

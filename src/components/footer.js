@@ -92,7 +92,7 @@ const Footer = () => (
             </li>
           </ul>
           <p className="c-footer__copyright desktop">
-            &copy; {new Date().getFullYear()} Last Door
+            &copy; 2006 - {new Date().getFullYear()} Last Door
           </p>
         </div>
         <div className="c-footer__contact">
@@ -180,7 +180,7 @@ const Footer = () => (
         </div>
       </div>
       <p className="c-footer__copyright responsive">
-        &copy; {new Date().getFullYear()} Last Door
+        &copy; 2006 - {new Date().getFullYear()} Last Door
       </p>
     </div>
     <SvgSprite title="Svg Sprite" />

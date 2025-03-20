@@ -342,7 +342,7 @@
   font-family: $ff-primary-bold;
   @include fsz(22px);
   letter-spacing: -1px;
-  margin-bottom: 11px;
+  margin-bottom: 0;
 
   .c-contact__body & {
     color: $c-black;

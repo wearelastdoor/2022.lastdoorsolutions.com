@@ -94,7 +94,7 @@ const AnchorwavePage = () => {
 
             <ul className={`c-case-study-hero__stats`}>
               <li>
-                <strong>1200+</strong>
+                <strong>650+</strong>
                 projects
               </li>
               <li>
@@ -136,15 +136,15 @@ const AnchorwavePage = () => {
             <div className={`c-concentration__content`}>
               <h2 className={`c-concentration__title`}>concentrations</h2>
               <ul className={`c-concentration__list`}>
-                <li>UI Design</li>
+                {/* <li>UI Design</li> */}
                 <li> Web Development</li>
                 <li> Elementor Dev</li>
-                <li>Consultation</li>
+                {/* <li>Consultation</li> */}
                 <li>
                   Support Tickets
                   <strong>(For web and around)</strong>
                 </li>
-                <li>Programming</li>
+                <li>WordPress Programming</li>
               </ul>
             </div>
             <img
@@ -231,11 +231,10 @@ const AnchorwavePage = () => {
                 platforms.
               </p>
               <p>
-                Over the years, we built at least 1200+ websites, ranging from
+                Over the years, we built at least 650+ websites, ranging from
                 small to large scales. We worked on almost all the verticals and
-                utilized all the skills ranging from graphic design, UX,
-                Strategy, Front-End Development, Email Templates, Elementor
-                Websites, Custom WordPress Development, Programming, SEO, etc.
+                utilized all the skills ranging from Front-End Development, Elementor
+                Websites, Custom WordPress Development, Programming, etc.
               </p>
             </div>
           </div>

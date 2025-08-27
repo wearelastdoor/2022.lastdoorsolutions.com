@@ -182,7 +182,7 @@ const AnchorwavePage = () => {
           </div>
         </div>
 
-        <div className={`c-showcase`}>
+        {/* <div className={`c-showcase`}>
           <div className={`container`}>
             <div className={`c-showcase__carousel scale-carousel`}>
               <div className={`c-front-showcase__image`}>
@@ -211,7 +211,7 @@ const AnchorwavePage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className={`c-showcase-detail`}>
           <div className={`container`}>
             <h2 className={`c-showcase-detail__title`}>What We Did</h2>
@@ -380,7 +380,7 @@ const AnchorwavePage = () => {
             </div>
           </div>
         </div>
-        <div className={`c-showcase c-showcase--alt`}>
+        {/* <div className={`c-showcase c-showcase--alt`}>
           <div className={`container`}>
             <div className={`c-showcase__carousel scale-carousel`}>
               <div className={`c-front-showcase__image`}>
@@ -412,7 +412,7 @@ const AnchorwavePage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <section className={`c-accordion`}>
           <div className={`container`}>

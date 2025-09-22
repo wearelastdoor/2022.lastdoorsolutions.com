@@ -77,10 +77,11 @@ const AnchorwavePage = () => {
               className="c-case-study-hero__logo"
               alt={`anchorwave branding`}
             />
-            <h1 className={`c-case-study-hero__title`}>
-              13+ years of working together.
+            <h1 className={`c-case-study-hero__title c-case-study-hero__title-lessspace`}>
+            A Partnership That Lasted 13+ Years
             </h1>
-
+              <p className={`c-case-study-hero__shortInfo`}>For more than 13 years, LastDoor served as the engineering backbone for Anchor Wave. Together, we combined Anchor Wave’s creative vision with our technical execution to deliver projects on time, at scale, and with real results.
+</p>
             <dl className={`c-case-study-hero__meta`}>
               <div>
                 <dt>Partner:</dt>
@@ -95,19 +96,19 @@ const AnchorwavePage = () => {
             <ul className={`c-case-study-hero__stats`}>
               <li>
                 <strong>650+</strong>
-                projects
+                projects completed
               </li>
               <li>
-                <strong>13+</strong>
-                years
+                <strong>14+</strong>
+                verticals served
               </li>
               <li>
                 <strong>10k+</strong>
                 Support tickets
               </li>
               <li>
-                <strong>14+</strong>
-                verticals
+                <strong>13+</strong>
+                years partnership
               </li>
             </ul>
           </div>
@@ -116,16 +117,12 @@ const AnchorwavePage = () => {
         <div className={`c-case-study-intro`}>
           <div className="container">
             <div className="c-case-study-intro__content">
-              <strong className={`c-case-study-intro__lead-text`}>About</strong>
+              <strong className={`c-case-study-intro__lead-text`}>About Anchor Wave</strong>
               <p>
-                Anchorwave is a Tucson-based Web Design & Marketing Agency that
-                helps businesses of all sizes, from small manufacturers who are
-                just getting started or looking to expand their reach online.
+              Anchor Wave is one of Tucson’s top digital agencies. They focus on web design, brand development, and digital marketing, serving a wide range of businesses, from small manufacturers and local service providers to established regional enterprises. Their approach is simple: <i>focus on clients first and create digital strategies that lead to real outcomes, like more leads, conversions, and growth</i>. Their services include custom web design & UX that matches a brand’s identity, content, and copywriting to strengthen messaging, and digital marketing campaigns like SEO, PPC, and social media.
               </p>
               <p>
-                We’ve been working together since its inception, and our shared
-                values have allowed anchorwave to grow into one of Tucson’s most
-                reputable agencies for all things digital!
+              When we partnered with Anchor Wave, they needed a dependable development partner to handle development, coding, and technical execution so their designers could focus on creativity. That’s where our collaboration began. Over the years, we became an extension of their team, handling the technical side of projects for their clients across different industries.
               </p>
             </div>
           </div>
@@ -134,17 +131,15 @@ const AnchorwavePage = () => {
         <div className={`c-concentration`}>
           <div className={`container`}>
             <div className={`c-concentration__content`}>
-              <h2 className={`c-concentration__title`}>concentrations</h2>
+              <h2 className={`c-concentration__title`}>Our Role in the Partnership</h2>
+              <p>We were Anchor Wave’s dedicated engineering partner, focusing exclusively on technical execution so Anchor Wave could prioritize design, strategy, and client relationships.</p>
+              <p>We provided:</p>
               <ul className={`c-concentration__list`}>
-                {/* <li>UI Design</li> */}
-                <li> Web Development</li>
-                <li> Elementor Dev</li>
-                {/* <li>Consultation</li> */}
-                <li>
-                  Support Tickets
-                  <strong>(For web and around)</strong>
-                </li>
-                <li>WordPress Programming</li>
+                 <li><strong>Custom Development:</strong> WordPress and Elementor builds tailored to project needs</li> 
+                <li><strong>Theme & Plugin Development:</strong> Custom-based themes, Modular, SEO-friendly builds, and advanced integrations</li>
+                <li><strong>Technical Support:</strong> Over 10,000 support tickets resolved with precision and consistency</li>
+                <li><strong>Engineering Consultation:</strong> Reliable input on scalability, performance, and platform optimization</li>
+                <li><strong>Backend Programming & Debugging:</strong> Clean, modular, and maintainable code</li>
               </ul>
             </div>
             <img
@@ -158,16 +153,21 @@ const AnchorwavePage = () => {
         <div className={`c-content`}>
           <div className={`container`}>
             <div className="c-content__card">
-              <h2 className={`c-content-card__title`}>
-                Our story, not-story but the truth.
+              <h2 className={`c-content-card__title c-content-card__title-large`}>
+              How We Worked Together
               </h2>
               <p>
-                We may have been on the other side of Earth, but we managed to
-                work well together. Our remote partnership has lasted more than
-                a decade, thanks in part to our coordination skills and ability
-                to get stuff done.
+              Our collaboration was built on clarity, speed, and trust:
               </p>
-              <p>
+              <ul className={`c-content-card__list`}> 
+                <li>Anchor Wave shared requirements and project briefs.</li>
+                <li>Our engineers reviewed them, optimized, suggested improvements, and started development.</li>
+                <li>Projects were tested, delivered on schedule, and ready to launch.</li>
+                <li>Hosting and support kept everything running smoothly.</li>
+                <li>Communication remained active through ConnectWise, Figma, Loom, Dropbox, and G-Suite.</li>
+                <li>Even while working from another continent, this setup gave Anchor Wave reliable delivery , 24/7 availability, and scalable results.</li>
+              </ul>
+              {/* <p>
                 With a team of dedicated designers and developers, we helped
                 Anchorwave achieve its client’s goals.
               </p>
@@ -177,7 +177,7 @@ const AnchorwavePage = () => {
                 group that could handle all strategical needs and those pesky
                 little details like coding or building out everything from
                 scratch.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -214,14 +214,24 @@ const AnchorwavePage = () => {
         </div> */}
         <div className={`c-showcase-detail`}>
           <div className={`container`}>
-            <h2 className={`c-showcase-detail__title`}>What We Did</h2>
+            <h2 className={`c-showcase-detail__title c-showcase-detail__title-large`}>The Advantages for Anchor Wave</h2>
             <div className="c-showcase-detail__description">
               <p>
-                Over the years, we set up a team of experienced designers,
-                developers, and project managers who can handle any project, no
-                matter how big or small the scope.
+              Partnering with LastDoor offered clear business advantages for Anchor Wave like;
               </p>
-              <p>
+              <ul className={`c-showcase-detail__list`}>
+                <li><strong>Significant Cost Savings:</strong> By relying on LastDoor instead of a full in-house engineering team, Anchor Wave achieved major cost reductions. Our highly skilled professionals provided top-quality work at a fraction of U.S. costs, making it a highly effective strategy.</li>
+                <li><strong>Flexible Scaling:</strong> Resources could be scaled up or down based on project needs, ensuring the right level of support at all times.</li>
+                <li><strong>Diverse Technical Expertise:</strong> From custom WordPress development to frontend/backend engineering and server management (including CI/CD pipelines), we provided the depth and range of technical skills Anchor Wave needed.
+</li>
+                <li><strong>High-Quality Solutions:</strong> Our modular, reusable code reduced rework, accelerated delivery, and ensured stable, well-tested projects.
+</li>
+                <li><strong>Continuous Workflow:</strong> The time difference between Nepal and Tucson meant work continued after Anchor Wave’s business hours ended. Tasks could continue in Nepal after the U.S. business day ended, which allows the tasks to progress overnight and results in faster project turnaround.
+</li>
+                <li><strong>Clear Communication:</strong> With strong English proficiency and international experience, our team ensured smooth, effective communication throughout the partnership.
+</li>
+              </ul>
+              {/* <p>
                 We set up a team of experienced designers, developers, and
                 project managers for anchorwave. We’ve worked on projects
                 ranging from small-scale to large, with even some previously
@@ -235,7 +245,7 @@ const AnchorwavePage = () => {
                 small to large scales. We worked on almost all the verticals and
                 utilized all the skills ranging from Front-End Development, Elementor
                 Websites, Custom WordPress Development, Programming, etc.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -244,45 +254,15 @@ const AnchorwavePage = () => {
           <div className={`container`}>
             <div className={`c-list-content__card`}>
               <div className="c-list-content__card-content">
-                <h2 className={`c-list-content__title`}>How do We work?</h2>
-                <p>
-                  We have the most straightforward structure that gets the
-                  workflow up and running with a simple plan that eliminates 99%
-                  of the hassle. We work as a team.
-                </p>
+                <h2 className={`c-list-content__title c-list-content__title-large`}>The Legacy of Our Partnership</h2>
+                <p>Our support helped Anchor Wave:</p>
                 <ul>
-                  <li>
-                    {" "}
-                    We gather all of the project requirements from the
-                    anchorwave team and the client to create a detailed brief.
-                  </li>
-                  <li>
-                    Whenever we have a project, the team at anchorwave gathers
-                    requirements, creates a thorough brief, and includes every
-                    detail on a task.
-                  </li>
-                  <li>
-                    Someone at Last Door picks up the project, reviews it
-                    thoroughly, and gets back with questions, missing elements,
-                    solutions, suggestions, etc.
-                  </li>
-                  <li>
-                    Depending on the nature of the project, we allocate the
-                    resources and conduct preliminary discussions regarding the
-                    assignment.
-                  </li>
-                  <li>
-                    While the details are in, the team starts the project.
-                  </li>
-                  <li>
-                    The teams communicate timely with each other to complete the
-                    task on time.
-                  </li>
-                  <li>
-                    We use tools like Connectwise, basecamp, invision, Figma,
-                    G-Suite, Dropbox, Loom, etc., to communicate effectively.
-                  </li>
+                  <li>Scale into new industries and services</li>
+                  <li>Build and maintain 650+ projects with minimal rework across 14+ verticals</li>
+                  <li>Resolve 10k+ support tickets quickly and effectively</li>
+                  <li>Grow their reputation into one of Tucson’s most trusted agencies</li>
                 </ul>
+                <p>Although our long-term partnership has now come to an end, as Anchor Wave shifted its focus to digital marketing only, the impact of our collaboration remains. The systems, processes, and technical foundations built over 13+ years still support Anchor Wave today. However, that being said, our partnership is not discontinued for a lifetime; we still help them in need on demand.</p>
               </div>
 
               <div className="c-list-content__tools">
@@ -423,7 +403,7 @@ const AnchorwavePage = () => {
             <div className={`c-accordion__item`}>
               <div className={`c-accordion__header`}>
                 <h3 className={`c-accordion__title`}>
-                  How often do we have meetings?
+                How often did you meet with Anchor Wave?
                 </h3>
                 <button type={`button`} className={`c-accordion__button`}>
                   <span className={`screen-reader-text`}>
@@ -433,18 +413,14 @@ const AnchorwavePage = () => {
               </div>
               <div className={`c-accordion__body`}>
                 <p>
-                  Less than five meetings a year. This is because we use our
-                  project management tools at their maximum capacity. Rather
-                  than having meetings, we document almost everything and use
-                  Loom and similar apps to explain issues, tasks, and briefs if
-                  needed.
+                Our operational model focuses on efficiency, holding fewer than five meetings each year. We rely on a clear communication system, productivity tools, Loom videos, and detailed documentation to keep everyone aligned. All project requirements are written down, avoiding unnecessary discussions and ensuring clarity. This disciplined approach keeps our deadlines firm, and we have a flawless record of meeting them.
                 </p>
               </div>
             </div>
             <div className={`c-accordion__item`}>
               <div className={`c-accordion__header`}>
                 <h3 className={`c-accordion__title`}>
-                  How many resources do you allocate for Anchorwave?
+                How many resources were allocated to Anchor Wave at any given time?
                 </h3>
                 <button type={`button`} className={`c-accordion__button`}>
                   <span className={`screen-reader-text`}>
@@ -454,18 +430,14 @@ const AnchorwavePage = () => {
               </div>
               <div className={`c-accordion__body`}>
                 <p>
-                  Resources are subject to change according to the flow of
-                  projects and yearly plans. However, at least 1-3 dedicated
-                  human resources are allocated each year. P.S. The flexibility
-                  to increase/decrease resources helps our partners achieve
-                  their goals accordingly.
+                Resource allocation was flexible, tailored to project needs and yearly planning. We combined dedicated frontend and backend engineers with on-demand support, providing flexibility and security for both sides. This approach allowed Anchor Wave to scale easily without worrying about resource constraints, while giving us the ability to adjust our team as projects evolved.
                 </p>
               </div>
             </div>
             <div className={`c-accordion__item`}>
               <div className={`c-accordion__header`}>
                 <h3 className={`c-accordion__title`}>
-                  What’s the most common type of project?
+                What was the most common type of project delivered?
                 </h3>
                 <button type={`button`} className={`c-accordion__button`}>
                   <span className={`screen-reader-text`}>
@@ -474,9 +446,59 @@ const AnchorwavePage = () => {
                 </button>
               </div>
               <div className={`c-accordion__body`}>
-                <p>WordPress Websites.</p>
+                <p>The majority of projects were custom-developed websites, designed with a modular architecture tailored to each client’s niche. This approach ensured the sites were easy to use, accessible, and free of backend clutter. We also worked on eCommerce projects using WooCommerce, building custom plugins and extensions as needed to meet specific requirements.</p>
               </div>
             </div>
+            <div className={`c-accordion__item`}>
+              <div className={`c-accordion__header`}>
+                <h3 className={`c-accordion__title`}>
+                Why did the partnership end if it worked so well?
+                </h3>
+                <button type={`button`} className={`c-accordion__button`}>
+                  <span className={`screen-reader-text`}>
+                    accordion action button
+                  </span>
+                </button>
+              </div>
+              <div className={`c-accordion__body`}>
+                <p>The partnership concluded as Anchor Wave shifted its focus from engineering to digital marketing. But we still provide them support on demand. So, the relationship remains active.</p>
+              </div>
+            </div>
+            <div className={`c-accordion__item`}>
+              <div className={`c-accordion__header`}>
+                <h3 className={`c-accordion__title`}>
+                Does LastDoor still work with agencies?
+                </h3>
+                <button type={`button`} className={`c-accordion__button`}>
+                  <span className={`screen-reader-text`}>
+                    accordion action button
+                  </span>
+                </button>
+              </div>
+              <div className={`c-accordion__body`}>
+                <p>Yes. We continue to partner with agencies worldwide, providing reliable support across a wide range of services, including marketing, design and branding, engineering, DevOps, and AI. Our skilled teams can handle diverse client needs.</p>
+              </div>
+            </div>
+            <div className={`c-accordion__item`}>
+              <div className={`c-accordion__header`}>
+                <h3 className={`c-accordion__title`}>
+                Can this model work for small agencies, too?
+                </h3>
+                <button type={`button`} className={`c-accordion__button`}>
+                  <span className={`screen-reader-text`}>
+                    accordion action button
+                  </span>
+                </button>
+              </div>
+              <div className={`c-accordion__body`}>
+                <p>Absolutely. This work model is particularly powerful for small-to-mid-sized agencies because it provides immediate scale and technical reliability without upfront overhead.</p>
+              </div>
+            </div>
+            <div className={`c-accordion__additional`}>
+            <h3>Want the full story?</h3>
+            <p><a href="/contact/">Contact Us</a> to get inside look at the tools, workflows, and decisions that made 13+ years of collaboration possible and discover how we can support your agency’s next stage of growth.</p>
+            </div>
+          
           </div>
         </section>
         <HighlightCta />

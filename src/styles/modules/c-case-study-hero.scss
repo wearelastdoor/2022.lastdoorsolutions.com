@@ -177,3 +177,13 @@
     }
   }
 }
+.c-case-study-hero__title-lessspace{
+  padding-bottom: 40px;
+
+  @media #{$phone} {
+    padding-bottom: 30px;
+  }
+}
+.c-case-study-hero__shortInfo{
+  padding-bottom: 25px;
+}

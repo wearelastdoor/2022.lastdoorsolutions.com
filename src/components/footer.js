@@ -110,18 +110,19 @@ const Footer = () => (
                   </figure>
                   <div className="contactPerson__details">
                     <h3 className="contactPerson__name">
-                      Prav <span>O</span>
+                      Pravo 
+                      {/* <span>o</span> */}
                     </h3>
                     <address className="contactPerson__address">Earth</address>
 
                     <div className="contactPerson__links">
-                      {/* <a
-                        href="https://wa.me/16314193281"
+                      <a
+                        href="https://wa.me/14083948252"
                         className="contactPerson__phone"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        (631) 419 3281
+                        (408) 394-8252
                       </a>
 
                       <a
@@ -131,7 +132,7 @@ const Footer = () => (
                         rel="noopener noreferrer"
                       >
                         985 116 7777
-                      </a> */}
+                      </a> 
                       <a href="mailto:pravo@lastdoorsolutions.com">
                         pravo@lastdoorsolutions.com
                       </a>

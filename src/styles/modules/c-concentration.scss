@@ -59,23 +59,49 @@
 
 .c-concentration__list {
   list-style: none;
-  column-count: 2;
-  @media #{$phone} {
-    column-count: 1;
-  }
+  // column-count: 2;
+  // @media #{$phone} {
+  //   column-count: 1;
+  // }
 
   li {
     margin-bottom: 10px;
-    -webkit-column-break-inside: avoid;
-    break-inside: avoid-column;
-    page-break-inside: avoid; /* Theoretically FF 20+ */
-    display: inline-block;
+    // -webkit-column-break-inside: avoid;
+    // break-inside: avoid-column;
+    // page-break-inside: avoid; 
+    // display: inline-block;
     width: 100%;
+    padding-left: 60px;
+    position: relative;
+    z-index: 1;
+    @media #{$phone} {
+      padding-left: 30px;
+    }
+    &:after {
+      content: '';
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='18px' height='18px' viewBox='0 0 18 18' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpolygon id='path-h2ml1miswm-1' points='170 4763 186 4771 170 4779'%3E%3C/polygon%3E%3Cfilter x='-6.2%25' y='-6.2%25' width='125.0%25' height='125.0%25' filterUnits='objectBoundingBox' id='filter-h2ml1miswm-2'%3E%3CfeOffset dx='2' dy='2' in='SourceAlpha' result='shadowOffsetOuter1'%3E%3C/feOffset%3E%3CfeColorMatrix values='0 0 0 0 0.556862745 0 0 0 0 0.862745098 0 0 0 0 0.592156863 0 0 0 1 0' type='matrix' in='shadowOffsetOuter1'%3E%3C/feColorMatrix%3E%3C/filter%3E%3C/defs%3E%3Cg id='Finalized-Pages' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Anchorwave_22.0' transform='translate(-170.000000, -4763.000000)' fill-rule='nonzero'%3E%3Cg id='Rectangle'%3E%3Cuse fill='black' fill-opacity='1' filter='url(%23filter-h2ml1miswm-2)' xlink:href='%23path-h2ml1miswm-1'%3E%3C/use%3E%3Cuse fill='%238EDC97' xlink:href='%23path-h2ml1miswm-1'%3E%3C/use%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 
+      position: absolute;
+      left: 0;
+      top: 8px;
+      height: 18px;
+      width: 18px;
+      background-repeat: no-repeat;
+    background-position: center;
+      @media #{$phone} {
+        top: 9px;
+        transform: scale(.8);
+        transform-origin: left top;
+      }
+    }
     strong {
-      display: block;
-      @include fsz(12px);
-      line-height: 1.25;
+      font-weight: 700;
+      // display: block;
+      // @include fsz(12px);
+      // line-height: 1.25;
     }
   }
+
+
+
 }

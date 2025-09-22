@@ -142,3 +142,16 @@
     display: block;
   }
 }
+
+.c-accordion__additional{
+  margin-top: 50px;
+  h2{
+    font-size: clamp(2.125rem, 6vw, 2.875rem);
+    line-height: 1;
+    letter-spacing: -2px;
+    @media #{$phone} {
+      margin-bottom: 10px;
+      letter-spacing: -1px;
+    }
+  }
+}

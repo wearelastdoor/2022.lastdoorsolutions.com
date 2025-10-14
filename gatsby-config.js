@@ -150,8 +150,5 @@ module.exports = {
                 layout: require.resolve(`./src/components/layout`),
             },
         },
-        {
-            resolve: 'gatsby-plugin-brotli'
-        }
     ],
 }

@@ -425,3 +425,11 @@
     color: rgba($c-brand-secondary, 0.5);
   }
 }
+
+.contactPerson__links-item {
+  color: $c-white;
+    @include fsz(16px);
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+}

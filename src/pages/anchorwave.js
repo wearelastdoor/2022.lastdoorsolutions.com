@@ -33,6 +33,7 @@ import toolLogo10 from "../images/tool-logo-10.png";
 import toolLogo11 from "../images/tool-logo-11.png";
 import toolLogo12 from "../images/tool-logo-12.png";
 import HighlightCta from "../components/HighlightCta";
+import { Accordion, AccordionItem } from "../components/Accordion";
 
 import ScaleCarousel from "../components/anchorwave/scaleCarousel";
 // Import Components
@@ -393,114 +394,35 @@ const AnchorwavePage = () => {
           </div>
         </div> */}
 
-        <section className={`c-accordion`}>
-          <div className={`container`}>
-            <div className="c-accordion__intro">
-              <h2 className={`c-accordion__heading`} title={`FAQs`}>
-                FAQs
-              </h2>
-            </div>
-            <div className={`c-accordion__item`}>
-              <div className={`c-accordion__header`}>
-                <h3 className={`c-accordion__title`}>
-                How often did you meet with Anchor Wave?
-                </h3>
-                <button type={`button`} className={`c-accordion__button`}>
-                  <span className={`screen-reader-text`}>
-                    accordion action button
-                  </span>
-                </button>
-              </div>
-              <div className={`c-accordion__body`}>
-                <p>
-                Our operational model focuses on efficiency, holding fewer than five meetings each year. We rely on a clear communication system, productivity tools, Loom videos, and detailed documentation to keep everyone aligned. All project requirements are written down, avoiding unnecessary discussions and ensuring clarity. This disciplined approach keeps our deadlines firm, and we have a flawless record of meeting them.
-                </p>
-              </div>
-            </div>
-            <div className={`c-accordion__item`}>
-              <div className={`c-accordion__header`}>
-                <h3 className={`c-accordion__title`}>
-                How many resources were allocated to Anchor Wave at any given time?
-                </h3>
-                <button type={`button`} className={`c-accordion__button`}>
-                  <span className={`screen-reader-text`}>
-                    accordion action button
-                  </span>
-                </button>
-              </div>
-              <div className={`c-accordion__body`}>
-                <p>
-                Resource allocation was flexible, tailored to project needs and yearly planning. We combined dedicated frontend and backend engineers with on-demand support, providing flexibility and security for both sides. This approach allowed Anchor Wave to scale easily without worrying about resource constraints, while giving us the ability to adjust our team as projects evolved.
-                </p>
-              </div>
-            </div>
-            <div className={`c-accordion__item`}>
-              <div className={`c-accordion__header`}>
-                <h3 className={`c-accordion__title`}>
-                What was the most common type of project delivered?
-                </h3>
-                <button type={`button`} className={`c-accordion__button`}>
-                  <span className={`screen-reader-text`}>
-                    accordion action button
-                  </span>
-                </button>
-              </div>
-              <div className={`c-accordion__body`}>
-                <p>The majority of projects were custom-developed websites, designed with a modular architecture tailored to each client’s niche. This approach ensured the sites were easy to use, accessible, and free of backend clutter. We also worked on eCommerce projects using WooCommerce, building custom plugins and extensions as needed to meet specific requirements.</p>
-              </div>
-            </div>
-            <div className={`c-accordion__item`}>
-              <div className={`c-accordion__header`}>
-                <h3 className={`c-accordion__title`}>
-                Why did the partnership end if it worked so well?
-                </h3>
-                <button type={`button`} className={`c-accordion__button`}>
-                  <span className={`screen-reader-text`}>
-                    accordion action button
-                  </span>
-                </button>
-              </div>
-              <div className={`c-accordion__body`}>
-                <p>The partnership concluded as Anchor Wave shifted its focus from engineering to digital marketing. But we still provide them support on demand. So, the relationship remains active.</p>
-              </div>
-            </div>
-            <div className={`c-accordion__item`}>
-              <div className={`c-accordion__header`}>
-                <h3 className={`c-accordion__title`}>
-                Does LastDoor still work with agencies?
-                </h3>
-                <button type={`button`} className={`c-accordion__button`}>
-                  <span className={`screen-reader-text`}>
-                    accordion action button
-                  </span>
-                </button>
-              </div>
-              <div className={`c-accordion__body`}>
-                <p>Yes. We continue to partner with agencies worldwide, providing reliable support across a wide range of services, including marketing, design and branding, engineering, DevOps, and AI. Our skilled teams can handle diverse client needs.</p>
-              </div>
-            </div>
-            <div className={`c-accordion__item`}>
-              <div className={`c-accordion__header`}>
-                <h3 className={`c-accordion__title`}>
-                Can this model work for small agencies, too?
-                </h3>
-                <button type={`button`} className={`c-accordion__button`}>
-                  <span className={`screen-reader-text`}>
-                    accordion action button
-                  </span>
-                </button>
-              </div>
-              <div className={`c-accordion__body`}>
-                <p>Absolutely. This work model is particularly powerful for small-to-mid-sized agencies because it provides immediate scale and technical reliability without upfront overhead.</p>
-              </div>
-            </div>
-            <div className={`c-accordion__additional`}>
+        <Accordion heading="FAQs" title="FAQs" additional={
+          <>
             <h3>Want the full story?</h3>
-            <p><a href="/contact/">Contact Us</a> to get inside look at the tools, workflows, and decisions that made 13+ years of collaboration possible and discover how we can support your agency’s next stage of growth.</p>
-            </div>
-          
-          </div>
-        </section>
+            <p><a href="/contact/">Contact Us</a> to get inside look at the tools, workflows, and decisions that made 13+ years of collaboration possible and discover how we can support your agency's next stage of growth.</p>
+          </>
+        }>
+          <AccordionItem title="How often did you meet with Anchor Wave?">
+            <p>
+              Our operational model focuses on efficiency, holding fewer than five meetings each year. We rely on a clear communication system, productivity tools, Loom videos, and detailed documentation to keep everyone aligned. All project requirements are written down, avoiding unnecessary discussions and ensuring clarity. This disciplined approach keeps our deadlines firm, and we have a flawless record of meeting them.
+            </p>
+          </AccordionItem>
+          <AccordionItem title="How many resources were allocated to Anchor Wave at any given time?">
+            <p>
+              Resource allocation was flexible, tailored to project needs and yearly planning. We combined dedicated frontend and backend engineers with on-demand support, providing flexibility and security for both sides. This approach allowed Anchor Wave to scale easily without worrying about resource constraints, while giving us the ability to adjust our team as projects evolved.
+            </p>
+          </AccordionItem>
+          <AccordionItem title="What was the most common type of project delivered?">
+            <p>The majority of projects were custom-developed websites, designed with a modular architecture tailored to each client's niche. This approach ensured the sites were easy to use, accessible, and free of backend clutter. We also worked on eCommerce projects using WooCommerce, building custom plugins and extensions as needed to meet specific requirements.</p>
+          </AccordionItem>
+          <AccordionItem title="Why did the partnership end if it worked so well?">
+            <p>The partnership concluded as Anchor Wave shifted its focus from engineering to digital marketing. But we still provide them support on demand. So, the relationship remains active.</p>
+          </AccordionItem>
+          <AccordionItem title="Does LastDoor still work with agencies?">
+            <p>Yes. We continue to partner with agencies worldwide, providing reliable support across a wide range of services, including marketing, design and branding, engineering, DevOps, and AI. Our skilled teams can handle diverse client needs.</p>
+          </AccordionItem>
+          <AccordionItem title="Can this model work for small agencies, too?">
+            <p>Absolutely. This work model is particularly powerful for small-to-mid-sized agencies because it provides immediate scale and technical reliability without upfront overhead.</p>
+          </AccordionItem>
+        </Accordion>
         <HighlightCta />
       </main>
       <Footer />

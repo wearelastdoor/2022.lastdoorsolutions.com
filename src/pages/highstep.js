@@ -26,6 +26,7 @@ import toolLogo10 from "../images/tool-logo-10.png";
 import toolLogo11 from "../images/tool-logo-11.png";
 import toolLogo12 from "../images/tool-logo-12.png";
 import HighlightCta from "../components/HighlightCta";
+import { Accordion, AccordionItem } from "../components/Accordion";
 
 import ScaleCarousel from "../components/anchorwave/scaleCarousel";
 // Import Components
@@ -366,71 +367,28 @@ const AnchorwavePage = () => {
           </div>
         </div>
 
-        <section className={`c-accordion`}>
-          <div className={`container`}>
-            <div className="c-accordion__intro">
-              <h2 className={`c-accordion__heading`} title={`FAQs`}>
-                FAQs
-              </h2>
-            </div>
-            <div className={`c-accordion__item`}>
-              <div className={`c-accordion__header`}>
-                <h3 className={`c-accordion__title`}>
-                  How often do we have meetings?
-                </h3>
-                <button type={`button`} className={`c-accordion__button`}>
-                  <span className={`screen-reader-text`}>
-                    accordion action button
-                  </span>
-                </button>
-              </div>
-              <div className={`c-accordion__body`}>
-                <p>
-                  This depends on the nature of the product we are working on.
-                  Mostly, every team member constantly communicates with the
-                  stake holders, and while the project is running, they conduct
-                  meetings at least 3-4 times a week. For other ongoing tasks,
-                  we don't do meetings. That's because generally, the
-                  distributed team of Last Door and Highstep communicate in
-                  Microsoft Teams to keep things on track.
-                </p>
-              </div>
-            </div>
-            <div className={`c-accordion__item`}>
-              <div className={`c-accordion__header`}>
-                <h3 className={`c-accordion__title`}>
-                  How many resources do you allocate for Higstep?
-                </h3>
-                <button type={`button`} className={`c-accordion__button`}>
-                  <span className={`screen-reader-text`}>
-                    accordion action button
-                  </span>
-                </button>
-              </div>
-              <div className={`c-accordion__body`}>
-                <p>
-                  We are highly flexible with resources. However, minimum 1
-                  resource is allocated at all times.
-                </p>
-              </div>
-            </div>
-            <div className={`c-accordion__item`}>
-              <div className={`c-accordion__header`}>
-                <h3 className={`c-accordion__title`}>
-                  What’s the most common type of project?
-                </h3>
-                <button type={`button`} className={`c-accordion__button`}>
-                  <span className={`screen-reader-text`}>
-                    accordion action button
-                  </span>
-                </button>
-              </div>
-              <div className={`c-accordion__body`}>
-                <p>DotNet Web Apps</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Accordion heading="FAQs" title="FAQs">
+          <AccordionItem title="How often do we have meetings?">
+            <p>
+              This depends on the nature of the product we are working on.
+              Mostly, every team member constantly communicates with the
+              stake holders, and while the project is running, they conduct
+              meetings at least 3-4 times a week. For other ongoing tasks,
+              we don't do meetings. That's because generally, the
+              distributed team of Last Door and Highstep communicate in
+              Microsoft Teams to keep things on track.
+            </p>
+          </AccordionItem>
+          <AccordionItem title="How many resources do you allocate for Higstep?">
+            <p>
+              We are highly flexible with resources. However, minimum 1
+              resource is allocated at all times.
+            </p>
+          </AccordionItem>
+          <AccordionItem title="What's the most common type of project?">
+            <p>DotNet Web Apps</p>
+          </AccordionItem>
+        </Accordion>
         <HighlightCta />
       </main>
       <Footer />

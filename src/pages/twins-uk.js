@@ -7,6 +7,7 @@ import projectImage1 from "../images/twins-uk/twins-showcase-01.webp";
 import projectImage2 from "../images/twins-uk/twins-showcase-02.webp";
 import projectImage3 from "../images/twins-uk/twins-showcase-03.webp";
 import HighlightCta from "../components/HighlightCta";
+import { Accordion, AccordionItem } from "../components/Accordion";
 
 const TwinsUkPage = () => {
   return (
@@ -354,78 +355,35 @@ const TwinsUkPage = () => {
           </div>
         </section>
 
-        <section className={`c-accordion`}>
-          <div className={`container`}>
-            <div className="c-accordion__intro">
-              <h2 className={`c-accordion__heading`} title={`FAQs`}>
-                FAQs
-              </h2>
-            </div>
-            <div className={`c-accordion__item`}>
-              <div className={`c-accordion__header`}>
-                <h3 className={`c-accordion__title`}>
-                  How often do we have meetings?
-                </h3>
-                <button type={`button`} className={`c-accordion__button`}>
-                  <span className={`screen-reader-text`}>
-                    accordion action button
-                  </span>
-                </button>
-              </div>
-              <div className={`c-accordion__body`}>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime mollitia, molestiae quas vel sint commodi repudiandae
-                  consequuntur voluptatum laborum numquam blanditiis harum
-                  quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                  eaque rerum! Provident similique accusantium nemo autem.
-                </p>
-              </div>
-            </div>
-            <div className={`c-accordion__item`}>
-              <div className={`c-accordion__header`}>
-                <h3 className={`c-accordion__title`}>
-                  How many resources do you allocate for Anchorwave?
-                </h3>
-                <button type={`button`} className={`c-accordion__button`}>
-                  <span className={`screen-reader-text`}>
-                    accordion action button
-                  </span>
-                </button>
-              </div>
-              <div className={`c-accordion__body`}>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime mollitia, molestiae quas vel sint commodi repudiandae
-                  consequuntur voluptatum laborum numquam blanditiis harum
-                  quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                  eaque rerum! Provident similique accusantium nemo autem.
-                </p>
-              </div>
-            </div>
-            <div className={`c-accordion__item`}>
-              <div className={`c-accordion__header`}>
-                <h3 className={`c-accordion__title`}>
-                  What’s the most common type of project?
-                </h3>
-                <button type={`button`} className={`c-accordion__button`}>
-                  <span className={`screen-reader-text`}>
-                    accordion action button
-                  </span>
-                </button>
-              </div>
-              <div className={`c-accordion__body`}>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime mollitia, molestiae quas vel sint commodi repudiandae
-                  consequuntur voluptatum laborum numquam blanditiis harum
-                  quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                  eaque rerum! Provident similique accusantium nemo autem.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Accordion heading="FAQs" title="FAQs">
+          <AccordionItem title="How often do we have meetings?">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Maxime mollitia, molestiae quas vel sint commodi repudiandae
+              consequuntur voluptatum laborum numquam blanditiis harum
+              quisquam eius sed odit fugiat iusto fuga praesentium optio,
+              eaque rerum! Provident similique accusantium nemo autem.
+            </p>
+          </AccordionItem>
+          <AccordionItem title="How many resources do you allocate for Anchorwave?">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Maxime mollitia, molestiae quas vel sint commodi repudiandae
+              consequuntur voluptatum laborum numquam blanditiis harum
+              quisquam eius sed odit fugiat iusto fuga praesentium optio,
+              eaque rerum! Provident similique accusantium nemo autem.
+            </p>
+          </AccordionItem>
+          <AccordionItem title="What's the most common type of project?">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Maxime mollitia, molestiae quas vel sint commodi repudiandae
+              consequuntur voluptatum laborum numquam blanditiis harum
+              quisquam eius sed odit fugiat iusto fuga praesentium optio,
+              eaque rerum! Provident similique accusantium nemo autem.
+            </p>
+          </AccordionItem>
+        </Accordion>
         <HighlightCta />
       </main>
       <Footer />

@@ -1,8 +1,10 @@
 .c-accordion {
   padding: 143px 0 110px;
+
   @media #{$tablet} {
     padding: 100px 0 80px;
   }
+
   @media #{$phone} {
     padding: 80px 0 60px;
   }
@@ -17,6 +19,7 @@
   position: relative;
   z-index: 1;
   margin-bottom: 28px;
+
   @media #{$phone} {
     margin-bottom: 0;
   }
@@ -93,7 +96,8 @@
   top: 25px;
   right: 30px;
 
-  &:after, &:before {
+  &:after,
+  &:before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -128,27 +132,27 @@
   line-height: 1.2315;
   letter-spacing: -0.5px;
   margin-bottom: 0;
+
   @media #{$phone} {
     @include fsz(22px);
     letter-spacing: -0.2px;
   }
 }
 
-.c-accordion__body {
-  padding: 10px 0;
-  display: none;
+.c-accordion__body {}
 
-  .is-open & {
-    display: block;
-  }
+.c-accordion__body-inner {
+  padding: 10px 0;
 }
 
-.c-accordion__additional{
+.c-accordion__additional {
   margin-top: 50px;
-  h2{
+
+  h2 {
     font-size: clamp(2.125rem, 6vw, 2.875rem);
     line-height: 1;
     letter-spacing: -2px;
+
     @media #{$phone} {
       margin-bottom: 10px;
       letter-spacing: -1px;

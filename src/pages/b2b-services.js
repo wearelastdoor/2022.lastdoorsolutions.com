@@ -59,7 +59,7 @@ const ServiceSingle = () => {
                   style={{ backgroundImage: `url(${partnerImg2})` }}
                 >
                   <h3 className={`c-service-partner__title`}>
-                    Higstep Technologies
+                    Highstep Technologies
                   </h3>
                   <TransitionLink
                     to="/highstep/"

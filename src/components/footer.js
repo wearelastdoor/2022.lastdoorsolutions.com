@@ -116,6 +116,7 @@ const Footer = () => (
                     <address className="contactPerson__address">Earth</address>
 
                     <div className="contactPerson__links">
+                      <div className="contactPerson__links-item">
                       <a
                         href="https://wa.me/14083948252"
                         className="contactPerson__phone"
@@ -123,8 +124,9 @@ const Footer = () => (
                         rel="noopener noreferrer"
                       >
                         (408) 394-8252
-                      </a>
-
+                      </a> (US)
+                      </div>
+                      <div className="contactPerson__links-item">
                       <a
                         href="https://wa.me/9779851167777"
                         className="contactPerson__phone"
@@ -132,7 +134,8 @@ const Footer = () => (
                         rel="noopener noreferrer"
                       >
                         985 116 7777
-                      </a> 
+                      </a> (NP) 
+                      </div>
                       <a href="mailto:pravo@lastdoorsolutions.com">
                         pravo@lastdoorsolutions.com
                       </a>

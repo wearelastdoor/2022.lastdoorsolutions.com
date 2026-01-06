@@ -3,19 +3,19 @@
 import { device } from "@/styles/theme/breakpoints";
 import styled from "styled-components";
 
-const Quote = styled.div<{ themetype: string }>`
+const Quote = styled.div<{ $themetype: string }>`
   position: relative;
   z-index: 1;
   background-color: ${({ theme }) => theme.color.brandSecondary};
   padding: 6.6rem 0;
   text-align: center;
-  background-color: ${({ theme, themetype }) =>
-    themetype === "dark"
+  background-color: ${({ theme, $themetype }) =>
+    $themetype === "dark"
       ? theme.colors.primary.gray[50]
       : theme.colors.secondary.purple[50]};
 
-  color: ${({ theme, themetype }) =>
-    themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
+  color: ${({ theme, $themetype }) =>
+    $themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
 
   &:after {
     content: "";
@@ -94,14 +94,14 @@ const QuoteUser = styled.cite`
   line-height: 1.6;
 `;
 
-const QuoteDesignation = styled.p<{ themetype: string }>`
+const QuoteDesignation = styled.p<{ $themetype: string }>`
   font-size: ${({ theme }) => theme.font.size.body.sm};
   font-family: ${({ theme }) => theme.fonts.black};
   letter-spacing: 0.05rem;
   text-transform: uppercase;
   line-height: 1.6;
-  color: ${({ theme, themetype }) =>
-    themetype === "dark" ? "rgba(255,255,255, 0.5)" : "rgba(23, 33, 42, 0.5)"};
+  color: ${({ theme, $themetype }) =>
+    $themetype === "dark" ? "rgba(255,255,255, 0.5)" : "rgba(23, 33, 42, 0.5)"};
 `;
 
 export {

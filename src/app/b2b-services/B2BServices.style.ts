@@ -216,7 +216,7 @@ const ServicePartnertitle = styled.h3`
 
 const StyledLink = styled.a``;
 
-const StyledLinkDiv = styled.div`
+const StyledLinkDiv = styled.button`
   display: block;
   position: absolute;
   top: 0;
@@ -224,6 +224,15 @@ const StyledLinkDiv = styled.div`
   right: 0;
   bottom: 0;
   z-index: 1;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-size: 0;
+  width: 100%;
+  height: 100%;
+  text-align: left;
 `;
 
 const ScreenReaderText = styled.span`

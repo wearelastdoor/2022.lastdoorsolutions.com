@@ -8,9 +8,9 @@ export interface CaseStudyProps {
 
 const CaseStudyIntro = ({ themeType, description }: CaseStudyProps) => {
   return (
-    <S.CaseStudyIntro themetype={themeType}>
+    <S.CaseStudyIntro $themetype={themeType}>
       <S.StyledContainer>
-        <S.IntroContent themetype={themeType}>
+        <S.IntroContent $themetype={themeType}>
           {parse(description)}
         </S.IntroContent>
         <S.IntroImage>

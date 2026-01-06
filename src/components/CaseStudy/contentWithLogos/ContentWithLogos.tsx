@@ -13,7 +13,7 @@ const ContentWithLogos = ({
   description,
 }: ContentWithLogosProps) => {
   return (
-    <S.LogosContent themetype={themeType}>
+    <S.LogosContent $themetype={themeType}>
       <S.StyledContainer>
         <S.ContentCol $centered>
           <S.Logos>
@@ -49,7 +49,7 @@ const ContentWithLogos = ({
           <S.ShowcaseDescription>{description}</S.ShowcaseDescription>
         </S.ContentCol>
         <S.ContentCol>
-          <S.LogosTitle title={title} themetype={themeType}>
+          <S.LogosTitle title={title} $themetype={themeType}>
             {title}
           </S.LogosTitle>
         </S.ContentCol>

@@ -3,18 +3,18 @@
 import { device } from "@/styles/theme/breakpoints";
 import styled, { css } from "styled-components";
 
-const CarouselShowcase = styled.section<{ themetype: string }>`
+const CarouselShowcase = styled.section<{ $themetype: string }>`
   position: relative;
   z-index: 1;
   text-align: center;
   padding: 7.8rem 0 13.5rem;
-  background-color: ${({ theme, themetype }) =>
-    themetype === "dark"
+  background-color: ${({ theme, $themetype }) =>
+    $themetype === "dark"
       ? theme.colors.primary.gray[50]
       : theme.colors.secondary.purple[50]};
 
-  color: ${({ theme, themetype }) =>
-    themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
+  color: ${({ theme, $themetype }) =>
+    $themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
 
   @media ${device.smallScreen} {
     padding: 7rem 0;
@@ -28,7 +28,7 @@ const StyledContainer = styled.div`
 
 const ShowcaseHeader = styled.header``;
 
-const ShowcaseTitle = styled.h2<{ themetype: string }>`
+const ShowcaseTitle = styled.h2<{ $themetype: string }>`
   font-size: clamp(5rem, 8vw, 9.5rem);
   font-family: ${({ theme }) => theme.fonts.black};
   font-weight: normal;
@@ -41,8 +41,8 @@ const ShowcaseTitle = styled.h2<{ themetype: string }>`
   margin: 1.8rem auto 2rem;
   max-width: min(97rem, 100%);
 
-  color: ${({ theme, themetype }) =>
-    themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
+  color: ${({ theme, $themetype }) =>
+    $themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
 
   @media ${device.tablet} {
     letter-spacing: -0.33rem;
@@ -120,8 +120,8 @@ const CarouselInner = styled.div`
 `;
 
 const CarouselItem = styled.div<{
-  position: string;
-  depth: number;
+  $position: string;
+  $depth: number;
 }>`
   max-width: 87rem;
   top: 0;
@@ -143,25 +143,25 @@ const CarouselItem = styled.div<{
     height: auto;
   }
 
-  ${({ position }) =>
-    position === "active" &&
+  ${({ $position }) =>
+    $position === "active" &&
     `
     z-index: 10;
   `}
 
-  ${({ position, depth }) =>
-    position === "after" &&
+  ${({ $position, $depth }) =>
+    $position === "after" &&
     `
-    transform: translate3d(${150 * depth}px, 0, 0) scale(${1 - depth * 0.2});
-    z-index: ${6 - depth};
+    transform: translate3d(${150 * $depth}px, 0, 0) scale(${1 - $depth * 0.2});
+    z-index: ${6 - $depth};
     transform-origin: right center;
   `}
 
-  ${({ position, depth }) =>
-    position === "before" &&
+  ${({ $position, $depth }) =>
+    $position === "before" &&
     `
-    transform: translate3d(-${150 * depth}px, 0, 0) scale(${1 - depth * 0.2});
-    z-index: ${6 - depth};
+    transform: translate3d(-${150 * $depth}px, 0, 0) scale(${1 - $depth * 0.2});
+    z-index: ${6 - $depth};
     transform-origin: left center;
   `}
 `;

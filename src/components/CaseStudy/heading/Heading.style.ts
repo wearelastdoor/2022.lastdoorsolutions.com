@@ -3,19 +3,19 @@
 import { device } from "@/styles/theme/breakpoints";
 import styled from "styled-components";
 
-const Heading = styled.section<{ themetype: string }>`
+const Heading = styled.section<{ $themetype: string }>`
   position: relative;
   z-index: 1;
   padding: 10.5rem 0 0 1.3rem;
   background-color: ${({ theme }) => theme.color.brandSecondary};
   text-align: center;
-  background-color: ${({ theme, themetype }) =>
-    themetype === "dark"
+  background-color: ${({ theme, $themetype }) =>
+    $themetype === "dark"
       ? theme.colors.primary.gray[50]
       : theme.colors.secondary.purple[50]};
 
-  color: ${({ theme, themetype }) =>
-    themetype === "dark" ? theme.colorVars.tertiary : theme.colors.primary.gray[50]} !important;
+  color: ${({ theme, $themetype }) =>
+    $themetype === "dark" ? theme.colorVars.tertiary : theme.colors.primary.gray[50]} !important;
 
   @media ${device.tablet} {
     padding: 8rem 0 1rem;
@@ -43,7 +43,7 @@ const StyledContainer = styled.div`
   padding: 0 2rem;
 `;
 
-const HeadingTitle = styled.h2<{ themetype: string }>`
+const HeadingTitle = styled.h2<{ $themetype: string }>`
   font-size: clamp(5rem, 8vw, 9.5rem);
   font-family: ${({ theme }) => theme.fonts.black};
   font-weight: normal;
@@ -54,8 +54,8 @@ const HeadingTitle = styled.h2<{ themetype: string }>`
   position: relative;
   z-index: 1;
   margin-bottom: 2.1rem;
-  color: ${({ theme, themetype }) =>
-    themetype === "dark" ? "${({ theme }) => theme.color.screen}" : theme.colors.primary.gray[50]};
+  color: ${({ theme, $themetype }) =>
+    $themetype === "dark" ? theme.colors.primary.white : theme.colors.primary.gray[50]};
 
   @media ${device.tablet} {
     letter-spacing: -0.33rem;
@@ -72,8 +72,8 @@ const HeadingTitle = styled.h2<{ themetype: string }>`
     left: 0;
     transform: translate(0.5rem, 0.5rem) translateZ(0);
     backface-visibility: hidden;
-    -webkit-text-stroke: ${({ theme, themetype }) =>
-      themetype === "dark"
+    -webkit-text-stroke: ${({ theme, $themetype }) =>
+      $themetype === "dark"
         ? ".1rem rgba(142,210,220,0.6)"
         : ".1rem rgba(142,210,220,1)"};
 

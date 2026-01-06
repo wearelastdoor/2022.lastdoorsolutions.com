@@ -13,11 +13,10 @@ const ImageContent = ({ themeType, id, layout }: ImageContentProps) => {
 
   if (!data) return null;
 
-  console.log(layout);
 
   return (
-    <S.ImageContent themetype={themeType}>
-      <S.StyledContainer layout={layout}>
+    <S.ImageContent $themetype={themeType}>
+      <S.StyledContainer $layout={layout}>
         <S.MainContent>
           <S.ContentTitle dangerouslySetInnerHTML={{ __html: data.title }} />
           <S.ContentDescription

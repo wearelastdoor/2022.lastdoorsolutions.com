@@ -4,18 +4,18 @@ import { device } from "@/styles/theme/breakpoints";
 import Image from "next/image";
 import styled, { css } from "styled-components";
 
-const ImageContent = styled.section<{ themetype?: string }>`
+const ImageContent = styled.section<{ $themetype?: string }>`
   position: relative;
   z-index: 1;
   background-color: ${({ theme }) => theme.color.brandSecondary};
   padding: 8.6rem 0;
-  background-color: ${({ theme, themetype }) =>
-    themetype === "dark"
+  background-color: ${({ theme, $themetype }) =>
+    $themetype === "dark"
       ? theme.colors.primary.gray[50]
       : theme.colors.secondary.purple[50]};
 
-  color: ${({ theme, themetype }) =>
-    themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
+  color: ${({ theme, $themetype }) =>
+    $themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
 
   @media ${device.phone} {
     padding: 4.6rem 0 6rem;
@@ -35,7 +35,7 @@ const ImageContent = styled.section<{ themetype?: string }>`
   }
 `;
 
-const StyledContainer = styled.div<{ layout?: string }>`
+const StyledContainer = styled.div<{ $layout?: string }>`
   margin: 0 auto;
   max-width: 120rem;
   padding: 0 2rem;
@@ -44,8 +44,8 @@ const StyledContainer = styled.div<{ layout?: string }>`
   flex-wrap: wrap;
   align-items: center;
 
-  ${({ layout }) =>
-    layout === "reversed" &&
+  ${({ $layout }) =>
+    $layout === "reversed" &&
     css`
       flex-direction: row-reverse;
     `}
@@ -63,7 +63,7 @@ const MainContent = styled.div`
   }
 `;
 
-const ContentTitle = styled.h2<{ themetype?: string }>`
+const ContentTitle = styled.h2<{ $themetype?: string }>`
   letter-spacing: -0.3rem;
   font-size: clamp(3rem, 5vw, 4.6rem);
   max-width: min(37rem, 100%);

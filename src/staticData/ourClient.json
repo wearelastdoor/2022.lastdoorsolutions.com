@@ -1,0 +1,95 @@
+[
+  {
+    "header": {
+      "subTitle": "WE’RE YOUR PARTNERS",
+      "title": "Augmenting teams for 16+ years",
+      "description": "We are the nearest experience to having an internal team for your agency, minus all the crazy costs & administrative burdens."
+    },
+    "clients": [
+      {
+        "image": {
+          "baseUrl": "./images/anchorwave-logo.png",
+          "alt": "Anchorwave branding",
+          "width": 80
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/highstep-logo.png",
+          "alt": "Highstep branding",
+          "width": 142
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/kings-college-logo.png",
+          "alt": "Kings Collage branding",
+          "width": 64
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/eleven-logo.png",
+          "alt": "eleven branding",
+          "width": 162
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/mila-care-logo.png",
+          "alt": "Mila care branding",
+          "width": 48
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/british-gut-logo.png",
+          "alt": "british gut branding",
+          "width": 82
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/glass-pixel.png",
+          "alt": "glass pixel branding",
+          "width": 168
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/dma-rge.png",
+          "alt": "glass pixel branding",
+          "width": 72
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/in8-logic.png",
+          "alt": "in8logic branding",
+          "width": 117
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/adventure-link.png",
+          "alt": "adventure link branding",
+          "width": 72
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/abt.png",
+          "alt": "Associated business technologies  branding",
+          "width": 156
+        }
+      },
+      {
+        "image": {
+          "baseUrl": "../images/ellamac.png",
+          "alt": "Ellamac  branding",
+          "width": 115
+        }
+      }
+    ]
+  }
+]

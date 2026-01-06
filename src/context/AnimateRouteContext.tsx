@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useMemo, useRef, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { useOverlayAnimation } from "@/hooks/useOverlayAnimation";
 
@@ -36,36 +36,85 @@ export const AnimateRouteContextProvider = ({
   const router = useRouter();
   const { animateExit, animateEntry } = useOverlayAnimation();
   const pathname = usePathname();
+  const pendingUrlRef = useRef<string | null>(null);
+  const pathChangeResolverRef = useRef<(() => void) | null>(null);
+
+  // Watch for pathname changes and resolve pending route transitions
+  useEffect(() => {
+    if (pendingUrlRef.current && pathChangeResolverRef.current) {
+      // Normalize both URLs for comparison
+      const normalizedPending = pendingUrlRef.current.startsWith("/")
+        ? pendingUrlRef.current
+        : `/${pendingUrlRef.current}`;
+      const normalizedPathname = pathname.startsWith("/")
+        ? pathname
+        : `/${pathname}`;
+
+      if (normalizedPathname === normalizedPending) {
+        const resolver = pathChangeResolverRef.current;
+        pathChangeResolverRef.current = null;
+        pendingUrlRef.current = null;
+        resolver();
+      }
+    }
+  }, [pathname]);
 
   const handleRoute = async (url: string) => {
     const normalizedUrl = url.startsWith("/") ? url : `/${url}`;
     if (normalizedUrl === pathname) return;
+    
+    // Prevent multiple simultaneous transitions
+    if (isTransitioning.current) return;
+    
     isTransitioning.current = true;
     setOverlayVariant(
       overlayVariants[Math.floor(Math.random() * overlayVariants.length)]
     );
 
     await animateExit(overlaysRef);
+    
+    // Set pending URL before navigation
+    pendingUrlRef.current = normalizedUrl;
+    
     router.push(normalizedUrl);
 
+    // Wait for pathname change with timeout fallback
     const waitForPathChange = () =>
       new Promise<void>((resolve) => {
-        const check = () => {
-          if (window.location.pathname === normalizedUrl) resolve();
-          else setTimeout(check, 10);
+        let resolved = false;
+        let timeoutId: NodeJS.Timeout | null = null;
+        
+        const doResolve = () => {
+          if (resolved) return;
+          resolved = true;
+          if (timeoutId) clearTimeout(timeoutId);
+          pathChangeResolverRef.current = null;
+          pendingUrlRef.current = null;
+          resolve();
         };
-        check();
+        
+        // Set resolver so useEffect can call it
+        pathChangeResolverRef.current = doResolve;
+        
+        // Fallback timeout to ensure animation completes even if pathname detection fails
+        timeoutId = setTimeout(() => {
+          doResolve();
+        }, 2000); // 2 second timeout
       });
+    
     await waitForPathChange();
 
     await animateEntry(overlaysRef);
     isTransitioning.current = false;
   };
 
+  const contextValue = useMemo(
+    () => ({ overlaysRef, overlayVariant, handleRoute }),
+    [overlayVariant]
+  );
+
   return (
-    <AnimateRouteContext.Provider
-      value={{ overlaysRef, overlayVariant, handleRoute }}
-    >
+    <AnimateRouteContext.Provider value={contextValue}>
       {children}
     </AnimateRouteContext.Provider>
   );

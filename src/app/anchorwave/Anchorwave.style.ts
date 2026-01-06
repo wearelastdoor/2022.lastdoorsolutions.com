@@ -32,7 +32,7 @@ const StyledContainer = styled.div`
   z-index: 1;
 `;
 
-const HeroLink = styled.a`
+const HeroLink = styled.button`
   color: ${({ theme }) => theme.colors.primary.white};
   font-size: ${({ theme }) => theme.font.size.display.md};
   background-color: transparent;
@@ -40,11 +40,13 @@ const HeroLink = styled.a`
   border-radius: 0;
   padding: 0;
   border: none;
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
   opacity: 0.6;
   text-decoration: none;
   margin-top: -1rem;
+  transition: ease all 0.25s;
 
   @media screen and (max-width: 768px) {
     font-size: ${({ theme }) => theme.font.size.display.xs};

@@ -7,7 +7,7 @@ import * as S from "./HighlightCard.style";
 
 const HighlightCard = ({ themeType, title, description }: CaseStudyProps) => {
   return (
-    <S.HighlightBlock themetype={themeType}>
+    <S.HighlightBlock $themetype={themeType}>
       <S.StyledContainer>
         <S.HighlightCard>
           <S.CardTitle title={title}>{title}</S.CardTitle>

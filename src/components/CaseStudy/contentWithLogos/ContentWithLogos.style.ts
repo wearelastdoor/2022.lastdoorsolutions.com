@@ -3,7 +3,7 @@
 import { device } from "@/styles/theme/breakpoints";
 import styled, { css } from "styled-components";
 
-const LogosContent = styled.section<{ themetype: string }>`
+const LogosContent = styled.section<{ $themetype: string }>`
   position: relative;
   z-index: 1;
   padding: 6.5rem 0;
@@ -16,13 +16,13 @@ const LogosContent = styled.section<{ themetype: string }>`
     padding: 4rem 0 3.5rem;
   }
 
-  background-color: ${({ theme, themetype }) =>
-    themetype === "dark"
+  background-color: ${({ theme, $themetype }) =>
+    $themetype === "dark"
       ? theme.colors.primary.gray[50]
       : theme.colors.secondary.purple[50]};
 
-  color: ${({ theme, themetype }) =>
-    themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
+  color: ${({ theme, $themetype }) =>
+    $themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
 `;
 
 const StyledContainer = styled.div`
@@ -96,7 +96,7 @@ const ShowcaseDescription = styled.p`
   line-height: 1.6;
 `;
 
-const LogosTitle = styled.h2<{ themetype: string }>`
+const LogosTitle = styled.h2<{ $themetype: string }>`
   font-size: clamp(5rem, 8vw, 9.5rem);
   font-family: ${({ theme }) => theme.fonts.black};
   font-weight: normal;
@@ -108,8 +108,8 @@ const LogosTitle = styled.h2<{ themetype: string }>`
   z-index: 1;
   max-width: min(44.5rem, 100%);
 
-  color: ${({ theme, themetype }) =>
-    themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
+  color: ${({ theme, $themetype }) =>
+    $themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
 
   @media ${device.tablet} {
     letter-spacing: -0.33rem;

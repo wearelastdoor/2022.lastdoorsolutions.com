@@ -31,7 +31,7 @@ const ServiceSingle = () => {
                 }}
               >
                 <S.ServicePartnertitle>Anchorwave</S.ServicePartnertitle>
-                <S.StyledLinkDiv onClick={() => handleRoute("/anchorwave")}>
+                <S.StyledLinkDiv onClick={() => handleRoute("/anchorwave")} type="button">
                   <S.ScreenReaderText>anchorwave</S.ScreenReaderText>
                 </S.StyledLinkDiv>
               </S.ServicePartnerCard>
@@ -60,7 +60,7 @@ const ServiceSingle = () => {
                 <S.StyledLink
                   href="https://e11group.com/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                 >
                   <S.ScreenReaderText>e11group</S.ScreenReaderText>
                 </S.StyledLink>

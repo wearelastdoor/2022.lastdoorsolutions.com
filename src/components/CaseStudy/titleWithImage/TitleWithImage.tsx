@@ -8,13 +8,13 @@ interface TitleWithImageProps {
 
 const TitleWithImage = ({ themeType, title }: TitleWithImageProps) => {
   return (
-    <S.TitleWithImage themetype={themeType}>
+    <S.TitleWithImage $themetype={themeType}>
       <S.StyledContainer>
-        <S.MainTitle title={title} themetype={themeType}>
+        <S.MainTitle title={title} $themetype={themeType}>
           {title}
         </S.MainTitle>
 
-        <S.TitleImage themetype={themeType}>
+        <S.TitleImage $themetype={themeType}>
           <S.StyledImage
             src="./images/dashboard.jpg"
             alt="Dashboard Showcase"

@@ -54,10 +54,10 @@ const HighlightCta = ({ themeColor }: HighlightCtaProps) => {
     </g></svg>`;
 
   return (
-    <S.HighlightCta themecolor={themeColor}>
+    <S.HighlightCta $themecolor={themeColor}>
       <S.CtaContainer>
         <S.CtaHolder>
-          <S.CtaDecorate themecolor={themeColor}>
+          <S.CtaDecorate $themecolor={themeColor}>
             <S.ScreenReaderText>decorate</S.ScreenReaderText>
           </S.CtaDecorate>
           <S.CtaCard>

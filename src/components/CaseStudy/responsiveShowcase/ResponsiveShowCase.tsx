@@ -8,9 +8,9 @@ interface ResponsiveShowCaseProps {
 
 const ResponsiveShowCase = ({ themeType, title }: ResponsiveShowCaseProps) => {
   return (
-    <S.ResponsiveShowcase themetype={themeType}>
+    <S.ResponsiveShowcase $themetype={themeType}>
       <S.StyledContainer>
-        <S.ShowcaseTitle title={title} themetype={themeType}>
+        <S.ShowcaseTitle title={title} $themetype={themeType}>
           {title}
         </S.ShowcaseTitle>
 

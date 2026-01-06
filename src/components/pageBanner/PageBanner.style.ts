@@ -3,13 +3,13 @@
 import { device } from "@/styles/theme/breakpoints";
 import styled from "styled-components";
 
-const PageBanner = styled.section<{ themetype?: string }>`
+const PageBanner = styled.section<{ $themetype?: string }>`
   position: relative;
   padding: ${({ theme }) => `${theme.spacing.custom.r22_7} 0 ${theme.spacing["3xl"]}`};
   z-index: 3;
 
-  background-color: ${({ theme, themetype }) =>
-    themetype === "dark"
+  background-color: ${({ theme, $themetype }) =>
+    $themetype === "dark"
       ? theme.colors.primary.gray[50]
       : theme.colors.secondary.purple[50]};
 
@@ -42,7 +42,7 @@ const BannerContent = styled.div`
   }
 `;
 
-const PageName = styled.p<{ themetype?: string }>`
+const PageName = styled.p<{ $themetype?: string }>`
   z-index: 1;
   text-transform: uppercase;
   font-size: ${({ theme }) => theme.font.size.body.sm};
@@ -51,8 +51,8 @@ const PageName = styled.p<{ themetype?: string }>`
   left: 0;
   top: ${({ theme }) => theme.spacing.custom.r4_4};
   max-width: ${({ theme }) => theme.spacing.custom.r20};
-  color: ${({ themetype }) =>
-    themetype === "dark" ? "rgba(255,255,255, 0.5)" : "rgba(23,33,42, 1)"};
+  color: ${({ $themetype }) =>
+    $themetype === "dark" ? "rgba(255,255,255, 0.5)" : "rgba(23,33,42, 1)"};
 
   @media ${device.smallScreen} {
     left: ${({ theme }) => theme.spacing.xxxl};
@@ -69,12 +69,12 @@ const PageName = styled.p<{ themetype?: string }>`
   }
 `;
 
-const Bannertitle = styled.h1<{ themetype?: string }>`
+const Bannertitle = styled.h1<{ $themetype?: string }>`
   font-size: clamp(6.7rem, 10vw, 12rem);
   font-family: ${({ theme }) => theme.fonts.black};
   font-weight: normal;
-  color: ${({ theme, themetype }) =>
-    themetype === "dark"
+  color: ${({ theme, $themetype }) =>
+    $themetype === "dark"
       ? theme.colors.primary.white
       : theme.colors.primary.gray[50]};
   display: inline-block;

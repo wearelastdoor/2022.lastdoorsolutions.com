@@ -7,8 +7,8 @@ const Stats = () => {
     <S.Stats>
       <S.StatsContainer>
         <S.StatsContent>
-          <S.OffsetBg variant="primary"></S.OffsetBg>
-          <S.OffsetBg variant="secondary"></S.OffsetBg>
+          <S.OffsetBg $variant="primary"></S.OffsetBg>
+          <S.OffsetBg $variant="secondary"></S.OffsetBg>
           <S.StatsTitle title={`Last Door’s story`}>
             Last Door’s story
           </S.StatsTitle>

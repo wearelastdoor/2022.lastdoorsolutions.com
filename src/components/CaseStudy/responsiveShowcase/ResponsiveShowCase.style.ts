@@ -3,17 +3,17 @@
 import { device } from "@/styles/theme/breakpoints";
 import styled from "styled-components";
 
-const ResponsiveShowcase = styled.div<{ themetype: string }>`
+const ResponsiveShowcase = styled.div<{ $themetype: string }>`
   position: relative;
   z-index: 1;
 
-  background-color: ${({ theme, themetype }) =>
-    themetype === "dark"
+  background-color: ${({ theme, $themetype }) =>
+    $themetype === "dark"
       ? theme.colors.primary.gray[50]
       : theme.colors.secondary.purple[50]};
 
-  color: ${({ theme, themetype }) =>
-    themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
+  color: ${({ theme, $themetype }) =>
+    $themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
 `;
 
 const StyledContainer = styled.div`
@@ -31,7 +31,7 @@ const StyledContainer = styled.div`
   }
 `;
 
-const ShowcaseTitle = styled.h2<{ themetype: string }>`
+const ShowcaseTitle = styled.h2<{ $themetype: string }>`
   font-size: clamp(5rem, 8vw, 9.5rem);
   font-family: ${({ theme }) => theme.fonts.black};
   font-weight: normal;
@@ -44,8 +44,8 @@ const ShowcaseTitle = styled.h2<{ themetype: string }>`
   max-width: min(44.5rem, 100%);
   width: 55%;
 
-  color: ${({ theme, themetype }) =>
-    themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
+  color: ${({ theme, $themetype }) =>
+    $themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
 
   @media ${device.smallScreen} {
     padding-right: 3rem;

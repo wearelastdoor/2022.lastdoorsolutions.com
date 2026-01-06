@@ -17,13 +17,13 @@ const PageBanner = ({
   pageDescription,
 }: PageBannerProps) => {
   return (
-    <S.PageBanner themetype={themeType}>
+    <S.PageBanner $themetype={themeType}>
       <S.BannerContainer>
         <S.BannerContent>
-          <S.PageName themetype={themeType}>{pageName}</S.PageName>
+          <S.PageName $themetype={themeType}>{pageName}</S.PageName>
           <S.Bannertitle
             title={title}
-            themetype={themeType}
+            $themetype={themeType}
             style={
               containerWidth ? { maxWidth: `${containerWidth}px` } : undefined
             }

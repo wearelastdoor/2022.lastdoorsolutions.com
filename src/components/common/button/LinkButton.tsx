@@ -12,16 +12,25 @@ interface LinkButtonProps {
 
 const LinkButton = ({ linkUrl, type, linkTitle, animate }: LinkButtonProps) => {
   const { handleRoute } = useAnimateRouteContext();
+  
+  const isExternal = linkUrl.startsWith("http://") || linkUrl.startsWith("https://");
+  
+  const externalLinkProps = isExternal
+    ? {
+        target: "_blank",
+        rel: "nofollow noopener noreferrer",
+      }
+    : {};
 
   return (
     <>
-      {animate ? (
+      {animate && !isExternal ? (
         <S.Button onClick={() => handleRoute(linkUrl)} type={type}>
           <S.StyledSpan></S.StyledSpan>
           {linkTitle}
         </S.Button>
       ) : (
-        <S.ButtonLink href={linkUrl} type={type}>
+        <S.ButtonLink href={linkUrl} type={type} {...externalLinkProps}>
           <S.StyledSpan></S.StyledSpan>
           {linkTitle}
         </S.ButtonLink>

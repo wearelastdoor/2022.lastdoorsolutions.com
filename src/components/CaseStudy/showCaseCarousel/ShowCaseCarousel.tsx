@@ -32,10 +32,10 @@ const ShowCaseCarousel = ({
   };
 
   return (
-    <S.CarouselShowcase themetype={themeType}>
+    <S.CarouselShowcase $themetype={themeType}>
       <S.StyledContainer>
         <S.ShowcaseHeader>
-          <S.ShowcaseTitle title={title} themetype={themeType}>
+          <S.ShowcaseTitle title={title} $themetype={themeType}>
             {title}
           </S.ShowcaseTitle>
           <S.ShowcaseDescription>{description}</S.ShowcaseDescription>
@@ -51,8 +51,8 @@ const ShowCaseCarousel = ({
               return (
                 <S.CarouselItem
                   key={item.image.url}
-                  position={pos}
-                  depth={depth}
+                  $position={pos}
+                  $depth={depth}
                   onClick={() => setActive(idx + 1)}
                 >
                   <img src={item.image.url} alt={item.image.alt} />

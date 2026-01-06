@@ -3,18 +3,18 @@
 import { device } from "@/styles/theme/breakpoints";
 import styled from "styled-components";
 
-const HighlightBlock = styled.section<{ themetype: string }>`
+const HighlightBlock = styled.section<{ $themetype: string }>`
   position: relative;
   z-index: 1;
   background-color: ${({ theme }) => theme.color.brandSecondary};
   padding: 6.7rem 0 23.6rem;
-  background-color: ${({ theme, themetype }) =>
-    themetype === "dark"
+  background-color: ${({ theme, $themetype }) =>
+    $themetype === "dark"
       ? theme.colors.primary.gray[50]
       : theme.colors.secondary.purple[50]};
 
-  color: ${({ theme, themetype }) =>
-    themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
+  color: ${({ theme, $themetype }) =>
+    $themetype === "dark" ? theme.colors.white : theme.colors.primary.gray[50]};
 
   @media ${device.phone} {
     padding: 4rem 0 19.4rem;

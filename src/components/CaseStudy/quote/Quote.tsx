@@ -14,7 +14,7 @@ const Quote = ({
   designation,
 }: QuoteProps) => {
   return (
-    <S.Quote themetype={themeType}>
+    <S.Quote $themetype={themeType}>
       <S.StyledContainer>
         <S.BlockQuote
           className="c-quote__blockquote"
@@ -22,7 +22,7 @@ const Quote = ({
         />
         <S.QuoteMeta>
           <S.QuoteUser>{quoteAuthor}</S.QuoteUser>
-          <S.QuoteDesignation themetype={themeType}>
+          <S.QuoteDesignation $themetype={themeType}>
             {designation}
           </S.QuoteDesignation>
         </S.QuoteMeta>

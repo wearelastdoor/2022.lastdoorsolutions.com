@@ -3,7 +3,7 @@
 import { device } from "@/styles/theme/breakpoints";
 import styled, { css, keyframes } from "styled-components";
 
-const HighlightCta = styled.section<{ themecolor?: string }>`
+const HighlightCta = styled.section<{ $themecolor?: string }>`
   color: ${({ theme }) => theme.colors.white};
   padding: ${({ theme }) => `${theme.spacing.custom.r7} 0 ${theme.spacing.custom.r12}`};
 
@@ -11,8 +11,8 @@ const HighlightCta = styled.section<{ themecolor?: string }>`
     padding: ${({ theme }) => `${theme.spacing.custom.r7} 0`};
   }
 
-  ${({ themecolor }) =>
-    themecolor === "dark" &&
+  ${({ $themecolor }) =>
+    $themecolor === "dark" &&
     css`
       background-color: ${({ theme }) => theme.color.brandSecondary};
       position: relative;
@@ -59,7 +59,7 @@ const CtaHolder = styled.div`
   }
 `;
 
-const CtaDecorate = styled.span<{ themecolor?: string }>`
+const CtaDecorate = styled.span<{ $themecolor?: string }>`
   position: absolute;
   top: 0;
   left: 0;
@@ -91,8 +91,8 @@ const CtaDecorate = styled.span<{ themecolor?: string }>`
       bottom: -${({ theme }) => theme.spacing.lg};
     }
 
-    ${({ themecolor }) =>
-      themecolor === "dark" &&
+    ${({ $themecolor }) =>
+      $themecolor === "dark" &&
       css`
         background-color: ${({ theme }) => `rgba(${theme.colorRgb.brandAlt})`};
       `}

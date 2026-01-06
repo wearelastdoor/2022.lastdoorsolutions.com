@@ -14,13 +14,13 @@ const FrontShowCase = ({
   description,
 }: FrontShowCaseProps) => {
   return (
-    <S.FrontShowcase themetype={themeType}>
+    <S.FrontShowcase $themetype={themeType}>
       <S.StyledContainer>
-        <S.ShowcaseTitle title={title} themetype={themeType}>
+        <S.ShowcaseTitle title={title} $themetype={themeType}>
           {title}
         </S.ShowcaseTitle>
         <S.ShowcaseDescription>{description}</S.ShowcaseDescription>
-        <S.ShowcaseImage themetype={themeType}>
+        <S.ShowcaseImage $themetype={themeType}>
           <S.StyledImage
             src={`./images/dwt-front-showcase.jpg`}
             alt="Discovery World Trekking Front page show case"

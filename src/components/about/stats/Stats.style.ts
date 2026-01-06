@@ -26,7 +26,7 @@ const StatsContainer = styled.div`
   }
 `;
 
-const OffsetBg = styled.span<{ variant?: "primary" | "secondary" }>`
+const OffsetBg = styled.span<{ $variant?: "primary" | "secondary" }>`
   position: absolute;
   z-index: -2;
 
@@ -43,8 +43,8 @@ const OffsetBg = styled.span<{ variant?: "primary" | "secondary" }>`
     display: block;
   }
 
-  ${({ variant }) =>
-    variant === "primary" &&
+  ${({ $variant }) =>
+    $variant === "primary" &&
     css`
       background-color: ${({ theme }) => theme.color.primary};
       top: 0;
@@ -53,8 +53,8 @@ const OffsetBg = styled.span<{ variant?: "primary" | "secondary" }>`
       left: -9999%;
     `}
 
-  ${({ variant }) =>
-    variant === "secondary" &&
+  ${({ $variant }) =>
+    $variant === "secondary" &&
     css`
       background-color: ${({ theme }) => theme.color.alt};
       bottom: 0;
@@ -71,7 +71,7 @@ const StatsContent = styled.section`
   position: relative;
   z-index: 2;
   margin: 0 auto;
-  background-color: $${({ theme }) => theme.colors.primary.white};
+  background-color: ${({ theme }) => theme.colors.primary.white};
 
   @media ${device.smallScreen} {
     padding: 6.6rem 5rem 6rem 4rem;
@@ -266,8 +266,7 @@ const CounterLabel = styled.p`
     @media ${device.phone} {
       padding-left: .5rem;
     }
-  }
-    `;
+`;
 
 const CounterHolder = styled.div`
   margin-left: auto;

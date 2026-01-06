@@ -1,7 +1,5 @@
 "use client";
 
-import * as React from "react";
-
 import * as S from "./Footer.style";
 import { useAnimateRouteContext } from "@/context/AnimateRouteContext";
 import { usePathname } from "next/navigation";
@@ -9,7 +7,6 @@ import { usePathname } from "next/navigation";
 const Footer = () => {
   const pathname = usePathname();
 
-  console.log(pathname);
 
   const { handleRoute } = useAnimateRouteContext();
   return (

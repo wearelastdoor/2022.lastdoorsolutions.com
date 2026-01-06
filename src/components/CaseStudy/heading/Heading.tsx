@@ -5,9 +5,9 @@ import * as S from "./Heading.style";
 
 const Heading = ({ themeType, title, description }: CaseStudyProps) => {
   return (
-    <S.Heading themetype={themeType}>
+    <S.Heading $themetype={themeType}>
       <S.StyledContainer>
-        <S.HeadingTitle title={title} themetype={themeType}>
+        <S.HeadingTitle title={title} $themetype={themeType}>
           {title}
         </S.HeadingTitle>
         <S.HeadingDescription>{description}</S.HeadingDescription>

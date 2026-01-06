@@ -3,12 +3,12 @@
 import { device } from "@/styles/theme/breakpoints";
 import styled from "styled-components";
 
-const CaseStudyIntro = styled.div<{ themetype: string }>`
+const CaseStudyIntro = styled.div<{ $themetype: string }>`
   position: relative;
   z-index: 7;
   padding: 2.1rem 0 6rem;
-  background-color: ${({ theme, themetype }) =>
-    themetype === "dark"
+  background-color: ${({ theme, $themetype }) =>
+    $themetype === "dark"
       ? theme.colors.primary.gray[50]
       : theme.colors.secondary.purple[50]};
 
@@ -31,7 +31,7 @@ const StyledContainer = styled.div`
   }
 `;
 
-const IntroContent = styled.div<{ themetype: string }>`
+const IntroContent = styled.div<{ $themetype: string }>`
   padding: 10.3rem 0 5.3rem;
   font-size: clamp(2.62rem, 3vw, 3.8rem);
   line-height: calc(55 / 38);
@@ -39,8 +39,8 @@ const IntroContent = styled.div<{ themetype: string }>`
   position: relative;
   z-index: 1;
   max-width: min(50.4rem, 100%);
-  color: ${({ theme, themetype }) =>
-    themetype === "dark"
+  color: ${({ theme, $themetype }) =>
+    $themetype === "dark"
       ? theme.colors.primary.white
       : theme.colors.primary.gray[50]};
 
@@ -67,8 +67,8 @@ const IntroContent = styled.div<{ themetype: string }>`
     display: block;
     position: absolute;
     z-index: -2;
-    background-color: ${({ theme, themetype }) =>
-      themetype === "dark" ? "${({ theme }) => theme.color.brandSecondary}" : "${({ theme }) => theme.color.white}"};
+    background-color: ${({ theme, $themetype }) =>
+      $themetype === "dark" ? theme.colors.primary.gray[50] : theme.colors.secondary.purple[50]};
   }
 `;
 

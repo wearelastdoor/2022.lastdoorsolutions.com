@@ -15,7 +15,7 @@ const CaseStudyIntro = ({ themeType, description }: CaseStudyProps) => {
         </S.IntroContent>
         <S.IntroImage>
           <S.StyledImage
-            src="/images/heritage.png"
+            src="/images/heritage.webp"
             alt="heritage"
             width={1169}
             height={866}

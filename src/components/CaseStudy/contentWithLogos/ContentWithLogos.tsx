@@ -19,28 +19,28 @@ const ContentWithLogos = ({
           <S.Logos>
             <S.LogoItem>
               <S.StyledImage
-                src={"./images/logo-laravel.png"}
+                src={"./images/logo-laravel.webp"}
                 alt="Laravel"
                 height={60}
               />
             </S.LogoItem>
             <S.LogoItem>
               <S.StyledImage
-                src={"./images/logo-html5.png"}
+                src={"./images/logo-html5.webp"}
                 alt="HTML5"
                 height={60}
               />
             </S.LogoItem>
             <S.LogoItem>
               <S.StyledImage
-                src={"./images/logo-react.png"}
+                src={"./images/logo-react.webp"}
                 alt="React"
                 height={53}
               />
             </S.LogoItem>
             <S.LogoItem>
               <S.StyledImage
-                src={"./images/logo-css3.png"}
+                src={"./images/logo-css3.webp"}
                 alt="CSS3"
                 height={60}
               />

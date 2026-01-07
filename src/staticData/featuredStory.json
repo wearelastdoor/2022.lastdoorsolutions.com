@@ -1,12 +1,12 @@
 [
   {
     "logo": {
-      "url": "../images/anchorwave-logo-white.png",
+      "url": "../images/anchorwave-logo-white.webp",
       "alt": "anchorwave logo",
       "width": "201px"
     },
     "image": {
-      "url": "../images/anchorwave-group.jpg",
+      "url": "../images/anchorwave-group.webp",
       "alt": "anchorwave group"
     },
     "content": {

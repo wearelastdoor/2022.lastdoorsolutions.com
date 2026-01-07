@@ -22,7 +22,7 @@ const MainHero = ({
       <S.StyledContainer>
         <S.HeroBadge>
           <S.BadgeImage
-            src="/images/estd-badge.png"
+            src="/images/estd-badge.webp"
             alt={`18 years of experience badge.`}
             height={200}
             width={200}

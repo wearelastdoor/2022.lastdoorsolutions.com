@@ -16,7 +16,7 @@ const TitleWithImage = ({ themeType, title }: TitleWithImageProps) => {
 
         <S.TitleImage $themetype={themeType}>
           <S.StyledImage
-            src="./images/dashboard.jpg"
+            src="./images/dashboard.webp"
             alt="Dashboard Showcase"
             height={696}
           />

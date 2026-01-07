@@ -27,7 +27,7 @@ const ServiceSingle = () => {
             <S.ServicePartnerItem>
               <S.ServicePartnerCard
                 style={{
-                  backgroundImage: `url(${"./images/anchorwave_white_label_partner.jpg"})`,
+                  backgroundImage: `url(${"./images/anchorwave_white_label_partner.webp"})`,
                 }}
               >
                 <S.ServicePartnertitle>Anchorwave</S.ServicePartnertitle>
@@ -39,7 +39,7 @@ const ServiceSingle = () => {
             <S.ServicePartnerItem>
               <S.ServicePartnerCard
                 style={{
-                  backgroundImage: `url(${"./images/highstep_white_label_partner.jpg"})`,
+                  backgroundImage: `url(${"./images/highstep_white_label_partner.webp"})`,
                 }}
               >
                 <S.ServicePartnertitle>
@@ -53,7 +53,7 @@ const ServiceSingle = () => {
             <S.ServicePartnerItem>
               <S.ServicePartnerCard
                 style={{
-                  backgroundImage: `url(${"./images/e11group_white_label_partner.jpg"})`,
+                  backgroundImage: `url(${"./images/e11group_white_label_partner.webp"})`,
                 }}
               >
                 <S.ServicePartnertitle>e11group</S.ServicePartnertitle>

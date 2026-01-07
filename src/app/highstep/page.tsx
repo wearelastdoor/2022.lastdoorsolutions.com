@@ -53,7 +53,7 @@ const AnchorwavePage = () => {
           </S.HeroLink>
 
           <S.HeroLogo
-            src="./images/highsep-white-logo.png"
+            src="./images/highsep-white-logo.webp"
             alt={`anchorwave branding`}
           />
           <S.HeroTitle>Software and user experience simplified</S.HeroTitle>
@@ -238,77 +238,77 @@ const AnchorwavePage = () => {
               <S.ListContentToolsList>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-2.png"
+                    src="./images/tool-logo-2.webp"
                     alt="Sketch"
                     style={{ maxWidth: `157px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-3.png"
+                    src="./images/tool-logo-3.webp"
                     alt="Suite"
                     style={{ maxWidth: `122px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-4.png"
+                    src="./images/tool-logo-4.webp"
                     alt="Loom"
                     style={{ maxWidth: `125px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-5.png"
+                    src="./images/tool-logo-5.webp"
                     alt="Dropbox"
                     style={{ maxWidth: `183px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-6.png"
+                    src="./images/tool-logo-6.webp"
                     alt="Figma"
                     style={{ maxWidth: `131px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-7.png"
+                    src="./images/tool-logo-7.webp"
                     alt="Invision"
                     style={{ maxWidth: `133px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <S.StyledImage
-                    src="./images/tool-logo-8.png"
+                    src="./images/tool-logo-8.webp"
                     alt="liquid web"
                     style={{ maxWidth: `179px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <S.StyledImage
-                    src="./images/tool-logo-9.png"
+                    src="./images/tool-logo-9.webp"
                     alt="basecamp"
                     style={{ maxWidth: `175px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <S.StyledImage
-                    src="./images/tool-logo-10.png"
+                    src="./images/tool-logo-10.webp"
                     alt="Time Doctor"
                     style={{ maxWidth: `176px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <S.StyledImage
-                    src="./images/tool-logo-11.png"
+                    src="./images/tool-logo-11.webp"
                     alt="Zoho"
                     style={{ maxWidth: `131px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <S.StyledImage
-                    src="./images/tool-logo-12.png"
+                    src="./images/tool-logo-12.webp"
                     alt="AdobeXD"
                     style={{ maxWidth: `132px` }}
                   />

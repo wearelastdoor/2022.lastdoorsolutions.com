@@ -5,7 +5,7 @@
         "name": "Prav O",
         "designation": "Founder/CEO",
         "image": {
-          "baseUrl": "../images/team/pravash_karki.png",
+          "baseUrl": "../images/team/pravash_karki.webp",
           "alt": "Pravash O"
         }
       },
@@ -13,7 +13,7 @@
         "name": "Sunita Pathak",
         "designation": "Full-stack Developer",
         "image": {
-          "baseUrl": "../images/team/sunita_pathak.png",
+          "baseUrl": "../images/team/sunita_pathak.webp",
           "alt": "Sunita Pathak"
         }
       },
@@ -22,7 +22,7 @@
         "name": "Sujal Karki",
         "designation": "Project Lead",
         "image": {
-          "baseUrl": "../images/team/sujal_karki.png",
+          "baseUrl": "../images/team/sujal_karki.webp",
           "alt": "Sujal Karki"
         }
       },
@@ -31,7 +31,7 @@
         "name": "Harry Chaudhary",
         "designation": "Senior Developer",
         "image": {
-          "baseUrl": "../images/team/harry_chaudhary.png",
+          "baseUrl": "../images/team/harry_chaudhary.webp",
           "alt": "Harry Chaudhary"
         }
       },
@@ -39,7 +39,7 @@
         "name": "Saijeet Upadhyay",
         "designation": "Web Developer",
         "image": {
-          "baseUrl": "../images/team/saijeet_upadhyay.png",
+          "baseUrl": "../images/team/saijeet_upadhyay.webp",
           "alt": "Saijeet Upadhyay"
         }
       },
@@ -47,7 +47,7 @@
         "name": "Sandesh Thapa",
         "designation": "Web Developer",
         "image": {
-          "baseUrl": "../images/team/sandesh_thapa.png",
+          "baseUrl": "../images/team/sandesh_thapa.webp",
           "alt": "Sandesh Thapa"
         }
       },
@@ -55,7 +55,7 @@
         "name": "Sujan Danai",
         "designation": "HR & Finance",
         "image": {
-          "baseUrl": "../images/team/sujan_danai.png",
+          "baseUrl": "../images/team/sujan_danai.webp",
           "alt": "Sujan Danai"
         }
       }

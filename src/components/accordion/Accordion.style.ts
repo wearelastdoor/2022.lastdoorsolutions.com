@@ -5,14 +5,17 @@ import { motion } from "framer-motion";
 import styled, { css } from "styled-components";
 
 const Accordion = styled.section`
-  padding: ${({ theme }) => `${theme.spacing.custom.r14_3} 0 ${theme.spacing.custom.r11}`};
+  padding: ${({ theme }) =>
+    `${theme.spacing.custom.r14_3} 0 ${theme.spacing.custom.r11}`};
 
   @media ${device.tablet} {
-    padding: ${({ theme }) => `${theme.spacing.custom.r10} 0 ${theme.spacing.custom.r8}`};
+    padding: ${({ theme }) =>
+      `${theme.spacing.custom.r10} 0 ${theme.spacing.custom.r8}`};
   }
 
   @media ${device.phone} {
-    padding: ${({ theme }) => `${theme.spacing.custom.r8} 0 ${theme.spacing.custom.r6}`};
+    padding: ${({ theme }) =>
+      `${theme.spacing.custom.r8} 0 ${theme.spacing.custom.r6}`};
   }
 `;
 
@@ -106,7 +109,8 @@ const AccordionHeader = styled.div`
   position: relative;
   z-index: 1;
   padding-right: ${({ theme }) => theme.spacing.custom.r7};
-  padding: ${({ theme }) => `${theme.spacing.custom.r2_1} ${theme.spacing.custom.r7_5} ${theme.spacing.lg} 0`};
+  padding: ${({ theme }) =>
+    `${theme.spacing.custom.r2_1} ${theme.spacing.custom.r7_5} ${theme.spacing.lg} 0`};
 `;
 
 const AccordionTitle = styled.h3`
@@ -117,6 +121,7 @@ const AccordionTitle = styled.h3`
   line-height: 1.2315;
   letter-spacing: -0.05rem;
   margin-bottom: 0;
+  cursor: pointer;
 
   @media ${device.phone} {
     font-size: ${({ theme }) => theme.font.size.display.xs};
@@ -168,7 +173,8 @@ const AccordionButton = styled.button<{ $isOpen: boolean }>`
 `;
 
 const ScreenReaderText = styled.span`
-  clip: ${({ theme }) => `rect(${theme.spacing.custom.r0_1}, ${theme.spacing.custom.r0_1}, ${theme.spacing.custom.r0_1}, ${theme.spacing.custom.r0_1})`};
+  clip: ${({ theme }) =>
+    `rect(${theme.spacing.custom.r0_1}, ${theme.spacing.custom.r0_1}, ${theme.spacing.custom.r0_1}, ${theme.spacing.custom.r0_1})`};
   position: absolute !important;
   height: ${({ theme }) => theme.spacing.custom.r0_1};
   width: ${({ theme }) => theme.spacing.custom.r0_1};
@@ -186,7 +192,8 @@ const ScreenReaderText = styled.span`
     height: auto;
     left: ${({ theme }) => theme.spacing.custom.r0_5};
     line-height: normal;
-    padding: ${({ theme }) => `${theme.spacing.custom.r1_5} ${theme.spacing.custom.r2_3} ${theme.spacing.custom.r1_4}`};
+    padding: ${({ theme }) =>
+      `${theme.spacing.custom.r1_5} ${theme.spacing.custom.r2_3} ${theme.spacing.custom.r1_4}`};
     text-decoration: none;
     top: ${({ theme }) => theme.spacing.custom.r0_5};
     width: auto;

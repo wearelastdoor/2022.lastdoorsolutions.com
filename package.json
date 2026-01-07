@@ -10,8 +10,8 @@
     "type-check": "tsc --noEmit"
   },
   "browserslist": [
-    "last 2 years",
-    "> 0.5%",
+    "last 1 year",
+    "> 1%",
     "not dead",
     "not ie 11"
   ],

@@ -1,5 +1,6 @@
+import dynamic from "next/dynamic";
 import * as S from "./Mediabook.style";
-import Footer from "@/components/footer/footer";
+const Footer = dynamic(() => import("@/components/footer/footer"));
 
 const MediaBookPage = () => (
   <>

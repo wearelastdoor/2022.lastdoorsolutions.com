@@ -1,11 +1,17 @@
 // Import Components
+import dynamic from "next/dynamic";
 
 import AboutIntro from "@/components/about/aboutIntro/AboutIntro";
 import PageBanner from "@/components/pageBanner/PageBanner";
-import Stats from "@/components/about/stats/Stats";
-import Leadership from "@/components/about/leadership/Leadership";
-import HighlightCta from "@/components/highlightCta/HighlightCta";
-import Footer from "@/components/footer/footer";
+
+const Stats = dynamic(() => import("@/components/about/stats/Stats"));
+const Leadership = dynamic(
+  () => import("@/components/about/leadership/Leadership")
+);
+const HighlightCta = dynamic(
+  () => import("@/components/highlightCta/HighlightCta")
+);
+const Footer = dynamic(() => import("@/components/footer/footer"));
 
 export const metadata = {
   title: "About Last Door",

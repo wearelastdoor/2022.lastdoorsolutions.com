@@ -1,13 +1,24 @@
 "use client";
 
 import * as React from "react";
+import dynamic from "next/dynamic";
 
 import * as S from "./TwinsUK.style";
 
-import Footer from "@/components/footer/footer";
-import HighlightCta from "@/components/highlightCta/HighlightCta";
-import { Accordion, AccordionItem } from "@/components/accordion/Accordion";
-import ScaleCarousel from "@/components/anchorwave/ScaleCarousel";
+const Footer = dynamic(() => import("@/components/footer/footer"));
+const HighlightCta = dynamic(
+  () => import("@/components/highlightCta/HighlightCta")
+);
+const Accordion = dynamic(
+  () => import("@/components/accordion/Accordion").then((mod) => mod.Accordion)
+);
+const AccordionItem = dynamic(
+  () =>
+    import("@/components/accordion/Accordion").then((mod) => mod.AccordionItem)
+);
+const ScaleCarousel = dynamic(
+  () => import("@/components/anchorwave/ScaleCarousel")
+);
 
 const TwinsUkPage = () => {
   const twinsShowcaseImages1 = [

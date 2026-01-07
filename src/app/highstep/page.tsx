@@ -1,12 +1,24 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Footer from "@/components/footer/footer";
-import HighlightCta from "@/components/highlightCta/HighlightCta";
-import { Accordion, AccordionItem } from "@/components/accordion/Accordion";
+import dynamic from "next/dynamic";
+
+const Footer = dynamic(() => import("@/components/footer/footer"));
+const HighlightCta = dynamic(
+  () => import("@/components/highlightCta/HighlightCta")
+);
+const Accordion = dynamic(
+  () => import("@/components/accordion/Accordion").then((mod) => mod.Accordion)
+);
+const AccordionItem = dynamic(
+  () =>
+    import("@/components/accordion/Accordion").then((mod) => mod.AccordionItem)
+);
 
 import * as S from "./Highstep.style";
-import ScaleCarousel from "@/components/anchorwave/ScaleCarousel";
+const ScaleCarousel = dynamic(
+  () => import("@/components/anchorwave/ScaleCarousel")
+);
 import { useAnimateRouteContext } from "@/context/AnimateRouteContext";
 
 // Import Components

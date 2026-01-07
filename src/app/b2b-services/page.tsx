@@ -1,11 +1,14 @@
 "use client";
 
 import * as React from "react";
+import dynamic from "next/dynamic";
 import PageBanner from "@/components/pageBanner/PageBanner";
 
 // Import Components
-import Footer from "@/components/footer/footer";
-import HighlightCta from "@/components/highlightCta/HighlightCta";
+const HighlightCta = dynamic(
+  () => import("@/components/highlightCta/HighlightCta")
+);
+const Footer = dynamic(() => import("@/components/footer/footer"));
 
 import * as S from "./B2BServices.style";
 import { useAnimateRouteContext } from "@/context/AnimateRouteContext";

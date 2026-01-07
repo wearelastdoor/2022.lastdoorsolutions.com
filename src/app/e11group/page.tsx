@@ -1,9 +1,21 @@
 "use client";
 
-import ScaleCarousel from "@/components/anchorwave/ScaleCarousel";
-import Accordion, { AccordionItem } from "@/components/accordion/Accordion";
-import HighlightCta from "@/components/highlightCta/HighlightCta";
-import Footer from "@/components/footer/footer";
+import dynamic from "next/dynamic";
+
+const ScaleCarousel = dynamic(
+  () => import("@/components/anchorwave/ScaleCarousel")
+);
+const Accordion = dynamic(
+  () => import("@/components/accordion/Accordion").then((mod) => mod.Accordion)
+);
+const AccordionItem = dynamic(
+  () =>
+    import("@/components/accordion/Accordion").then((mod) => mod.AccordionItem)
+);
+const HighlightCta = dynamic(
+  () => import("@/components/highlightCta/HighlightCta")
+);
+const Footer = dynamic(() => import("@/components/footer/footer"));
 
 import * as S from "./E11group.style";
 import { useAnimateRouteContext } from "@/context/AnimateRouteContext";

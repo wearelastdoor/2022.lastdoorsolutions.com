@@ -5,7 +5,7 @@ export const circularStdBlack = localFont({
   variable: "--font-circular-black",
   weight: "900",
   display: "swap",
-  preload: true,
+  preload: false,
 });
 
 export const circularStdBold = localFont({
@@ -21,7 +21,7 @@ export const circularStdBook = localFont({
   variable: "--font-circular-book",
   weight: "400",
   display: "swap",
-  preload: true,
+  preload: false,
 });
 
 export const circularStdBookItalic = localFont({

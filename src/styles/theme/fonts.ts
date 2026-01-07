@@ -38,11 +38,11 @@ const letterSpacing: LetterSpacingScale = {
 
 // Font families
 const fontFamilies = {
-  primary: 'var(--font-circular-book), Arial, sans-serif',
-  primaryItalic: 'var(--font-circular-book-italic), Arial, sans-serif',
-  primaryBold: 'var(--font-circular-bold), Arial, sans-serif',
-  primaryBlack: 'var(--font-circular-black), Arial, sans-serif',
-  default: 'var(--font-circular-book), Arial, sans-serif',
+  primary: 'var(--font-circular-book), system-ui, -apple-system, sans-serif',
+  primaryItalic: 'var(--font-circular-book-italic), system-ui, -apple-system, sans-serif',
+  primaryBold: 'var(--font-circular-bold), system-ui, -apple-system, sans-serif',
+  primaryBlack: 'var(--font-circular-black), system-ui, -apple-system, sans-serif',
+  default: 'var(--font-circular-book), system-ui, -apple-system, sans-serif',
   code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace',
   pre: '"Courier 10 Pitch", Courier, monospace',
 };

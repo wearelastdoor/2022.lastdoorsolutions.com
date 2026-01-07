@@ -16,7 +16,7 @@ const ResponsiveShowCase = ({ themeType, title }: ResponsiveShowCaseProps) => {
 
         <S.ShowcaseImage>
           <S.StyledImage
-            src="./images/responsiveness-showcase.webp"
+            src="/images/responsiveness-showcase.webp"
             alt="Discovery World Trekking responsive show case"
           />
         </S.ShowcaseImage>

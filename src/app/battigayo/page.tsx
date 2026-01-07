@@ -47,7 +47,7 @@ const BattiGayoPage = () => (
           </S.IntroContent>
           <S.IntroMedia>
             <S.IntroImage
-              src="./images/kul-man-ghising.webp"
+              src="/images/kul-man-ghising.webp"
               alt="Kul man ghusing"
               width={285}
               height={459}

@@ -1,17 +1,27 @@
 "use client";
 
 import * as React from "react";
+import dynamic from "next/dynamic";
 
 // Import Components
 
 import MainHero from "@/components/home/mainHero/MainHero";
 import Intro from "@/components/home/intro/Intro";
-import OurClient from "@/components/home/client/OurClient";
-import FeaturedStory from "@/components/home/featuredStory/FeaturedStory";
-import HighlightContent from "@/components/home/highlightContent/HighlightContent";
-import FeaturedWork from "../components/home/featuredWork/FeaturedWork";
-import HighlightCta from "@/components/highlightCta/HighlightCta";
-import Footer from "@/components/footer/footer";
+
+const OurClient = dynamic(() => import("@/components/home/client/OurClient"));
+const FeaturedStory = dynamic(
+  () => import("@/components/home/featuredStory/FeaturedStory")
+);
+const HighlightContent = dynamic(
+  () => import("@/components/home/highlightContent/HighlightContent")
+);
+const FeaturedWork = dynamic(
+  () => import("../components/home/featuredWork/FeaturedWork")
+);
+const HighlightCta = dynamic(
+  () => import("@/components/highlightCta/HighlightCta")
+);
+const Footer = dynamic(() => import("@/components/footer/footer"));
 
 const IndexPage = () => {
   return (

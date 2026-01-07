@@ -1,9 +1,21 @@
 "use client";
 
-import ScaleCarousel from "@/components/anchorwave/ScaleCarousel";
-import Accordion, { AccordionItem } from "@/components/accordion/Accordion";
-import HighlightCta from "@/components/highlightCta/HighlightCta";
-import Footer from "@/components/footer/footer";
+import dynamic from "next/dynamic";
+
+const ScaleCarousel = dynamic(
+  () => import("@/components/anchorwave/ScaleCarousel")
+);
+const Accordion = dynamic(
+  () => import("@/components/accordion/Accordion").then((mod) => mod.Accordion)
+);
+const AccordionItem = dynamic(
+  () =>
+    import("@/components/accordion/Accordion").then((mod) => mod.AccordionItem)
+);
+const HighlightCta = dynamic(
+  () => import("@/components/highlightCta/HighlightCta")
+);
+const Footer = dynamic(() => import("@/components/footer/footer"));
 
 import * as S from "./E11group.style";
 import { useAnimateRouteContext } from "@/context/AnimateRouteContext";
@@ -150,7 +162,7 @@ const page = () => {
             </S.ConcentrationList>
           </S.ConcentrationContent>
           <S.ConcentrationGraphic
-            src="./images/grapic-welcome.svg"
+            src="/images/grapic-welcome.svg"
             alt={`welcome illustration`}
           />
         </S.ConcentrationContainer>
@@ -264,84 +276,84 @@ const page = () => {
               <S.ListContentToolsList>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-1.webp"
+                    src="/images/tool-logo-1.webp"
                     alt="ConnectWise"
                     style={{ maxWidth: `191px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-2.webp"
+                    src="/images/tool-logo-2.webp"
                     alt="Sketch"
                     style={{ maxWidth: `157px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-3.webp"
+                    src="/images/tool-logo-3.webp"
                     alt="Suite"
                     style={{ maxWidth: `122px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-4.webp"
+                    src="/images/tool-logo-4.webp"
                     alt="Loom"
                     style={{ maxWidth: `125px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-5.webp"
+                    src="/images/tool-logo-5.webp"
                     alt="Dropbox"
                     style={{ maxWidth: `183px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-6.webp"
+                    src="/images/tool-logo-6.webp"
                     alt="Figma"
                     style={{ maxWidth: `131px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-7.webp"
+                    src="/images/tool-logo-7.webp"
                     alt="Invision"
                     style={{ maxWidth: `133px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-8.webp"
+                    src="/images/tool-logo-8.webp"
                     alt="liquid web"
                     style={{ maxWidth: `179px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-9.webp"
+                    src="/images/tool-logo-9.webp"
                     alt="basecamp"
                     style={{ maxWidth: `175px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-10.webp"
+                    src="/images/tool-logo-10.webp"
                     alt="Time Doctor"
                     style={{ maxWidth: `176px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-11.webp"
+                    src="/images/tool-logo-11.webp"
                     alt="Zoho"
                     style={{ maxWidth: `131px` }}
                   />
                 </S.ListItem>
                 <S.ListItem>
                   <img
-                    src="./images/tool-logo-12.webp"
+                    src="/images/tool-logo-12.webp"
                     alt="AdobeXD"
                     style={{ maxWidth: `132px` }}
                   />

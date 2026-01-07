@@ -1,12 +1,22 @@
 import * as React from "react";
+import dynamic from "next/dynamic";
 
 // Import Components
 import PageBanner from "@/components/pageBanner/PageBanner";
-import ImageCarousel from "@/components/work/imageCarousel/ImageCarousel";
-import PastClients from "@/components/work/pastClients/PastClients";
-import CaseStudy from "@/components/work/caseStudy/CaseStudy";
-import HighlightCta from "@/components/highlightCta/HighlightCta";
-import Footer from "@/components/footer/footer";
+
+const ImageCarousel = dynamic(
+  () => import("@/components/work/imageCarousel/ImageCarousel")
+);
+const PastClients = dynamic(
+  () => import("@/components/work/pastClients/PastClients")
+);
+const CaseStudy = dynamic(
+  () => import("@/components/work/caseStudy/CaseStudy")
+);
+const HighlightCta = dynamic(
+  () => import("@/components/highlightCta/HighlightCta")
+);
+const Footer = dynamic(() => import("@/components/footer/footer"));
 
 const WorkPage = () => (
   <>

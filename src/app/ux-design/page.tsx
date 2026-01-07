@@ -1,7 +1,10 @@
 import * as React from "react";
+import dynamic from "next/dynamic";
 
-import Footer from "@/components/footer/footer";
-import HighlightCta from "@/components/highlightCta/HighlightCta";
+const Footer = dynamic(() => import("@/components/footer/footer"));
+const HighlightCta = dynamic(
+  () => import("@/components/highlightCta/HighlightCta")
+);
 
 import * as S from "./UxDesign.style";
 
@@ -31,7 +34,7 @@ const UXDesign = () => {
               }}
             >
               <img
-                src="./images/featured-article-image.webp"
+                src="/images/featured-article-image.webp"
                 alt={`Human-centred product strategy, design, and engineering`}
               />
               <S.ArticleTag>Article</S.ArticleTag>
@@ -63,7 +66,7 @@ const UXDesign = () => {
           <S.StrategyBody>
             <S.StrategyIllustrations>
               <S.StyledImage
-                src="./images/strategy-illustration.svg"
+                src="/images/strategy-illustration.svg"
                 alt={`strategy Illustration`}
               />
             </S.StrategyIllustrations>
@@ -86,7 +89,7 @@ const UXDesign = () => {
               <S.StrategyAdditional>
                 <S.StrategyAdditionalMedia>
                   <S.StyledImage
-                    src="./images/strategy-img.webp"
+                    src="/images/strategy-img.webp"
                     alt={`strategy`}
                     height={`600`}
                     width={`600`}
@@ -127,14 +130,14 @@ const UXDesign = () => {
                 product.
               </S.ProcessHighlightTitle>
               <S.ProcessHighlightBackground
-                src="./images/process-oval.svg"
+                src="/images/process-oval.svg"
                 alt={`processOval`}
               />
             </S.ProcessHighlight>
             <S.ProcessItem item="one">
               <S.ProcessIcon>
                 <S.ProcessIconImage
-                  src="./images/process-icon-1.svg"
+                  src="/images/process-icon-1.svg"
                   alt={`Ideate`}
                 />
               </S.ProcessIcon>
@@ -152,7 +155,7 @@ const UXDesign = () => {
             <S.ProcessItem item="two">
               <S.ProcessIcon>
                 <S.ProcessIconImage
-                  src="./images/process-icon-2.svg"
+                  src="/images/process-icon-2.svg"
                   alt={`Prototype & Test`}
                 />
               </S.ProcessIcon>
@@ -170,7 +173,7 @@ const UXDesign = () => {
             <S.ProcessItem item="three">
               <S.ProcessIcon>
                 <S.ProcessIconImage
-                  src="./images/process-icon-3.svg"
+                  src="/images/process-icon-3.svg"
                   alt={`Launch`}
                 />
               </S.ProcessIcon>
@@ -187,7 +190,7 @@ const UXDesign = () => {
             </S.ProcessItem>
             <S.ProcessItem item="four">
               <S.ProcessIcon>
-                <img src="./images/process-icon-4.svg" alt={`Analyze`} />
+                <img src="/images/process-icon-4.svg" alt={`Analyze`} />
               </S.ProcessIcon>
               <S.ProcessContent>
                 <S.ProcessTitle>Analyze</S.ProcessTitle>
@@ -203,7 +206,7 @@ const UXDesign = () => {
             <S.ProcessItem item="five">
               <S.ProcessIcon>
                 <S.ProcessIconImage
-                  src="./images/process-icon-5.svg"
+                  src="/images/process-icon-5.svg"
                   alt={`Discover & Define`}
                 />
               </S.ProcessIcon>

@@ -22,7 +22,7 @@ const OurClient = () => {
           </S.HeaderContent>
           <S.ClientImageWrapper>
             <S.StyledImage
-              src="./images/team-work.svg"
+              src="/images/team-work.svg"
               alt={`we craft brands, that people love`}
               height={354}
               width={334}

@@ -41,7 +41,7 @@ const Leadership = () => {
 
           <S.GridColumn>
             <S.LeadershipCard type="linked">
-              <S.CardImage src="./images/dummy-face.webp" alt="Dummy Face" />
+              <S.CardImage src="/images/dummy-face.webp" alt="Dummy Face" />
               <S.JoinUs>Join Us</S.JoinUs>
               <S.MailLink
                 href="mailto:hello@lastdoorsolutions.com"

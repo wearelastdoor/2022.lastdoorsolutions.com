@@ -1,5 +1,6 @@
+import dynamic from "next/dynamic";
 import * as S from "./Mediabook.style";
-import Footer from "@/components/footer/footer";
+const Footer = dynamic(() => import("@/components/footer/footer"));
 
 const MediaBookPage = () => (
   <>
@@ -7,7 +8,7 @@ const MediaBookPage = () => (
       <S.StyledContainer>
         <S.MediaBookLogo>
           <S.StyledImage
-            src="./images/mediabook-large.webp"
+            src="/images/mediabook-large.webp"
             alt="mediabook"
             height={40}
             width={205}
@@ -15,7 +16,7 @@ const MediaBookPage = () => (
         </S.MediaBookLogo>
         <S.Showcase>
           <S.StyledImage
-            src="./images/app-showcase.webp"
+            src="/images/app-showcase.webp"
             alt="app showcase "
             height={277}
           />

@@ -17,7 +17,6 @@ export const GlobalStyles = createGlobalStyle`
   html, html a {
     box-sizing: border-box;
     font-size: 62.5%;
-    text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased;
   }
 

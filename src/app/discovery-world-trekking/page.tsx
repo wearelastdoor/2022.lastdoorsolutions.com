@@ -1,19 +1,39 @@
 import * as React from "react";
+import dynamic from "next/dynamic";
 
 // Import Components
 import PageBanner from "@/components/pageBanner/PageBanner";
 import CaseStudyIntro from "@/components/CaseStudy/caseStudyIntro/CaseStudyIntro";
-import FrontShowCase from "@/components/CaseStudy/frontShowCase/FrontShowCase";
-import ResponsiveShowCase from "@/components/CaseStudy/responsiveShowcase/ResponsiveShowCase";
-import ShowCaseCarousel from "@/components/CaseStudy/showCaseCarousel/ShowCaseCarousel";
-import ContentWithLogos from "@/components/CaseStudy/contentWithLogos/ContentWithLogos";
-import TitleWithImage from "@/components/CaseStudy/titleWithImage/TitleWithImage";
-import Heading from "@/components/CaseStudy/heading/Heading";
-import ImageContent from "@/components/CaseStudy/imageContent/ImageContent";
-import Quote from "@/components/CaseStudy/quote/Quote";
-import HighlightCard from "@/components/CaseStudy/highlightCard/HighlightCard";
-import HighlightCta from "@/components/highlightCta/HighlightCta";
-import Footer from "@/components/footer/footer";
+
+const FrontShowCase = dynamic(
+  () => import("@/components/CaseStudy/frontShowCase/FrontShowCase")
+);
+const ResponsiveShowCase = dynamic(
+  () => import("@/components/CaseStudy/responsiveShowcase/ResponsiveShowCase")
+);
+const ShowCaseCarousel = dynamic(
+  () => import("@/components/CaseStudy/showCaseCarousel/ShowCaseCarousel")
+);
+const ContentWithLogos = dynamic(
+  () => import("@/components/CaseStudy/contentWithLogos/ContentWithLogos")
+);
+const TitleWithImage = dynamic(
+  () => import("@/components/CaseStudy/titleWithImage/TitleWithImage")
+);
+const Heading = dynamic(
+  () => import("@/components/CaseStudy/heading/Heading")
+);
+const ImageContent = dynamic(
+  () => import("@/components/CaseStudy/imageContent/ImageContent")
+);
+const Quote = dynamic(() => import("@/components/CaseStudy/quote/Quote"));
+const HighlightCard = dynamic(
+  () => import("@/components/CaseStudy/highlightCard/HighlightCard")
+);
+const HighlightCta = dynamic(
+  () => import("@/components/highlightCta/HighlightCta")
+);
+const Footer = dynamic(() => import("@/components/footer/footer"));
 
 const DiscoveryWorldTrekkingPage = () => {
   return (

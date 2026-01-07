@@ -1,9 +1,12 @@
 import * as React from "react";
+import dynamic from "next/dynamic";
 // import Seo from "../components/seo"
 
 // Import Components
-import Footer from "@/components/footer/footer";
-import HighlightCta from "@/components/highlightCta/HighlightCta";
+const Footer = dynamic(() => import("@/components/footer/footer"));
+const HighlightCta = dynamic(
+  () => import("@/components/highlightCta/HighlightCta")
+);
 
 import * as S from "./Wordpress.style";
 
@@ -26,7 +29,7 @@ const ServiceSingle = () => {
               </S.Paragraph>
             </S.Description>
             <S.WordpressImage
-              src="./images/wordpress-logotype-wmark.webp"
+              src="/images/wordpress-logotype-wmark.webp"
               alt="wordpress"
               width={800}
               height={800}
@@ -59,7 +62,7 @@ const ServiceSingle = () => {
           <S.ServiceContainer>
             <S.ServiceIntroImage>
               <S.StyledImage
-                src="./images/wordpress-logotype-standard.webp"
+                src="/images/wordpress-logotype-standard.webp"
                 alt="wordpress"
                 width={250}
                 height={51}
@@ -97,7 +100,7 @@ const ServiceSingle = () => {
 
               <S.ServiceCardImage>
                 <S.StyledImage
-                  src="./images/service-card-img.webp"
+                  src="/images/service-card-img.webp"
                   alt={`service card`}
                   height={339}
                   width={509}
@@ -124,7 +127,7 @@ const ServiceSingle = () => {
 
               <S.ServiceCardImage>
                 <S.StyledImage
-                  src="./images/service-card-img.webp"
+                  src="/images/service-card-img.webp"
                   alt={`service card`}
                   height={339}
                   width={509}
@@ -154,7 +157,7 @@ const ServiceSingle = () => {
 
               <S.ServiceCardImage>
                 <img
-                  src="./images/service-card-img.webp"
+                  src="/images/service-card-img.webp"
                   alt={`service card`}
                   height={339}
                   width={509}
@@ -173,7 +176,7 @@ const ServiceSingle = () => {
               <S.OfferingItem>
                 <S.OfferingImage
                   type="oval"
-                  src="./images/svg-oval.svg"
+                  src="/images/svg-oval.svg"
                   alt={`Oval`}
                   height={144}
                   width={144}
@@ -192,7 +195,7 @@ const ServiceSingle = () => {
               <S.OfferingItem>
                 <S.OfferingImage
                   type="rectangle"
-                  src="./images/svg-rectangle.svg"
+                  src="/images/svg-rectangle.svg"
                   alt={`Rectangle`}
                   height={168}
                   width={168}
@@ -210,7 +213,7 @@ const ServiceSingle = () => {
               <S.OfferingItem>
                 <S.OfferingImage
                   type="triangle"
-                  src="./images/svg-triangle.svg"
+                  src="/images/svg-triangle.svg"
                   alt={`Triangle`}
                   width={124}
                   height={132}
@@ -231,7 +234,7 @@ const ServiceSingle = () => {
               <S.OfferingItem>
                 <S.OfferingImage
                   type="triangle"
-                  src="./images/svg-triangle.svg"
+                  src="/images/svg-triangle.svg"
                   alt={`Triangle`}
                   width={124}
                   height={132}
@@ -247,7 +250,7 @@ const ServiceSingle = () => {
               <S.OfferingItem>
                 <S.OfferingImage
                   type="oval"
-                  src="./images/svg-oval.svg"
+                  src="/images/svg-oval.svg"
                   alt={`Oval`}
                   height={144}
                   width={144}
@@ -263,7 +266,7 @@ const ServiceSingle = () => {
               <S.OfferingItem>
                 <S.OfferingImage
                   type="rectangle"
-                  src="./images/svg-rectangle.svg"
+                  src="/images/svg-rectangle.svg"
                   alt={`Rectangle`}
                   height={168}
                   width={168}

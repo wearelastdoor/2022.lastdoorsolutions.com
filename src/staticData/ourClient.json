@@ -8,84 +8,84 @@
     "clients": [
       {
         "image": {
-          "baseUrl": "./images/anchorwave-logo.png",
+          "baseUrl": "./images/anchorwave-logo.webp",
           "alt": "Anchorwave branding",
           "width": 80
         }
       },
       {
         "image": {
-          "baseUrl": "../images/highstep-logo.png",
+          "baseUrl": "../images/highstep-logo.webp",
           "alt": "Highstep branding",
           "width": 142
         }
       },
       {
         "image": {
-          "baseUrl": "../images/kings-college-logo.png",
+          "baseUrl": "../images/kings-college-logo.webp",
           "alt": "Kings Collage branding",
           "width": 64
         }
       },
       {
         "image": {
-          "baseUrl": "../images/eleven-logo.png",
+          "baseUrl": "../images/eleven-logo.webp",
           "alt": "eleven branding",
           "width": 162
         }
       },
       {
         "image": {
-          "baseUrl": "../images/mila-care-logo.png",
+          "baseUrl": "../images/mila-care-logo.webp",
           "alt": "Mila care branding",
           "width": 48
         }
       },
       {
         "image": {
-          "baseUrl": "../images/british-gut-logo.png",
+          "baseUrl": "../images/british-gut-logo.webp",
           "alt": "british gut branding",
           "width": 82
         }
       },
       {
         "image": {
-          "baseUrl": "../images/glass-pixel.png",
+          "baseUrl": "../images/glass-pixel.webp",
           "alt": "glass pixel branding",
           "width": 168
         }
       },
       {
         "image": {
-          "baseUrl": "../images/dma-rge.png",
+          "baseUrl": "../images/dma-rge.webp",
           "alt": "glass pixel branding",
           "width": 72
         }
       },
       {
         "image": {
-          "baseUrl": "../images/in8-logic.png",
+          "baseUrl": "../images/in8-logic.webp",
           "alt": "in8logic branding",
           "width": 117
         }
       },
       {
         "image": {
-          "baseUrl": "../images/adventure-link.png",
+          "baseUrl": "../images/adventure-link.webp",
           "alt": "adventure link branding",
           "width": 72
         }
       },
       {
         "image": {
-          "baseUrl": "../images/abt.png",
+          "baseUrl": "../images/abt.webp",
           "alt": "Associated business technologies  branding",
           "width": 156
         }
       },
       {
         "image": {
-          "baseUrl": "../images/ellamac.png",
+          "baseUrl": "../images/ellamac.webp",
           "alt": "Ellamac  branding",
           "width": 115
         }

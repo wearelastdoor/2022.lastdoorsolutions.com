@@ -9,7 +9,7 @@
       {
         "backgroundColor": "linear-gradient(130deg, rgb(46, 63, 77) 0%, rgb(23, 33, 42) 100%)",
         "logo": {
-          "url": "../images/wildyak-logo.png",
+          "url": "../images/wildyak-logo.webp",
           "alt": "wildyak logo",
           "width": "147px"
         },
@@ -17,7 +17,7 @@
         "category": "website",
         "linkUrl": "https://wildyakexpeditions.com/",
         "image": {
-          "url": "../images/wildyak-w.png",
+          "url": "../images/wildyak-w.webp",
           "alt": "wildyak Letter",
           "width": "450px"
         }
@@ -25,7 +25,7 @@
       {
         "backgroundColor": "#1F9DD9",
         "logo": {
-          "url": "../images/dwt-logo.png",
+          "url": "../images/dwt-logo.webp",
           "alt": "Discovery World Trekking Logo",
           "width": "153px"
         },
@@ -33,7 +33,7 @@
         "category": "Travel Booking System",
         "linkUrl": "https://www.discoveryworldtrekking.com/",
         "image": {
-          "url": "../images/dwt-d.png",
+          "url": "../images/dwt-d.webp",
           "alt": "Discovery World Trekking",
           "width": "330px"
         }
@@ -41,7 +41,7 @@
       {
         "backgroundColor": "#C38623",
         "logo": {
-          "url": "../images/nepal-alternate-logo.png",
+          "url": "../images/nepal-alternate-logo.webp",
           "alt": "nepal Alternative treks logo",
           "width": "307px"
         },
@@ -49,7 +49,7 @@
         "category": "Ecommerce",
         "linkUrl": "https://nepalalternativetreks.com/",
         "image": {
-          "url": "../images/nepal-alternate-n.png",
+          "url": "../images/nepal-alternate-n.webp",
           "alt": "nepal Alternative treks ",
           "width": "292px"
         }
@@ -57,7 +57,7 @@
       {
         "backgroundColor": "#542662",
         "logo": {
-          "url": "../images/twins-uk-logo.png",
+          "url": "../images/twins-uk-logo.webp",
           "alt": "twins uk logo",
           "width": "160px"
         },
@@ -65,7 +65,7 @@
         "category": "TwinsUK Portal",
         "linkUrl": "https://twinsuk.ac.uk/",
         "image": {
-          "url": "../images/twins-uk-t.png",
+          "url": "../images/twins-uk-t.webp",
           "alt": "twins uk ",
           "width": "210px"
         }

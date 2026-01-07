@@ -10,7 +10,7 @@
         "projectUrl": "https://www.discoveryworldtrekking.com/",
         "urlType": "external",
         "image": {
-          "url": "../images/discovery-world-trekking-thumbnail.png",
+          "url": "../images/discovery-world-trekking-thumbnail.webp",
           "alt": "Discovery World Trekking"
         }
       },
@@ -19,7 +19,7 @@
         "projectUrl": "https://sampression.com/",
         "urlType": "external",
         "image": {
-          "url": "../images/sampression-thumbnail.png",
+          "url": "../images/sampression-thumbnail.webp",
           "alt": "Sampression | WordPress Themes"
         }
       },
@@ -28,7 +28,7 @@
         "projectUrl": "https://twinsuk.ac.uk/",
         "urlType": "external",
         "image": {
-          "url": "../images/twins-uk-thumbnail.png",
+          "url": "../images/twins-uk-thumbnail.webp",
           "alt": "Twin Research & Genetic Epidemiology"
         }
       }

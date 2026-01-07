@@ -32,7 +32,7 @@ const OffsetBg = styled.span<{ $variant?: "primary" | "secondary" }>`
 
   &:after {
     content: "";
-    background-image: url("/images/texture.png");
+    background-image: url("/images/texture.webp");
     background-repeat: repeat;
     position: absolute;
     z-index: -1;
@@ -307,7 +307,7 @@ const CounterHolder = styled.div`
 
   &:after {
     content: "";
-    background-image: url("/images/texture.png");
+    background-image: url("/images/texture.webp");
     background-repeat: repeat;
     position: absolute;
     z-index: -1;

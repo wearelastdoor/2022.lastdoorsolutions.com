@@ -4,7 +4,7 @@ import { device } from "@/styles/theme/breakpoints";
 import styled, { css } from "styled-components";
 
 const Texture = css`
-  background-image: url("/images/texture.png");
+  background-image: url("/images/texture.webp");
   background-repeat: repeat;
   position: absolute;
   z-index: -1;

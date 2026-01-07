@@ -10,7 +10,7 @@ const BattiGayoPage = () => (
         <S.BattigayoHeader>
           <S.HeaderImage>
             <S.StyledImage
-              src="/images/batti-on-off.png"
+              src="/images/batti-on-off.webp"
               alt="batti on off"
               height={278}
               width={306}
@@ -25,7 +25,7 @@ const BattiGayoPage = () => (
           <S.IntroContent>
             <S.IntroLogo>
               <S.StyledImage
-                src="/images/battigayo-logo-large.png"
+                src="/images/battigayo-logo-large.webp"
                 alt="Battigayo"
                 height={98}
                 width={308}
@@ -47,7 +47,7 @@ const BattiGayoPage = () => (
           </S.IntroContent>
           <S.IntroMedia>
             <S.IntroImage
-              src="./images/kul-man-ghising.png"
+              src="./images/kul-man-ghising.webp"
               alt="Kul man ghusing"
               width={285}
               height={459}

@@ -82,7 +82,7 @@ const ContactForm = () => {
         </S.ContactCard>
         <S.ContactImage>
           <S.StyledImage
-            src="./images/graphic-05.png"
+            src="./images/graphic-05.webp"
             alt="Holding Evelope"
             height={369}
           />

@@ -131,7 +131,7 @@ const StoryContent = styled.div`
 
   &:before {
     background-color: ${({ theme }) => theme.colors.primary.white};
-    background-image: url("/images/texture.png");
+    background-image: url("/images/texture.webp");
     background-repeat: repeat;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   }

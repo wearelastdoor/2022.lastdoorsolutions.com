@@ -32,7 +32,7 @@ const AboutIntro = () => {
           </S.IntroGraphic2>
           <S.IntroImageWrapper>
             <S.StyledImage
-              src="/images/about-intro-image.jpg"
+              src="/images/about-intro-image.webp"
               alt={`a work desk in kathmandu.`}
               width={614}
               height={614}

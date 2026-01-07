@@ -1,0 +1,48 @@
+/* Font face declarations loaded asynchronously to prevent render blocking */
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url('/fonts/CircularStd-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url('/fonts/CircularStd-BookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url('/fonts/CircularStd-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url('/fonts/CircularStd-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CSS Variables for font families - set on :root for global access */
+:root {
+  --font-geist-sans: 'CircularStd', Arial, sans-serif;
+  --font-geist-mono: 'Monaco', 'Consolas', monospace;
+  --font-circular-book: 'CircularStd', Arial, sans-serif;
+  --font-circular-bold: 'CircularStd', Arial, sans-serif;
+  --font-circular-black: 'CircularStd', Arial, sans-serif;
+}
+
+/* Apply font variables to body for immediate use */
+body {
+  font-family: var(--font-circular-book);
+}
+

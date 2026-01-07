@@ -13,27 +13,26 @@ export const circularStdBold = localFont({
   variable: "--font-circular-bold",
   weight: "700",
   display: "swap",
-  preload: true,
+  preload: false,
 });
 
 export const circularStdBook = localFont({
-  src: [
-    {
-      path: "../../public/fonts/CircularStd-Book.woff2",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/CircularStd-BookItalic.woff2",
-      weight: "400",
-      style: "italic",
-    },
-  ],
+  src: "../../public/fonts/CircularStd-Book.woff2",
   variable: "--font-circular-book",
+  weight: "400",
   display: "swap",
   preload: true,
 });
 
+export const circularStdBookItalic = localFont({
+  src: "../../public/fonts/CircularStd-BookItalic.woff2",
+  variable: "--font-circular-book-italic",
+  weight: "400",
+  style: "italic",
+  display: "swap",
+  preload: false,
+});
+
 // Combined font class names for easy use
-export const fontVariables = `${circularStdBlack.variable} ${circularStdBold.variable} ${circularStdBook.variable}`;
+export const fontVariables = `${circularStdBlack.variable} ${circularStdBold.variable} ${circularStdBook.variable} ${circularStdBookItalic.variable}`;
 

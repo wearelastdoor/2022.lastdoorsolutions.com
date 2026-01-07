@@ -12,7 +12,7 @@ const HighlightContent = () => {
           </S.Intro>
           <S.ContentPath
             className={`c-highlight-content__path`}
-            src="./images/triangle-path.svg"
+            src="/images/triangle-path.svg"
             alt="triangle"
           />
         </S.ContentIntro>

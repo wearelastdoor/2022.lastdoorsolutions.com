@@ -9,6 +9,12 @@
     "lint": "eslint",
     "type-check": "tsc --noEmit"
   },
+  "browserslist": [
+    "last 2 years",
+    "> 0.5%",
+    "not dead",
+    "not ie 11"
+  ],
   "dependencies": {
     "framer-motion": "^12.23.26",
     "gsap": "^3.14.2",

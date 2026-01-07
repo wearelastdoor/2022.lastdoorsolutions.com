@@ -159,25 +159,25 @@ const TwinsUkPage = () => {
           <div className={`c-showcase__carousel scale-carousel`} data-scale="1">
             <div className={`c-front-showcase__image`}>
               <img
-                src="./images/twins-uk/twins-showcase-03.webp"
+                src="/images/twins-uk/twins-showcase-03.webp"
                 alt={`Agency Coach project, Last Door`}
               />
             </div>
             <div className={`c-front-showcase__image`}>
               <img
-                src="./images/twins-uk/twins-showcase-03.webp"
+                src="/images/twins-uk/twins-showcase-03.webp"
                 alt={`Amg Aesthetics, Last Door`}
               />
             </div>
             <div className={`c-front-showcase__image`}>
               <img
-                src="./images/twins-uk/twins-showcase-03.webp"
+                src="/images/twins-uk/twins-showcase-03.webp"
                 alt={`Amg Aesthetics, Last Door`}
               />
             </div>
             <div className={`c-front-showcase__image`}>
               <img
-                src="./images/twins-uk/twins-showcase-03.webp"
+                src="/images/twins-uk/twins-showcase-03.webp"
                 alt={`Amg Aesthetics, Last Door`}
               />
             </div>
@@ -229,25 +229,25 @@ const TwinsUkPage = () => {
           <div className={`c-showcase__carousel scale-carousel`}>
             <div className={`c-front-showcase__image`}>
               <img
-                src="./images/twins-uk/twins-showcase-01.webp"
+                src="/images/twins-uk/twins-showcase-01.webp"
                 alt={`Agency Coach project, Last Door`}
               />
             </div>
             <div className={`c-front-showcase__image`}>
               <img
-                src="./images/twins-uk/twins-showcase-02.webp"
+                src="/images/twins-uk/twins-showcase-02.webp"
                 alt={`Amg Aesthetics, Last Door`}
               />
             </div>
             <div className={`c-front-showcase__image`}>
               <img
-                src="./images/twins-uk/twins-showcase-01.webp"
+                src="/images/twins-uk/twins-showcase-01.webp"
                 alt={`Amg Aesthetics, Last Door`}
               />
             </div>
             <div className={`c-front-showcase__image`}>
               <img
-                src="./images/twins-uk/twins-showcase-02.webp"
+                src="/images/twins-uk/twins-showcase-02.webp"
                 alt={`Amg Aesthetics, Last Door`}
               />
             </div>
@@ -326,25 +326,25 @@ const TwinsUkPage = () => {
           <div className={`c-showcase__carousel scale-carousel`} data-scale="1">
             <div className={`c-front-showcase__image`}>
               <img
-                src="./images/twins-uk/twins-showcase-03.webp"
+                src="/images/twins-uk/twins-showcase-03.webp"
                 alt={`Agency Coach project, Last Door`}
               />
             </div>
             <div className={`c-front-showcase__image`}>
               <img
-                src="./images/twins-uk/twins-showcase-03.webp"
+                src="/images/twins-uk/twins-showcase-03.webp"
                 alt={`Amg Aesthetics, Last Door`}
               />
             </div>
             <div className={`c-front-showcase__image`}>
               <img
-                src="./images/twins-uk/twins-showcase-03.webp"
+                src="/images/twins-uk/twins-showcase-03.webp"
                 alt={`Amg Aesthetics, Last Door`}
               />
             </div>
             <div className={`c-front-showcase__image`}>
               <img
-                src="./images/twins-uk/twins-showcase-03.webp"
+                src="/images/twins-uk/twins-showcase-03.webp"
                 alt={`Amg Aesthetics, Last Door`}
               />
             </div>

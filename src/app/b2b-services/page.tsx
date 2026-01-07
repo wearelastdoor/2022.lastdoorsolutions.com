@@ -84,7 +84,7 @@ const ServiceSingle = () => {
           <S.StrategyBody>
             <S.StrategyIllustrations>
               <S.StyledImage
-                src="./images/working-illustration.svg"
+                src="/images/working-illustration.svg"
                 alt={`strategy Illustration`}
               />
             </S.StrategyIllustrations>

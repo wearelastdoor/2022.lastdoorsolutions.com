@@ -26,7 +26,7 @@ const ImageCarousel = () => {
       <Slider {...settings}>
         <S.CarouselItem>
           <S.CarouselImage
-            src="./images/carousel-image-01.jpg"
+            src="./images/carousel-image-01.webp"
             height={height}
             alt="peace nepal treks"
           />
@@ -35,7 +35,7 @@ const ImageCarousel = () => {
 
         <S.CarouselItem>
           <S.CarouselImage
-            src="./images/carousel-image-02.jpg"
+            src="./images/carousel-image-02.webp"
             height={height}
             alt="Mountain View"
           />
@@ -44,7 +44,7 @@ const ImageCarousel = () => {
 
         <S.CarouselItem>
           <S.CarouselImage
-            src="./images/carousel-image-03.jpg"
+            src="./images/carousel-image-03.webp"
             height={height}
             alt="Hotel Jal Mahal"
           />
@@ -53,7 +53,7 @@ const ImageCarousel = () => {
 
         <S.CarouselItem>
           <S.CarouselImage
-            src="./images/carousel-image-04.jpg"
+            src="./images/carousel-image-04.webp"
             height={height}
             alt="Filming In Nepal"
           />

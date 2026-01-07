@@ -272,7 +272,7 @@ const StrategyBody = styled.div`
 
 const pattern = css`
   content: "";
-  background-image: url("/images/texture.png");
+  background-image: url("/images/texture.webp");
   background-repeat: repeat;
   position: absolute;
   z-index: -1;

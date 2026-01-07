@@ -19,7 +19,7 @@ const Quote = styled.div<{ $themetype: string }>`
 
   &:after {
     content: "";
-    background-image: url("/images/texture.png");
+    background-image: url("/images/texture.webp");
     background-repeat: repeat;
     position: absolute;
     z-index: -1;

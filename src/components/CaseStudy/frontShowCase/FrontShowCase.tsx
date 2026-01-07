@@ -22,7 +22,7 @@ const FrontShowCase = ({
         <S.ShowcaseDescription>{description}</S.ShowcaseDescription>
         <S.ShowcaseImage $themetype={themeType}>
           <S.StyledImage
-            src={`./images/dwt-front-showcase.jpg`}
+            src={`./images/dwt-front-showcase.webp`}
             alt="Discovery World Trekking Front page show case"
             height={546}
           />

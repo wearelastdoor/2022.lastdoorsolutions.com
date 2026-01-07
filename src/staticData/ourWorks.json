@@ -13,12 +13,12 @@
           "url": "/discovery-world-trekking/"
         },
         "logo": {
-          "baseUrl": "/images/white-dwt-logo.png",
+          "baseUrl": "/images/white-dwt-logo.webp",
           "alt": "Discovery World Trekking",
           "width": 175
         },
         "image": {
-          "baseUrl": "/images/dwt-d.png",
+          "baseUrl": "/images/dwt-d.webp",
           "alt": "Discovery World Trekking First Letter",
           "width": 420
         }
@@ -35,12 +35,12 @@
           "url": "/anchorwave/"
         },
         "logo": {
-          "baseUrl": "/images/anchorwave-logo-white.png",
+          "baseUrl": "/images/anchorwave-logo-white.webp",
           "alt": "achorwave",
           "width": 142
         },
         "image": {
-          "baseUrl": "/images/achorwave-a.png",
+          "baseUrl": "/images/achorwave-a.webp",
           "alt": "Achor Wave First Letter",
           "width": 420
         }
@@ -57,12 +57,12 @@
           "url": "https://wildyakexpeditions.com/"
         },
         "logo": {
-          "baseUrl": "/images/wildyak-logo.png",
+          "baseUrl": "/images/wildyak-logo.webp",
           "alt": "wildyak",
           "width": 147
         },
         "image": {
-          "baseUrl": "/images/wildyak-w.png",
+          "baseUrl": "/images/wildyak-w.webp",
           "alt": "Wildyak First Letter",
           "width": 420
         }
@@ -79,12 +79,12 @@
           "url": "https://www.acethehimalaya.com/"
         },
         "logo": {
-          "baseUrl": "/images/ace-logo.png",
+          "baseUrl": "/images/ace-logo.webp",
           "alt": "Ace the Himalaya",
           "width": 81
         },
         "image": {
-          "baseUrl": "/images/a-letter.png",
+          "baseUrl": "/images/a-letter.webp",
           "alt": "Ace the Himalaya First Letter",
           "width": 420
         }
@@ -101,12 +101,12 @@
           "url": "https://twinsuk.ac.uk/"
         },
         "logo": {
-          "baseUrl": "/images/twins-uk-logo.png",
+          "baseUrl": "/images/twins-uk-logo.webp",
           "alt": "Department of Twin Research & Genetic Epidemiology, King's College London",
           "width": 162
         },
         "image": {
-          "baseUrl": "/images/twins-uk-t.png",
+          "baseUrl": "/images/twins-uk-t.webp",
           "alt": "Department of Twin Research & Genetic Epidemiology, King's College London First Letter",
           "width": 216
         }
@@ -123,12 +123,12 @@
           "url": "https://mountainkick.com/"
         },
         "logo": {
-          "baseUrl": "/images/mountain-kick-logo.png",
+          "baseUrl": "/images/mountain-kick-logo.webp",
           "alt": "Mountain Kick",
           "width": 85
         },
         "image": {
-          "baseUrl": "/images/mountain-kick-m.png",
+          "baseUrl": "/images/mountain-kick-m.webp",
           "alt": "Mountain Kick First Letter",
           "width": 483
         }
@@ -145,12 +145,12 @@
           "url": "https://nepalalternativetreks.com/"
         },
         "logo": {
-          "baseUrl": "/images/nepal-alternate-logo.png",
+          "baseUrl": "/images/nepal-alternate-logo.webp",
           "alt": "Nepal Alternative Treks & Expedition",
           "width": 307
         },
         "image": {
-          "baseUrl": "/images/nepal-alternate-n.png",
+          "baseUrl": "/images/nepal-alternate-n.webp",
           "alt": "Nepal Alternative Treks & Expedition First Letter",
           "width": 420
         }
